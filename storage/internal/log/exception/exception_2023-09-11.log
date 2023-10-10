@@ -1,0 +1,44 @@
+2023-09-11 10:19:43 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-11 16:59:38 [ERROR] - uncaughtException: Unexpected token '='
+D:\Code\r-rfms\agros_net_server_node_git\database\obj_db.js:160
+       = [1, 2, 3];
+       ^
+
+SyntaxError: Unexpected token '='
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_data.js:15:15)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-11 16:59:46 [ERROR] - uncaughtException: Unexpected token '='
+D:\Code\r-rfms\agros_net_server_node_git\database\obj_db.js:160
+       = [1, 2, 3];
+       ^
+
+SyntaxError: Unexpected token '='
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_data.js:15:15)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)

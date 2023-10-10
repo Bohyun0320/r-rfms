@@ -1,0 +1,35 @@
+@import "_global";
+
+.sens-ty {
+    color: white;
+    border-radius: 6px;
+    padding : 4px 6px;
+    width: 72px;
+}
+
+.sens-ty-cam {
+    background-color: $color-secondary;
+}
+
+.sens-ty-lidar {
+    background-color: $color-third-dark;
+}
+
+.sens-ty-set {
+    background-color: $color-fourth-dark;
+}
+
+.tui-grid-table {
+    .nav-selected td {
+        color: $color-secondary-dark;
+        font-weight: 600;
+    }
+}
+
+
+
+@media (max-width: 1220) {
+}
+
+@media (max-width: 820px) {
+}

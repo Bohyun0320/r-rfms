@@ -1,0 +1,111 @@
+@import "_global";
+
+.excd-input-group-file {
+    align-items: flex-start;
+}
+
+.excd-filebox {
+    height: auto;
+    padding : 4px 8px;
+    margin-right: 10px;
+
+    &.excd-filebox-empty::before {
+        content: "파일을 추가해 주세요.";
+        color: #9a9a9a;
+    }
+
+    .file-box-count {
+        margin : 5px 10px;
+    }
+
+    .file-item {  
+        display: flex;
+        margin: 8px 10px;
+        padding: 4px 8px;
+        border : 1px solid $color-gray3;
+        border-radius: 4px;
+
+        .file-item-icon  {
+            align-self: center;
+            padding : 3px 6px;
+            border-radius: 12px 3px 3px 3px;
+            color : white;
+            font-size : 12px;
+        }
+
+        .file-item-pkg {
+            align-self: center;
+            padding : 3px 6px;
+            border-radius: 3px;
+            color : white;
+            font-size : 12px;
+            margin-left: 5px;
+            background-color: $color-file-pkg;
+
+            &::before {
+                content: 'PKG';
+            }
+        }
+
+        .file-item-name {
+            flex-grow: 1;
+            margin: 0 8px;
+        }
+
+        &.file-item-zip > .file-item-icon {
+            background-color: $color-file-zip;
+
+            &::before {
+                content: 'ZIP';
+            }
+        }
+        &.file-item-img > .file-item-icon {
+            background-color: $color-file-img;
+
+            &::before {
+                content: 'IMG';
+            }
+        }
+        &.file-item-las > .file-item-icon {
+            background-color: $color-file-las;
+
+            &::before {
+                content: 'LAS';
+            }
+        }
+        &.file-item-meta > .file-item-icon {
+            background-color: $color-file-meta;
+
+            &::before {
+                content: '</>';
+            }
+        }
+
+        .file-item-rmbtn, .file-item-dnbtn {
+            color: $color-gray4;
+            font-size: 16px;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+        }
+
+        &.file-item-server {
+            background-color: $color-gray0;
+        }
+    }
+}
+
+#file-item-dummy {
+    display : none;
+}
+
+.file-btns .excd-btn:nth-child(n+2) {
+    margin-top: 4px;
+    // margin-left: 5px;
+}
+
+
+
+

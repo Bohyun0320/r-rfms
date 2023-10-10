@@ -1,0 +1,327 @@
+@import "_global";
+
+.contents-dashboard {
+    padding: 10px;
+}
+
+.contents-stat-wrap{
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    position: relative;
+    margin: 10px 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+    flex-basis: 48%;
+    flex-grow: 1;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+    padding: 16px 20px;
+    // margin: 10px;
+    box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+
+    .stat-title {
+        margin: 4px 0 10px;
+        font-size: 18px;
+        border-bottom: 2px solid #acacac;
+        width: fit-content;
+        padding-left: 5px;
+        padding-right: 20px;
+        font-weight: bold;
+    }
+
+    &#prjStats {
+        min-height: 220px;
+
+        .stat-info {
+            position: absolute;
+            display: flex;
+            flex-direction: row;
+            top : 25px;
+            right: 40px;
+            font-size: 20px;
+
+            .stat-info-item {
+                margin-left: 10px;
+                color: $color-primary-dark;
+    
+            }
+        }
+
+        .process-info {
+            font-size: 25px;
+            font-weight: 600;
+            bottom: -70px;
+            color: $color-text-default;
+        }
+    }
+
+    .stat-contents {
+        font-size: 16px;
+        margin: 10px;
+
+        &.stat-summary {
+            padding-left: 120px;
+        }
+
+        &.stat-data {
+            display: flex;
+            flex-direction: row;
+
+            .stat-data-item {
+                position: relative;
+                // border: 1px solid $color-primary;
+                border-radius: 10px;
+                flex-basis: 33%;
+                flex-grow: 1;
+                padding: 10px 20px;
+                color: white;
+                min-width: 150px;
+
+                &:nth-child(n+2) {
+                    margin-left: 8px;
+                }
+
+                .stat-data-item-icon {
+                    position: absolute;
+                    top: 10px;
+                    right: 14px;
+                    font-size: 30px;
+                    font-weight: 100;
+                    color: rgba(255,255,255,0.8);
+                }
+
+                &:nth-child(1) {
+                    background-color: $color-secondary;
+                }
+                &:nth-child(2) {
+                    background-color: $color-third;
+                }
+                &:nth-child(3) {
+                    background-color: $color-fourth;
+                }
+
+                .stat-data-item-count {
+                    font-size: 24px;
+                    font-weight: 600;
+                }
+
+                .excd-btn-bar {
+                    margin-top:  20px;
+                    padding: 10px 0;
+                    justify-content: right;
+                    padding-right: 10px;
+
+                    .excd-btn-white:hover {
+                        background-color: $color-gray3;
+                    }
+                }
+            }
+        }
+
+        &.stat-prj {
+            min-width: 580px;
+
+        }
+
+        &.stat-equip {
+            .stat-equip-item {
+                padding: 20px 20px 50px 40px;
+                position: relative;
+                background-color: white;
+                // border: 4px solid $color-third;
+                border-radius: 10px;
+                // max-width: 300px;
+                color:$color-text-default;
+                // box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+                .stat-equip-icon {
+                    position: absolute;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    top:20px;
+                    right:40px;
+                    font-size: 20px;
+                    border-radius: 50%;
+                    width: 50px;
+                    height: 50px;
+                    color: white;
+                }
+
+                .stat-equip-title {
+                    font-size: 22px;
+                    font-weight: 600;
+                }
+
+                &:nth-child(n+2) {
+                    margin-top: 30px;
+                }
+
+                .stat-equip-count {
+                    margin-left: 20%;
+                    margin-right: 10px;
+                    font-size: 50px;
+                    align-self: baseline;
+                    font-weight: 600;
+                    
+                }
+
+                &:nth-child(1) {
+                    border: 1px solid rgba(250,140,77,0.5);
+                    box-shadow: 4px 4px 8px 0 rgba(250,140,77,0.2);
+                    // box-shadow: 4px 4px 8px 0 $color-secondary+20;  
+
+                    .stat-equip-count {
+                        color: $color-secondary;
+                    }
+
+                    .stat-equip-icon {
+                        background-color: $color-secondary;
+                    }
+                }
+
+                &:nth-child(2) {
+                    border: 1px solid rgba(230,98,230,0.5);
+                    box-shadow: 4px 4px 8px 0 rgba(230,98,230,0.2);
+
+                    .stat-equip-count {
+                        color: $color-fourth;
+                    }
+
+                    .stat-equip-icon {
+                        background-color: $color-fourth;
+                    }
+                }
+
+                .excd-btn {
+                    position: absolute;
+                    bottom:25px;
+                    right:50px;
+                }
+
+                .stat-equip-unit {
+                    margin-right: 20px;
+                    font-size: 18px;
+                    align-self: baseline;
+                }
+
+
+            }
+
+            
+        }
+
+        .stat-contents-item {
+            display: flex;
+            flex-direction: row;
+            margin: 4px 0;
+            align-items: center;
+
+            .stat-box {
+                margin: 4px 20px;
+                font-size: 18px;
+                border: 2px solid #1833ef;
+                border-radius: 5px;
+                font-weight: bold;
+                padding: 4px 10px;
+            }
+
+            .stat-box-red {
+                border-color: #ef5c5c;
+            }
+
+            .stat-box-green {
+                border-color: #0abb54;
+            }
+
+            .stat-box-pupple {
+                border-color: #ad1ef0;
+            }
+        }
+
+        table {
+            margin: 0 0 40px 0;
+            width: 100%;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            display: table;
+
+            tr {
+                display: table-row;
+                background: #f6f6f6;
+            }
+            tr:nth-of-type(odd) {
+                background: #e9e9e9;
+            }
+            tr.header {
+                font-weight: bold;
+                color: #ffffff;
+                background: #ea6153;
+            }
+            td {
+                padding: 10px;
+            }
+        }
+    }
+
+    &#chartObjData {
+        // flex-basis: 97%;
+        flex-grow: 1;
+    }
+
+    .stat-chart{
+        height: 400px;
+    }
+
+    &#dataByPeriod {
+        flex-grow: 3;
+    }
+    
+    &#statEquip {
+        // color: white;
+        flex-basis: 20%;
+        // background-color: $color-third;
+        // flex-grow: 3;
+
+        .stat-title {
+            // border-color: $color-gray1;
+        }
+    }
+
+    &#dataByPeriod {
+        .stat-filter {
+            align-items: center;
+
+            .tui-datepicker-input {
+                z-index: 1010;
+                margin: 0 10px;
+                width: 100px;
+                box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+        
+            }
+        
+            select[name="date-step"] {
+                height:28px;
+                padding: 4px 10px;
+                width: 60px;
+                margin-left: 10px;
+                font-size: 12px;
+            }
+            
+            .excd-btn {
+                margin-left: 10px;
+            }
+        }
+    
+    
+        #chartDataPeriod {
+            width: 100%;
+        }
+      
+    }
+
+}

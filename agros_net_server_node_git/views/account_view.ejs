@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+<!--    <link rel="stylesheet" href="/public/css/signup.css">-->
+    
+    <title>사용자 정보</title>
+    <meta name="description" content="사용자 상세 정보"/>
+    <meta property="og:title" content="R-RFMS 사용자 상세 정보">
+    <meta property="og:description" content="사용자 상세 정보"/>
+    <link rel="stylesheet" href="/public/css/account.css">
+
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="title-text">사용자 정보</div>
+          </div>
+
+          <%- include('common/user_info_module', {user : user, userType: userType, userSttus: userSttus} )%>
+        </div>
+      </div>
+    </div>
+
+    <div class="excd-modal-bg display-none" id="headerModalBg">
+      <div class="contents-card-wrapper contents-card-center contents-card-center-contents" id="authCard">
+        <div class="contents-column">
+          <div class="card-title"> 
+            <div class="card-title-text">
+              사용자 인증
+            </div>
+          </div> 
+          <form action="/api/auth/token" class="card-contents login-form" method="post" id="form-auth">
+            <div class="excd-input-group login-input">
+              <div class="input-name">이메일</div>
+              <input type="email" class="form-control" id="inputId" placeholder="아이디를 입력하세요" name="authId" readonly>
+            </div>
+            <div class="excd-input-group login-input" id="formPw">
+              <div class="input-name">비밀번호</div>
+              <input type="password" id="inputPassword" class="form-control" placeholder="비밀번호를 입력하세요." name="authPassword">
+              <i class="fa fa-eye fa-lg"></i>
+            </div>
+          </form>
+          <div class="excd-btn-bar">
+            <div class="excd-btn excd-btn-140" onclick="javascript:cancelAuth();">취소</div>
+            <div class="excd-btn excd-btn-primary excd-btn-140" onclick="javascript:submitAuth();">확인</div>
+          </div>
+          
+        </div>
+      </div>
+    
+    </div>
+
+    <% include ./common/default_js %>
+
+    <script>
+      var accountInfo = {};
+      <% if (typeof accountInfo !== 'undefined' && accountInfo) {%>
+        accountInfo = <%- JSON.stringify(accountInfo)%>;
+      <%}%>
+    </script>
+        
+    <script src="/public/js/fr_account_view.js"></script>
+
+
+  </body>
+</html>

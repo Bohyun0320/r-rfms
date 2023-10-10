@@ -1,0 +1,46 @@
+@import url("./font.css");
+.user-search-container {
+  position: absolute;
+  top: 40px;
+  left: 10px;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  border-radius: 4px;
+  -webkit-box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+  padding: 10px;
+}
+
+.user-search-container::after {
+  content: " ";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  top: -7px;
+  left: 20px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  background: #fff;
+  -webkit-box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);
+  border: #dbdbdb transparent transparent #dbdbdb;
+  z-index: 1;
+}
+
+.user-search-container .usercard {
+  padding: 10px;
+}
+
+.user-search-container .usercard:nth-child(n + 2) {
+  border-top: 1px solid #dbdbdb;
+}
+
+.user-search-container img.user-photo {
+  width: 40px;
+  height: 40px;
+}
+
+.user-profile {
+  margin-left: 10px;
+}

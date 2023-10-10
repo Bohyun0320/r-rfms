@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+<!--    <link rel="stylesheet" href="/public/css/signup.css">-->
+    
+    <title>차량정보 상세 조회</title>
+    <meta name="description" content="argos description"/>
+    <meta property="og:title" content="차량정보 상세 조회">
+    <meta property="og:description" content="argos og description"/>
+
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="title-text">차량정보 상세 조회</div>
+          </div>
+
+          <%- include('common/vh_info_module', {mode : 'new'} )%>
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+
+    <script>
+      var vhInfo = {};
+      <% if (typeof vhInfo !== 'undefined' && vhInfo) {%>
+        vhInfo = <%- JSON.stringify(vhInfo)%>;
+      <%}%>
+    </script>
+        
+    <script src="/public/js/fr_equip_info_vh.js"></script>
+  </body>
+</html>

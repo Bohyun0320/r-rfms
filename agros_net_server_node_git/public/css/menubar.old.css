@@ -1,0 +1,88 @@
+#menubar {
+/*  position: absolute;*/
+  display: flex;
+  flex-direction: column;
+  width: 180px;
+  height: calc(100vh-64px);
+/*  height: 100vh;*/
+  flex-shrink: 0;
+  
+  background-color: #fafafa;
+  color: #a0a0a0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 14px;
+  border-right: 1px solid #d9d8df;
+  transition: all 0.3s ease;
+}
+
+#menubar a{
+  color:inherit;
+}
+
+#menubar.shrink {
+  width: 50px;
+}
+
+#menubar.shrink .menu .menu-name{
+  display: none;
+}
+
+ul.menu {
+  list-style: none;
+  width: 100%;
+  padding: 0 10px 0 0;
+  margin-top: 14px;
+}
+
+#menubar.shrink ul.menu {
+  padding-right: 4px;
+}
+
+
+ul.menu li a{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 14px;
+  width: 100%;
+}
+
+ul.menu li a.active-menu {
+  color:#808080 !important;
+  font-weight: 500;
+}
+
+ul.menu li:hover{
+  background-color: #e7e7e7;
+  border-radius: 0 16px 16px 0;
+}
+
+ul.menu li .menu-icon {
+  width: 30px;
+}
+
+.menu-footer {
+  width: 100%;
+  padding: 14px 20px;
+  font-size: 20px;
+  text-align: right;
+}
+
+.menu-footer:hover{
+  cursor:pointer;
+  background-color: #e7e7e7;
+}
+
+.menu-footer-icon:after{
+  content: "\f104";
+}
+
+#menubar.shrink .menu-footer-icon:after{
+  content: "\f105";
+}
+
+#menubar .menu-name,  #menubar .menu-icon{
+  flex-shrink: 0;
+}

@@ -1,0 +1,18 @@
+/*
+.contents-title-bar-bsns {
+  justify-content: flex-start;
+}
+*/
+
+#filter-form {
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.contents-title-bar-bsns .safety-btn {
+  border-radius: 4px;
+}
+
+.contents-title-bar-bsns .safety-btn i {
+  margin-right: 10px;
+}

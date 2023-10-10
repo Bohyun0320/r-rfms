@@ -1,0 +1,98 @@
+<style type="text/css"> 
+  @import url("/public/css/user_card.css"); 
+</style>
+ 
+<div class="contents-card-wrapper contents-card-medium contents-card-center contents-card-user">
+  <div class="card-title">
+    <div class="card-title-text display-none"><i class="fas fa-user-plus"></i> 사용자 계정 생성</div>
+    <div class="card-title-text "><i class="fas fa-user"></i> 사용자 정보 
+      <div class="card-title-userinfo"></div> 
+    </div>
+    <div class="card-title-toolbar">
+      <div class="card-title-tool safety-tooltip display-none" id="user-edit-btn" onclick="javascript:userCardApi.runEditMode();">
+        <i class="fas fa-user-edit"></i>
+        <div class="bottom">편집<i></i></div>
+      </div>
+      <div class="card-title-tool safety-tooltip display-none" id="user-delete-btn" onclick="javascript:userCardApi.deleteUser()">
+        <i class="fas fa-user-times"></i>
+        <div class="bottom">삭제<i></i></div>
+      </div>
+    </div>
+    <div class="close-btn" onclick="javascript:tollgeSafetyBgModal();"></div>
+  </div>
+  <form id="usercard-form" action="/signup" method="post">
+    <div class="card-contents" id="signup-contents">
+        <div class="signup-text">
+          <div class="safety-input-group account-input">
+            <div class="input-name">아이디</div>
+            <input type="text" class="form-control" placeholder="아이디를 입력하세요" name="id">
+          </div>
+          <div class="safety-input-group account-input">
+            <div class="input-name">이름</div>
+            <input type="text" class="form-control" placeholder="이름을 입력하세요" name="name">
+          </div>
+          <div class="safety-input-group account-input safety-input-password">
+            <div class="input-name">비밀번호</div>
+            <input type="password" class="form-control" placeholder="8~16자의 영문, 숫자, 특수문자" name="password">
+          </div>
+          <div class="safety-input-group account-input safety-input-password">
+            <div class="input-name">비밀번호 확인</div>
+            <input type="password" class="form-control" placeholder="8~16자의 영문, 숫자, 특수문자" name="confirm-password">
+          </div>
+          <div class="safety-input-group account-input">
+            <div class="input-name">연락처</div>
+            <input type="text" class="form-control" placeholder="연락처를 입력하세요" name="phone">
+          </div>
+          <div class="safety-input-group account-input">
+            <div class="input-name">이메일</div>
+            <input type="email" class="form-control" placeholder="example@example.com" name="email">
+          </div>
+          <div class="safety-input-group account-input">
+            <div class="input-name">소속</div>
+            <input type="text" class="form-control" placeholder="공간영상과" name="depart">
+          </div>
+          <div class="safety-input-group account-input">
+            <div class="input-name">직급</div>
+            <input type="text" class="form-control" placeholder="주무관" name="rank">
+          </div>
+          <div class="safety-input-group safety-input-group-hidden account-input">
+            <div class="input-name">프로필 이미지</div>
+            <input class="image-input" id="input-profile-photo" name="photo" type="file" accept="image/*">
+          </div>
+          <div class="safety-input-group account-input account-input-large">
+            <div class="input-name">메모</div>
+            <textarea class="form-control contact-textarea" rows="4" placeholder="참고사항을 입력해 주세요" name="memo"></textarea>
+          </div>
+        </div>
+        <div class="signup-image">
+          <div class="profile-img"></div>
+          <div class="singup-image-footer">
+            <div class="safety-btn" id="btn-change-photo" onclick="javascript:userCardApi.addPhoto()">사진 등록</div>
+          </div>
+            <select class="selectpicker form-control" name="user_type">
+            <% for (var i=0; i<userType.length; i++) { %>
+              <option value="<%= userType[i].user_ty_id%>"%> <%= i==0?"selected=selected":""%> ><%= userType[i].user_ty_nm%></option>
+            <%}%>
+            </select>
+        </div>
+    </div>
+
+    <div class="divider-horizon"></div>
+
+    <div class="signup-btnbar" id="signup-btnbar">
+      <div class="safety-btn safety-btn-secondary safety-btn-wide" id="cancel">취소</div>
+      <div class="safety-btn safety-btn-primary safety-btn-wide" id="submit" onclick="javascript:userCardApi.submitUserCard();">확인</div>
+    </div> 
+    <div class="signup-btnbar display-none" id="view-btnbar">
+      <div class="safety-btn safety-btn-secondary safety-btn-wide" id="approve" onclick="javacript:userCardApi.reqAproveUser()">승인</div>
+      <div class="safety-btn safety-btn-primary safety-btn-wide" id="done" onclick="javascript:tollgeSafetyBgModal();">확인</div>
+    </div> 
+    <div class="signup-btnbar display-none" id="edit-btnbar">
+     <div class="safety-btn safety-btn-secondary safety-btn-wide" id="cancelEdit" onclick="javascript:userCardApi.cancelEdit();">취소</div>
+      <div class="safety-btn safety-btn-primary safety-btn-wide" id="update" onclick="javascript:userCardApi.submitUserCard();">수정</div>
+    </div> 
+  </form>
+</div>
+
+
+<script src="/public/js/module/fr_user_card_module.js"></script>

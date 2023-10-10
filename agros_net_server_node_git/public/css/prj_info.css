@@ -1,0 +1,117 @@
+@import url("./font.css");
+input[type=radio] {
+  margin-right: 10px;
+}
+
+input[type=radio]:nth-child(n+2) {
+  margin-left: 40px;
+}
+
+.user-info-basic {
+  min-width: 500px;
+}
+
+.contents-photo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.user-info-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.prj-info-submit {
+  padding: 0 0 30px 0;
+}
+
+.divider-vertical {
+  margin: 10px;
+}
+
+.contensts-info-sub {
+  position: relative;
+  margin: 10px;
+  margin-left: 40px;
+  min-width: 670px;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.contensts-info-sub .divider-horizon {
+  margin: 20px 2%;
+  width: 96%;
+}
+
+.prj-ext-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 5px 10px;
+  font-size: 14px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 25px;
+}
+
+.prj-ext-info.prj-ext-info-data {
+  max-width: 500px;
+}
+
+.prj-ext-info:nth-child(2) {
+  margin-top: 20px;
+}
+
+.prj-ext-info .prj-ext-info-value {
+  margin-left: 10px;
+}
+
+.prj-ext-info i {
+  margin-right: 10px;
+}
+
+.excd-map {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.excd-map-full {
+  position: fixed;
+  z-index: 4000;
+}
+
+.btn-prj-data {
+  margin-left: 20px;
+}
+
+#prj-data-form .divider-horizon {
+  margin: 20px 0;
+}
+
+.btn-process-start {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 20%;
+  bottom: -40px;
+  line-height: normal;
+}
+
+.btn-process-start.btn-disabled {
+  pointer-events: none;
+  color: #bbbbbb !important;
+}

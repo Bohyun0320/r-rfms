@@ -1,0 +1,50 @@
+<style type="text/css">
+  @import url("/public/css/header.css");
+</style>
+
+<div id="header">
+  <div class="logo" onclick="javascript:location.href='/'">
+    <div class="version">v.1.0</div>
+  </div>
+  <div class="main-menu">
+    <!-- <a href="/statistics/dashboard" <%- typeof tool !== 'undefined' && tool=='statistics' ? 'class="active-tool"' : '' %>>통계 관리</a> -->
+    <a href="/stat/dashboard" <%- typeof tool !== 'undefined' && tool=='statistics' ? 'class="active-tool"' : '' %>>통계 관리</a>
+    <a href="/equip/list/vehicle" <%- typeof tool !== 'undefined' && tool=='equip' ? 'class="active-tool"' : '' %>>장비 관리</a>
+    <a href="/data/list/prj" <%- typeof tool !== 'undefined' && tool=='data' ? 'class="active-tool"' : '' %>>데이터 관리</a>
+    <a href="/account/list" <%- typeof tool !=='undefined' && tool=='account' ? 'class="active-tool"' : '' %>>사용자 관리</a>
+    <a href="/map/list/map" <%- typeof tool !== 'undefined' && tool=='map' ? 'class="active-tool"' : '' %>>지도 관리</a>
+  </div>
+  
+  <div class="header-notice display-none"></div>
+  <div class="profile">
+    <% if (typeof user !=="undefined" && user) { %>
+      <div class="photo"
+        style="background-image:url(<%= (user.user_img_file_path && user.user_img_file_path.length>0)? user.user_img_file_path : '/public/images/user.svg' %>)">
+      </div>
+      <div class="name">
+        <%= user.flnm %>
+      </div>
+      <% } %>
+
+  </div>
+
+  <div class="user-menu">
+    <% if (!user) {%>
+      <a href="/login"><i class="fas fa-sign-in-alt" id="login-icon"></i>로그인</a>
+      <% } else { %>
+        <i class="fas fa-bars"></i>
+        <ul class="user-menu-list">
+          <a href="/account/list">
+            <li>사용자 조회</li>
+          </a>
+          <a href="/account/my">
+            <li>사용자정보 수정</li>
+          </a>
+          <a href="/logout">
+            <li>로그아웃</li>
+          </a>
+        </ul>
+        <% } %>
+  </div>
+</div>
+<div id="header-spacer"></div>

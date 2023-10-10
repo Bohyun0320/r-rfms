@@ -1,0 +1,129 @@
+@import '_global';
+
+.login-card-wrapper {
+  width: 500px;
+  background-color: $color-primary;
+  color: white;
+}
+
+.card-title-login {
+  height: 100px;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} 
+
+.title-left img { 
+  width: 150px;
+  height: auto;
+  display: block;
+} 
+
+.title-right img {
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.login-input {
+  padding: 10px 60px;
+  position: relative;
+
+  &#formPw i {
+    position: absolute;
+    left: 78%;
+    top: 20px;
+    color: $color-text-default;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+
+}
+ 
+.login-form-title {
+  font-size: 28px;
+  height: 120px;
+  padding: 20px 40px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  img {
+    width: 60px;
+    padding-right: 20px;
+  }
+
+  .login-title {
+    align-self: center;
+    font-size: 28px;
+  }
+
+}
+
+.input-name {
+  width: 120px;
+}
+
+#checkbox-bar {
+  padding-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#checkbox-bar label {
+  font-weight: normal;
+}
+
+#checkbox-bar label:nth-child(n + 2) {
+  margin-left: 80px;
+}
+
+#checkbox-bar label input {
+  margin-right: 6px;
+}
+
+#login-msg {
+  margin: 10px 60px;
+  padding: 16px;
+  color: #d12337;
+  background-color: #ffc8d1;
+  border: 1px solid #f47685;
+  border-radius: 6px;
+}
+
+.login-input a {
+  margin-left: 20px;
+}
+
+#login-footer {
+  margin: 20px 0;
+}
+
+#logout-msg {
+  color: $color-text-default;
+  font-size: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+
+  padding: 16px;
+  background-color: #d9f3ff;
+  // border: 1px solid #53b5e4;
+  border-radius: 6px;
+}
+
+.logout-msg-time {
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}

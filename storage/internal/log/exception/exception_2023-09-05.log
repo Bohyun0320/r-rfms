@@ -1,0 +1,24 @@
+2023-09-05 09:04:25 [ERROR] - uncaughtException: Cannot read properties of undefined (reading 'length')
+TypeError: Cannot read properties of undefined (reading 'length')
+    at D:\Code\r-rfms\agros_net_server_node_git\database\sig_db.js:40:50
+    at D:\Code\r-rfms\agros_net_server_node_git\utils\postgres_util.js:47:12
+    at Query.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:417:18)
+    at Query.handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:527:28)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+2023-09-05 16:06:33 [ERROR] - uncaughtException: reulst is not defined
+ReferenceError: reulst is not defined
+    at D:\Code\r-rfms\agros_net_server_node_git\database\trffc_sign_db.js:24:30
+    at D:\Code\r-rfms\agros_net_server_node_git\utils\postgres_util.js:47:12
+    at Query.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:417:18)
+    at Query.handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:527:28)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)

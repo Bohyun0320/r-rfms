@@ -1,0 +1,63 @@
+2023-08-29 16:22:34 [INFO] - Argos Platform : win32
+2023-08-29 16:22:34 [INFO] - config.server_port : 3001
+2023-08-29 16:22:34 [INFO] - Routing Moudle count : 67
+2023-08-29 16:22:34 [INFO] - Express SSL server listening on port 443
+2023-08-29 16:22:34 [INFO] - Express server listening on port 3001
+2023-08-29 16:38:40 [INFO] - Argos Platform : win32
+2023-08-29 16:38:40 [INFO] - config.server_port : 3001
+2023-08-29 16:38:40 [INFO] - Routing Moudle count : 67
+2023-08-29 16:38:40 [INFO] - Express SSL server listening on port 443
+2023-08-29 16:38:40 [INFO] - Express server listening on port 3001
+2023-08-29 16:38:51 [INFO] - 계정과 비밀번호가 일치함.
+2023-08-29 16:39:19 [INFO] - Argos Platform : win32
+2023-08-29 16:39:19 [INFO] - config.server_port : 3001
+2023-08-29 16:39:19 [INFO] - Routing Moudle count : 67
+2023-08-29 16:39:19 [INFO] - Express SSL server listening on port 443
+2023-08-29 16:39:19 [INFO] - Express server listening on port 3001
+2023-08-29 16:41:29 [INFO] - Argos Platform : win32
+2023-08-29 16:41:29 [INFO] - config.server_port : 3001
+2023-08-29 16:41:29 [INFO] - Routing Moudle count : 67
+2023-08-29 16:41:29 [INFO] - Express SSL server listening on port 443
+2023-08-29 16:41:29 [INFO] - Express server listening on port 3001
+2023-08-29 16:56:58 [INFO] - Argos Platform : win32
+2023-08-29 16:56:58 [INFO] - config.server_port : 3001
+2023-08-29 16:56:58 [INFO] - Routing Moudle count : 67
+2023-08-29 16:56:58 [INFO] - Express SSL server listening on port 443
+2023-08-29 16:56:58 [INFO] - Express server listening on port 3001
+2023-08-29 16:57:09 [INFO] - 계정과 비밀번호가 일치함.
+2023-08-29 17:20:02 [INFO] - Argos Platform : win32
+2023-08-29 17:20:02 [INFO] - config.server_port : 3001
+2023-08-29 17:20:02 [INFO] - Routing Moudle count : 68
+2023-08-29 17:20:03 [INFO] - Express SSL server listening on port 443
+2023-08-29 17:20:03 [INFO] - Express server listening on port 3001
+2023-08-29 17:25:30 [INFO] - Argos Platform : win32
+2023-08-29 17:25:30 [INFO] - config.server_port : 3001
+2023-08-29 17:25:30 [INFO] - Routing Moudle count : 68
+2023-08-29 17:25:31 [INFO] - Express SSL server listening on port 443
+2023-08-29 17:25:31 [INFO] - Express server listening on port 3001
+2023-08-29 17:27:37 [INFO] - Argos Platform : win32
+2023-08-29 17:27:37 [INFO] - config.server_port : 3001
+2023-08-29 17:27:37 [INFO] - Routing Moudle count : 68
+2023-08-29 17:27:37 [INFO] - Express SSL server listening on port 443
+2023-08-29 17:27:37 [INFO] - Express server listening on port 3001
+2023-08-29 17:30:36 [ERROR] - 파일이 존재하지 않습니다.
+2023-08-29 17:30:48 [ERROR] - parseCsv Err : Error: ENOENT: no such file or directory, open 'Z:\argos_net_storage\data\54\meta_file\data.csv'
+2023-08-29 17:30:48 [ERROR] - parseCsv Err
+2023-08-29 17:30:48 [ERROR] - parseCsv Err
+2023-08-29 17:30:48 [ERROR] - parseCsv Err
+2023-08-29 17:30:50 [ERROR] - 파일이 존재하지 않습니다.
+2023-08-29 17:32:19 [INFO] - Argos Platform : win32
+2023-08-29 17:32:19 [INFO] - config.server_port : 3001
+2023-08-29 17:32:19 [INFO] - Routing Moudle count : 68
+2023-08-29 17:32:19 [INFO] - Express SSL server listening on port 443
+2023-08-29 17:32:19 [INFO] - Express server listening on port 3001
+2023-08-29 17:32:38 [INFO] - Argos Platform : win32
+2023-08-29 17:32:38 [INFO] - config.server_port : 3001
+2023-08-29 17:32:38 [INFO] - Routing Moudle count : 68
+2023-08-29 17:32:38 [INFO] - Express SSL server listening on port 443
+2023-08-29 17:32:38 [INFO] - Express server listening on port 3001
+2023-08-29 17:32:54 [INFO] - Argos Platform : win32
+2023-08-29 17:32:54 [INFO] - config.server_port : 3001
+2023-08-29 17:32:54 [INFO] - Routing Moudle count : 68
+2023-08-29 17:32:54 [INFO] - Express SSL server listening on port 443
+2023-08-29 17:32:54 [INFO] - Express server listening on port 3001

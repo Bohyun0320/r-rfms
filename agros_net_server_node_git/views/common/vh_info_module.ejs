@@ -1,0 +1,109 @@
+<style type="text/css">
+  @import url("/public/css/equip_info.css");
+</style>
+
+<form id="equip-form" action="/api/equip/add/vehicle" method="post">
+  <div class="card-contents">
+    <div class="contents-row">
+      <div class="contents-column user-info-basic">
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-info"></i>차량 ID</div>
+          <input type="text" class="form-control" placeholder="차량 ID는 자동 생성됩니다." name="vhid" readonly>
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="far fa-credit-card"></i>차량명<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="차량 이름을 입력해 주세요" name="name">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-car"></i>차량번호<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="차량 번호를 입력해 주세요" name="vhno">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-map-marked-alt"></i>관리지역</div>
+          <!-- <div class="input-sub-name">시·도</div> -->
+          <select class="selectpicker form-control sub-form" name="sido"></select>
+          <!-- <div class="input-sub-name">시·군·구</div> -->
+          <select class="selectpicker form-control sub-form" name="sigungu"></select>
+
+          <input type="text" class="form-control display-none" name="pnuid">
+        </div>    
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-user-check"></i>관리자</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="owner">
+              <% for (var i=0; i<userList.length; i++) { %>
+                <option value="<%= userList[i].sv_user_id%>" <%=  userList[i].user_cond_cd==1 ? '' : ' disabled'%>>
+                  <%= userList[i].flnm%> (<%= userList[i].sv_user_id%>)</option>
+              <%}%>
+            </select>
+          </div>
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-check-circle"></i>상태</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="cond">
+              <% for (var i=0; i<condCode.length; i++) { %>
+                <option value="<%= condCode[i].vh_cond_id%>"><%= condCode[i].vh_cond_nm%></option>
+              <%}%>
+            </select>
+          </div>
+        </div>
+        <div class="excd-input-group account-input account-input-large">
+          <div class="input-name"><i class="fas fa-file-alt"></i>메모</div>
+          <textarea class="form-control contact-textarea" rows="4" placeholder="참고사항을 입력해 주세요" name="memo"></textarea>
+        </div>
+        <div class="excd-mandatory-hint"><span class="excd-icon excd-mandatory"/> 필수항목</div>
+       
+      </div>
+
+      <div class="contents-column contents-photo" id="vh_photo">
+        <!-- <img src="/public/images/user.svg" alt=""> -->
+        <div class="profile-img img-empty"></div>
+        <div class="excd-btn" onclick="javascript:equipVhApi.addPhoto()">사진 등록</div>
+        <input class="image-input display-none" id="input-vh-photo" name="photo" type="file" accept="image/*">
+      </div>
+
+      <div class="spacer-horizon user-info-spacer"></div>
+      
+    </div>
+
+
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarNew">
+    <div class="excd-btn" id="cancel">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="submit" >확인</div>
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarView">
+    <div class="excd-btn" id="back">이전</div>
+    <div class="excd-btn excd-btn-secondary" id="edit" >수정</div>
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarEdit">
+    <div class="excd-btn" id="cancelUpdate">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="update" >업데이트</div>
+  </div>
+</form>
+
+<script>
+  var pnuCode = {};
+  <% if (typeof pnuCode !== 'undefined' && pnuCode) {%>
+    pnuCode = <%- JSON.stringify(pnuCode)%>;
+  <%}%>
+
+  var userList = {};
+  <% if (typeof userList !== 'undefined' && userList) {%>
+    userList = <%- JSON.stringify(userList)%>;
+  <%}%>
+
+  var condCode = {};
+  <% if (typeof condCode !== 'undefined' && condCode) {%>
+    condCode = <%- JSON.stringify(condCode)%>;
+  <%}%>
+
+</script>
+
+<script src="/public/js/module/fr_vh_info_module.js"></script>
+<script src="/public/js/module/fr_pnu_module.js"></script>
+<!-- <script src="/public/js/module/fr_user_search_module.js"></script> -->

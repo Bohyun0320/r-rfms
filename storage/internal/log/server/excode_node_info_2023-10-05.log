@@ -1,0 +1,354 @@
+2023-10-05 09:01:33 [INFO] - Argos Platform : win32
+2023-10-05 09:01:33 [INFO] - config.server_port : 3001
+2023-10-05 09:01:33 [INFO] - Routing Moudle count : 72
+2023-10-05 09:01:34 [INFO] - Express SSL server listening on port 443
+2023-10-05 09:01:34 [INFO] - Express server listening on port 3001
+2023-10-05 09:01:51 [INFO] - 계정과 비밀번호가 일치함.
+2023-10-05 10:33:38 [INFO] - Argos Platform : win32
+2023-10-05 10:33:38 [INFO] - config.server_port : 3001
+2023-10-05 10:33:38 [INFO] - Routing Moudle count : 72
+2023-10-05 10:33:38 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:33:38 [INFO] - Express server listening on port 3001
+2023-10-05 10:33:47 [ERROR] - error: 구문 오류, "=" 부근
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-10-05 10:33:47 [ERROR] - read err accoured!
+2023-10-05 10:35:44 [INFO] - Argos Platform : win32
+2023-10-05 10:35:44 [INFO] - config.server_port : 3001
+2023-10-05 10:35:44 [INFO] - Routing Moudle count : 72
+2023-10-05 10:35:44 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:35:44 [INFO] - Express server listening on port 3001
+2023-10-05 10:43:17 [INFO] - Argos Platform : win32
+2023-10-05 10:43:17 [INFO] - config.server_port : 3001
+2023-10-05 10:43:17 [INFO] - Routing Moudle count : 72
+2023-10-05 10:43:18 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:43:18 [INFO] - Express server listening on port 3001
+2023-10-05 10:43:58 [INFO] - Argos Platform : win32
+2023-10-05 10:43:58 [INFO] - config.server_port : 3001
+2023-10-05 10:43:58 [INFO] - Routing Moudle count : 72
+2023-10-05 10:43:58 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:43:58 [INFO] - Express server listening on port 3001
+2023-10-05 10:47:25 [INFO] - Argos Platform : win32
+2023-10-05 10:47:25 [INFO] - config.server_port : 3001
+2023-10-05 10:47:25 [INFO] - Routing Moudle count : 72
+2023-10-05 10:47:25 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:47:25 [INFO] - Express server listening on port 3001
+2023-10-05 10:52:29 [INFO] - Argos Platform : win32
+2023-10-05 10:52:29 [INFO] - config.server_port : 3001
+2023-10-05 10:52:29 [INFO] - Routing Moudle count : 72
+2023-10-05 10:52:29 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:52:29 [INFO] - Express server listening on port 3001
+2023-10-05 10:52:51 [INFO] - Argos Platform : win32
+2023-10-05 10:52:51 [INFO] - config.server_port : 3001
+2023-10-05 10:52:51 [INFO] - Routing Moudle count : 72
+2023-10-05 10:52:51 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:52:51 [INFO] - Express server listening on port 3001
+2023-10-05 10:56:10 [INFO] - Argos Platform : win32
+2023-10-05 10:56:10 [INFO] - config.server_port : 3001
+2023-10-05 10:56:10 [INFO] - Routing Moudle count : 72
+2023-10-05 10:56:10 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:56:10 [INFO] - Express server listening on port 3001
+2023-10-05 10:58:28 [INFO] - Argos Platform : win32
+2023-10-05 10:58:28 [INFO] - config.server_port : 3001
+2023-10-05 10:58:28 [INFO] - Routing Moudle count : 72
+2023-10-05 10:58:28 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:58:28 [INFO] - Express server listening on port 3001
+2023-10-05 10:58:56 [INFO] - Argos Platform : win32
+2023-10-05 10:58:56 [INFO] - config.server_port : 3001
+2023-10-05 10:58:56 [INFO] - Routing Moudle count : 72
+2023-10-05 10:58:56 [INFO] - Express SSL server listening on port 443
+2023-10-05 10:58:56 [INFO] - Express server listening on port 3001
+2023-10-05 11:00:45 [INFO] - Argos Platform : win32
+2023-10-05 11:00:45 [INFO] - config.server_port : 3001
+2023-10-05 11:00:45 [INFO] - Routing Moudle count : 72
+2023-10-05 11:00:45 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:00:45 [INFO] - Express server listening on port 3001
+2023-10-05 11:05:22 [INFO] - Argos Platform : win32
+2023-10-05 11:05:22 [INFO] - config.server_port : 3001
+2023-10-05 11:05:22 [INFO] - Routing Moudle count : 72
+2023-10-05 11:05:23 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:05:23 [INFO] - Express server listening on port 3001
+2023-10-05 11:06:24 [INFO] - Argos Platform : win32
+2023-10-05 11:06:24 [INFO] - config.server_port : 3001
+2023-10-05 11:06:24 [INFO] - Routing Moudle count : 72
+2023-10-05 11:06:24 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:06:24 [INFO] - Express server listening on port 3001
+2023-10-05 11:07:13 [INFO] - Argos Platform : win32
+2023-10-05 11:07:13 [INFO] - config.server_port : 3001
+2023-10-05 11:07:13 [INFO] - Routing Moudle count : 72
+2023-10-05 11:07:14 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:07:14 [INFO] - Express server listening on port 3001
+2023-10-05 11:12:53 [INFO] - Argos Platform : win32
+2023-10-05 11:12:53 [INFO] - config.server_port : 3001
+2023-10-05 11:12:53 [INFO] - Routing Moudle count : 72
+2023-10-05 11:12:53 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:12:53 [INFO] - Express server listening on port 3001
+2023-10-05 11:13:51 [INFO] - Argos Platform : win32
+2023-10-05 11:13:51 [INFO] - config.server_port : 3001
+2023-10-05 11:13:51 [INFO] - Routing Moudle count : 72
+2023-10-05 11:13:51 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:13:51 [INFO] - Express server listening on port 3001
+2023-10-05 11:14:46 [INFO] - Argos Platform : win32
+2023-10-05 11:14:46 [INFO] - config.server_port : 3001
+2023-10-05 11:14:46 [INFO] - Routing Moudle count : 72
+2023-10-05 11:14:47 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:14:47 [INFO] - Express server listening on port 3001
+2023-10-05 11:15:54 [INFO] - Argos Platform : win32
+2023-10-05 11:15:54 [INFO] - config.server_port : 3001
+2023-10-05 11:15:54 [INFO] - Routing Moudle count : 72
+2023-10-05 11:15:55 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:15:55 [INFO] - Express server listening on port 3001
+2023-10-05 11:17:25 [INFO] - Argos Platform : win32
+2023-10-05 11:17:25 [INFO] - config.server_port : 3001
+2023-10-05 11:17:25 [INFO] - Routing Moudle count : 72
+2023-10-05 11:17:26 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:17:26 [INFO] - Express server listening on port 3001
+2023-10-05 11:20:39 [INFO] - Argos Platform : win32
+2023-10-05 11:20:39 [INFO] - config.server_port : 3001
+2023-10-05 11:20:39 [INFO] - Routing Moudle count : 72
+2023-10-05 11:20:40 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:20:40 [INFO] - Express server listening on port 3001
+2023-10-05 11:21:19 [INFO] - Argos Platform : win32
+2023-10-05 11:21:19 [INFO] - config.server_port : 3001
+2023-10-05 11:21:19 [INFO] - Routing Moudle count : 72
+2023-10-05 11:21:20 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:21:20 [INFO] - Express server listening on port 3001
+2023-10-05 11:27:59 [INFO] - Argos Platform : win32
+2023-10-05 11:27:59 [INFO] - config.server_port : 3001
+2023-10-05 11:27:59 [INFO] - Routing Moudle count : 72
+2023-10-05 11:27:59 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:27:59 [INFO] - Express server listening on port 3001
+2023-10-05 11:30:44 [INFO] - Argos Platform : win32
+2023-10-05 11:30:44 [INFO] - config.server_port : 3001
+2023-10-05 11:30:44 [INFO] - Routing Moudle count : 72
+2023-10-05 11:30:45 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:30:45 [INFO] - Express server listening on port 3001
+2023-10-05 11:33:04 [INFO] - Argos Platform : win32
+2023-10-05 11:33:04 [INFO] - config.server_port : 3001
+2023-10-05 11:33:04 [INFO] - Routing Moudle count : 72
+2023-10-05 11:33:04 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:33:04 [INFO] - Express server listening on port 3001
+2023-10-05 11:33:44 [INFO] - Argos Platform : win32
+2023-10-05 11:33:44 [INFO] - config.server_port : 3001
+2023-10-05 11:33:44 [INFO] - Routing Moudle count : 72
+2023-10-05 11:33:44 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:33:44 [INFO] - Express server listening on port 3001
+2023-10-05 11:34:21 [INFO] - Argos Platform : win32
+2023-10-05 11:34:21 [INFO] - config.server_port : 3001
+2023-10-05 11:34:21 [INFO] - Routing Moudle count : 72
+2023-10-05 11:34:21 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:34:21 [INFO] - Express server listening on port 3001
+2023-10-05 11:34:42 [INFO] - Argos Platform : win32
+2023-10-05 11:34:42 [INFO] - config.server_port : 3001
+2023-10-05 11:34:42 [INFO] - Routing Moudle count : 72
+2023-10-05 11:34:42 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:34:42 [INFO] - Express server listening on port 3001
+2023-10-05 11:36:32 [INFO] - Argos Platform : win32
+2023-10-05 11:36:32 [INFO] - config.server_port : 3001
+2023-10-05 11:36:32 [INFO] - Routing Moudle count : 72
+2023-10-05 11:36:32 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:36:32 [INFO] - Express server listening on port 3001
+2023-10-05 11:37:04 [INFO] - Argos Platform : win32
+2023-10-05 11:37:04 [INFO] - config.server_port : 3001
+2023-10-05 11:37:04 [INFO] - Routing Moudle count : 72
+2023-10-05 11:37:04 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:37:04 [INFO] - Express server listening on port 3001
+2023-10-05 11:37:37 [INFO] - Argos Platform : win32
+2023-10-05 11:37:37 [INFO] - config.server_port : 3001
+2023-10-05 11:37:37 [INFO] - Routing Moudle count : 72
+2023-10-05 11:37:37 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:37:37 [INFO] - Express server listening on port 3001
+2023-10-05 11:38:38 [INFO] - Argos Platform : win32
+2023-10-05 11:38:38 [INFO] - config.server_port : 3001
+2023-10-05 11:38:38 [INFO] - Routing Moudle count : 72
+2023-10-05 11:38:38 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:38:38 [INFO] - Express server listening on port 3001
+2023-10-05 11:40:28 [INFO] - Argos Platform : win32
+2023-10-05 11:40:28 [INFO] - config.server_port : 3001
+2023-10-05 11:40:28 [INFO] - Routing Moudle count : 72
+2023-10-05 11:40:28 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:40:28 [INFO] - Express server listening on port 3001
+2023-10-05 11:41:40 [INFO] - Argos Platform : win32
+2023-10-05 11:41:40 [INFO] - config.server_port : 3001
+2023-10-05 11:41:40 [INFO] - Routing Moudle count : 72
+2023-10-05 11:41:41 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:41:41 [INFO] - Express server listening on port 3001
+2023-10-05 11:42:00 [INFO] - Argos Platform : win32
+2023-10-05 11:42:00 [INFO] - config.server_port : 3001
+2023-10-05 11:42:00 [INFO] - Routing Moudle count : 72
+2023-10-05 11:42:00 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:42:00 [INFO] - Express server listening on port 3001
+2023-10-05 11:42:54 [INFO] - Argos Platform : win32
+2023-10-05 11:42:54 [INFO] - config.server_port : 3001
+2023-10-05 11:42:54 [INFO] - Routing Moudle count : 72
+2023-10-05 11:42:54 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:42:54 [INFO] - Express server listening on port 3001
+2023-10-05 11:44:03 [INFO] - Argos Platform : win32
+2023-10-05 11:44:03 [INFO] - config.server_port : 3001
+2023-10-05 11:44:03 [INFO] - Routing Moudle count : 72
+2023-10-05 11:44:03 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:44:03 [INFO] - Express server listening on port 3001
+2023-10-05 11:45:14 [INFO] - Argos Platform : win32
+2023-10-05 11:45:14 [INFO] - config.server_port : 3001
+2023-10-05 11:45:14 [INFO] - Routing Moudle count : 72
+2023-10-05 11:45:14 [INFO] - Express SSL server listening on port 443
+2023-10-05 11:45:14 [INFO] - Express server listening on port 3001
+2023-10-05 13:02:29 [INFO] - Argos Platform : win32
+2023-10-05 13:02:29 [INFO] - config.server_port : 3001
+2023-10-05 13:02:29 [INFO] - Routing Moudle count : 72
+2023-10-05 13:02:30 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:02:30 [INFO] - Express server listening on port 3001
+2023-10-05 13:03:10 [INFO] - Argos Platform : win32
+2023-10-05 13:03:10 [INFO] - config.server_port : 3001
+2023-10-05 13:03:10 [INFO] - Routing Moudle count : 72
+2023-10-05 13:03:11 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:03:11 [INFO] - Express server listening on port 3001
+2023-10-05 13:04:39 [INFO] - Argos Platform : win32
+2023-10-05 13:04:39 [INFO] - config.server_port : 3001
+2023-10-05 13:04:39 [INFO] - Routing Moudle count : 72
+2023-10-05 13:04:39 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:04:39 [INFO] - Express server listening on port 3001
+2023-10-05 13:06:02 [INFO] - Argos Platform : win32
+2023-10-05 13:06:02 [INFO] - config.server_port : 3001
+2023-10-05 13:06:02 [INFO] - Routing Moudle count : 72
+2023-10-05 13:06:02 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:06:02 [INFO] - Express server listening on port 3001
+2023-10-05 13:06:48 [INFO] - Argos Platform : win32
+2023-10-05 13:06:48 [INFO] - config.server_port : 3001
+2023-10-05 13:06:48 [INFO] - Routing Moudle count : 72
+2023-10-05 13:06:49 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:06:49 [INFO] - Express server listening on port 3001
+2023-10-05 13:08:01 [INFO] - Argos Platform : win32
+2023-10-05 13:08:01 [INFO] - config.server_port : 3001
+2023-10-05 13:08:01 [INFO] - Routing Moudle count : 72
+2023-10-05 13:08:01 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:08:01 [INFO] - Express server listening on port 3001
+2023-10-05 13:09:40 [INFO] - Argos Platform : win32
+2023-10-05 13:09:40 [INFO] - config.server_port : 3001
+2023-10-05 13:09:40 [INFO] - Routing Moudle count : 72
+2023-10-05 13:09:40 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:09:40 [INFO] - Express server listening on port 3001
+2023-10-05 13:13:32 [INFO] - Argos Platform : win32
+2023-10-05 13:13:32 [INFO] - config.server_port : 3001
+2023-10-05 13:13:32 [INFO] - Routing Moudle count : 72
+2023-10-05 13:13:32 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:13:32 [INFO] - Express server listening on port 3001
+2023-10-05 13:14:27 [INFO] - Argos Platform : win32
+2023-10-05 13:14:27 [INFO] - config.server_port : 3001
+2023-10-05 13:14:27 [INFO] - Routing Moudle count : 72
+2023-10-05 13:14:27 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:14:27 [INFO] - Express server listening on port 3001
+2023-10-05 13:15:46 [INFO] - Argos Platform : win32
+2023-10-05 13:15:46 [INFO] - config.server_port : 3001
+2023-10-05 13:15:46 [INFO] - Routing Moudle count : 72
+2023-10-05 13:15:46 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:15:46 [INFO] - Express server listening on port 3001
+2023-10-05 13:44:26 [INFO] - Argos Platform : win32
+2023-10-05 13:44:26 [INFO] - config.server_port : 3001
+2023-10-05 13:44:26 [INFO] - Routing Moudle count : 72
+2023-10-05 13:44:27 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:44:27 [INFO] - Express server listening on port 3001
+2023-10-05 13:44:58 [INFO] - Argos Platform : win32
+2023-10-05 13:44:58 [INFO] - config.server_port : 3001
+2023-10-05 13:44:58 [INFO] - Routing Moudle count : 72
+2023-10-05 13:44:58 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:44:58 [INFO] - Express server listening on port 3001
+2023-10-05 13:45:57 [INFO] - Argos Platform : win32
+2023-10-05 13:45:57 [INFO] - config.server_port : 3001
+2023-10-05 13:45:57 [INFO] - Routing Moudle count : 72
+2023-10-05 13:45:58 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:45:58 [INFO] - Express server listening on port 3001
+2023-10-05 13:46:45 [INFO] - Argos Platform : win32
+2023-10-05 13:46:45 [INFO] - config.server_port : 3001
+2023-10-05 13:46:45 [INFO] - Routing Moudle count : 72
+2023-10-05 13:46:45 [INFO] - Express SSL server listening on port 443
+2023-10-05 13:46:45 [INFO] - Express server listening on port 3001
+2023-10-05 14:33:43 [INFO] - Argos Platform : win32
+2023-10-05 14:33:43 [INFO] - config.server_port : 3001
+2023-10-05 14:33:43 [INFO] - Routing Moudle count : 72
+2023-10-05 14:33:43 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:33:43 [INFO] - Express server listening on port 3001
+2023-10-05 14:34:45 [INFO] - Argos Platform : win32
+2023-10-05 14:34:45 [INFO] - config.server_port : 3001
+2023-10-05 14:34:45 [INFO] - Routing Moudle count : 72
+2023-10-05 14:34:45 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:34:45 [INFO] - Express server listening on port 3001
+2023-10-05 14:39:32 [INFO] - Argos Platform : win32
+2023-10-05 14:39:32 [INFO] - config.server_port : 3001
+2023-10-05 14:39:32 [INFO] - Routing Moudle count : 72
+2023-10-05 14:39:32 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:39:32 [INFO] - Express server listening on port 3001
+2023-10-05 14:40:49 [INFO] - Argos Platform : win32
+2023-10-05 14:40:49 [INFO] - config.server_port : 3001
+2023-10-05 14:40:50 [INFO] - Routing Moudle count : 72
+2023-10-05 14:40:50 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:40:50 [INFO] - Express server listening on port 3001
+2023-10-05 14:42:45 [INFO] - Argos Platform : win32
+2023-10-05 14:42:45 [INFO] - config.server_port : 3001
+2023-10-05 14:42:45 [INFO] - Routing Moudle count : 72
+2023-10-05 14:42:46 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:42:46 [INFO] - Express server listening on port 3001
+2023-10-05 14:44:35 [INFO] - Argos Platform : win32
+2023-10-05 14:44:35 [INFO] - config.server_port : 3001
+2023-10-05 14:44:35 [INFO] - Routing Moudle count : 72
+2023-10-05 14:44:35 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:44:35 [INFO] - Express server listening on port 3001
+2023-10-05 14:45:18 [INFO] - Argos Platform : win32
+2023-10-05 14:45:18 [INFO] - config.server_port : 3001
+2023-10-05 14:45:18 [INFO] - Routing Moudle count : 72
+2023-10-05 14:45:18 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:45:18 [INFO] - Express server listening on port 3001
+2023-10-05 14:48:46 [INFO] - Argos Platform : win32
+2023-10-05 14:48:46 [INFO] - config.server_port : 3001
+2023-10-05 14:48:46 [INFO] - Routing Moudle count : 72
+2023-10-05 14:48:46 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:48:46 [INFO] - Express server listening on port 3001
+2023-10-05 14:53:15 [INFO] - Argos Platform : win32
+2023-10-05 14:53:15 [INFO] - config.server_port : 3001
+2023-10-05 14:53:15 [INFO] - Routing Moudle count : 72
+2023-10-05 14:53:15 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:53:15 [INFO] - Express server listening on port 3001
+2023-10-05 14:56:13 [INFO] - Argos Platform : win32
+2023-10-05 14:56:13 [INFO] - config.server_port : 3001
+2023-10-05 14:56:13 [INFO] - Routing Moudle count : 72
+2023-10-05 14:56:13 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:56:13 [INFO] - Express server listening on port 3001
+2023-10-05 14:56:30 [ERROR] - error: 연산자 없음: timestamp with time zone >= integer
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-10-05 14:56:30 [ERROR] - read err accoured!
+2023-10-05 14:58:45 [INFO] - Argos Platform : win32
+2023-10-05 14:58:45 [INFO] - config.server_port : 3001
+2023-10-05 14:58:45 [INFO] - Routing Moudle count : 72
+2023-10-05 14:58:46 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:58:46 [INFO] - Express server listening on port 3001
+2023-10-05 14:58:59 [ERROR] - error: 연산자 없음: timestamp with time zone >= integer
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-10-05 14:58:59 [ERROR] - read err accoured!
+2023-10-05 14:59:21 [INFO] - Argos Platform : win32
+2023-10-05 14:59:21 [INFO] - config.server_port : 3001
+2023-10-05 14:59:21 [INFO] - Routing Moudle count : 72
+2023-10-05 14:59:22 [INFO] - Express SSL server listening on port 443
+2023-10-05 14:59:22 [INFO] - Express server listening on port 3001

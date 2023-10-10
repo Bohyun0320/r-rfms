@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+    <link rel="stylesheet" href="/public/bower_components/tui-grid/dist/tui-grid.min.css">
+    <link rel="stylesheet" href="/public/bower_components/tui-pagination/dist/tui-pagination.css">
+    <link rel="stylesheet" href="/public/css/eqip_list.css">
+    
+    <title>프로젝트 조회</title>
+    <meta name="description" content="프로젝트 정보를 조회 합니다."/>
+    <meta property="og:title" content="프로젝트 조회">
+    <meta property="og:description" content="Argos 차량정보를 조회하고 관리합니다."/>
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="con-scr-title">프로젝트 조회</div>
+            <div class="spacer-horizon"></div>
+            <div class="excd-btn excd-btn-small excd-btn-white excd-btn-title" onclick="javascript:location.href='/data/add/prj'">
+              <i class="fas fa-plus-square"></i> 프로젝트 생성
+            </div>
+
+            <form  id="filter-form" class="con-scr-title-toolbar con-scr-title-toolbar-vh" action="/api/data/prj/search" method="post">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <select class="selectpicker form-control" name="filter_type">
+                    <!-- <option value="vh_id">차량 ID</option> -->
+                    <option value="p.prj_id">프로젝트 ID</option>
+                    <option value="prj_nm">프로젝트명</option>
+                    <option value="vh_nm">차량명</option>
+                    <!-- <option value="s.sens_nm">카메라센서명</option>
+                    <option value="s2.sens_nm">라이다센서명</option> -->
+                    <option value="s3.sens_nm">센서세트명</option>
+                    <option value="flnm">관리자</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control" aria-label="..." name="filter_value" id="searchValue" onkeydown="javascript: if (event.keyCode == 13) {searchList();}">
+                <span class="input-group-btn">
+                  <button class="btn btn-default excd-btn-primary" type="button" onclick="javascript:searchList();">검색</button>
+                </span>
+              </div><!-- /input-group -->
+            </form>
+
+          </div>
+          
+          <div class="safety-grid" id="data-list-prj-grid"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+       
+    <script>
+        ;
+    </script>
+        
+    <script src="/public/bower_components/underscore/underscore-min.js"></script>
+    <script src="/public/bower_components/backbone/backbone-min.js"></script>
+    <script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+    <script src="/public/bower_components/tui-pagination/dist/tui-pagination.min.js"></script>
+    <script src="/public/bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>
+    <script src="/public/bower_components/tui-grid/dist/tui-grid.min.js"></script>
+    
+    <script src="/public/js/fr_data_list_prj.js"></script>
+  </body>
+</html>

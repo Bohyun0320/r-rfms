@@ -1,0 +1,344 @@
+2023-09-14 10:54:44 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_module.js:1
+export default class MapViewModule{
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:36)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 10:55:01 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_module.js:1
+export default class MapViewModule{
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:36)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 10:55:08 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_module.js:1
+export default class MapViewModule{
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:36)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 10:55:50 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_module.js:1
+export default class MapViewModule{
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:36)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 13:40:06 [ERROR] - uncaughtException: Cannot use import statement outside a module
+D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4
+import MapViewModule from './fr_map_view_module.js';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:33:19)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+2023-09-14 13:40:51 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_module.js:1
+export default class MapViewModule{
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:21)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 13:41:24 [ERROR] - uncaughtException: Cannot use import statement outside a module
+D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4
+import MapViewModule from "../../public/js/module/fr_map_view_module";
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:33:19)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+2023-09-14 14:09:23 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:5
+export default setMarkers = setMarkers();
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:14:30 [ERROR] - uncaughtException: setMarkers is not a function
+TypeError: setMarkers is not a function
+    at D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:51:9
+    at D:\Code\r-rfms\agros_net_server_node_git\database\obj_db.js:206:12
+    at D:\Code\r-rfms\agros_net_server_node_git\utils\postgres_util.js:47:12
+    at Query.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:417:18)
+    at Query.handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:527:28)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+2023-09-14 14:15:00 [ERROR] - uncaughtException: setMarkers.setMarkers is not a function
+TypeError: setMarkers.setMarkers is not a function
+    at D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:51:20
+    at D:\Code\r-rfms\agros_net_server_node_git\database\obj_db.js:206:12
+    at D:\Code\r-rfms\agros_net_server_node_git\utils\postgres_util.js:47:12
+    at Query.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:417:18)
+    at Query.handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:527:28)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+2023-09-14 14:38:40 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:6
+export default setMarkers;
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:41:41 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:5
+export default setMarkers = setMarkers;
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:44:06 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:1
+export function setMarkers(){
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:47:52 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:1
+export function setMarkers(){
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:48:02 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:1
+export default function setMarkers(){
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:48:36 [ERROR] - uncaughtException: Cannot set properties of undefined (setting 'setMarkers')
+TypeError: Cannot set properties of undefined (setting 'setMarkers')
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:6:28)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+2023-09-14 14:54:12 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:6
+export { setMarkers};
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 14:55:08 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:6
+export { setMarkers};
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 15:18:48 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:1
+export function setMarkers(){
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 15:42:40 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:1
+export class MapMarkerModule{
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 15:43:26 [ERROR] - uncaughtException: Unexpected token 'export'
+D:\Code\r-rfms\agros_net_server_node_git\public\js\fr_add_map_marker.js:9
+export default MapMarkerModule;
+^^^^^^
+
+SyntaxError: Unexpected token 'export'
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-14 16:36:11 [ERROR] - uncaughtException: Cannot find module '../../public/js/fr_add_map_marker'
+Require stack:
+- D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js
+- D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js
+- D:\Code\r-rfms\agros_net_server_node_git\app.js
+Error: Cannot find module '../../public/js/fr_add_map_marker'
+Require stack:
+- D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js
+- D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js
+- D:\Code\r-rfms\agros_net_server_node_git\app.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:4:18)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)

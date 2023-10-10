@@ -1,0 +1,1388 @@
+2023-08-31 10:31:44 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:31:44 [DEBUG] - GET : /map/list/map
+2023-08-31 10:31:44 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:31:45 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:31:45 [DEBUG] - GET : /data/list/cam
+2023-08-31 10:31:45 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:31:46 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:31:46 [DEBUG] - GET : /api/data/read/cam?page=1&perPage=14&curItemId=131592&_=1693445505990
+2023-08-31 10:31:46 [DEBUG] - [func]gridUtil.getDefaultInfo()
+2023-08-31 10:31:46 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'photo_id',
+  sortAscending: undefined,
+  filter_type: undefined,
+  filter_value: undefined
+}
+2023-08-31 10:31:46 [DEBUG] - [func]dataCamDB.getReadDataList()
+2023-08-31 10:31:46 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'photo_id',
+  sortAscending: undefined,
+  filter_type: undefined,
+  filter_value: undefined
+}
+2023-08-31 10:31:46 [DEBUG] - 'photo_id'
+2023-08-31 10:31:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:31:46 [DEBUG] - {
+  text: 'SELECT d.*, p.prj_nm, r.data_reg_ty_nm,              count(*) OVER() total             FROM photo_mng d LEFT JOIN project_mng p  ON d.prj_id = p.prj_id LEFT JOIN tc_data_reg_ty r  ON d.data_reg_ty_id = r.data_reg_ty_id  ORDER BY photo_id DESC  LIMIT $1 OFFSET $2',
+  values: [ 14, 0 ]
+}
+2023-08-31 10:31:46 [DEBUG] - [func]gridUtil.convertGridData()
+2023-08-31 10:32:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:32:07 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:32:07 [INFO] - Argos Platform : win32
+2023-08-31 10:32:07 [INFO] - config.server_port : 3001
+2023-08-31 10:32:07 [DEBUG] - route_loader.init called.
+2023-08-31 10:32:07 [INFO] - Routing Moudle count : 68
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:32:07 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:32:07 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:32:07.988Z } ]
+2023-08-31 10:32:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:32:24 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:32:24 [INFO] - Argos Platform : win32
+2023-08-31 10:32:24 [INFO] - config.server_port : 3001
+2023-08-31 10:32:24 [DEBUG] - route_loader.init called.
+2023-08-31 10:32:24 [INFO] - Routing Moudle count : 68
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:32:24 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:32:24 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:32:25.448Z } ]
+2023-08-31 10:34:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:34:52 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:34:52 [INFO] - Argos Platform : win32
+2023-08-31 10:34:52 [INFO] - config.server_port : 3001
+2023-08-31 10:34:52 [DEBUG] - route_loader.init called.
+2023-08-31 10:34:52 [INFO] - Routing Moudle count : 68
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:34:52 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:34:52 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:34:53.071Z } ]
+2023-08-31 10:39:43 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:39:43 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:39:43 [INFO] - Argos Platform : win32
+2023-08-31 10:39:43 [INFO] - config.server_port : 3001
+2023-08-31 10:39:43 [DEBUG] - route_loader.init called.
+2023-08-31 10:39:43 [INFO] - Routing Moudle count : 68
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:39:43 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:39:43 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:39:44.184Z } ]
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:40:13 [INFO] - Argos Platform : win32
+2023-08-31 10:40:13 [INFO] - config.server_port : 3001
+2023-08-31 10:40:13 [DEBUG] - route_loader.init called.
+2023-08-31 10:40:13 [INFO] - Routing Moudle count : 68
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 10:40:13 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 10:40:13 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:40:13 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 10:40:13 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 10:40:13 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 10:40:13 [DEBUG] - config/passport called.
+2023-08-31 10:40:13 [DEBUG] - local passport setted.
+2023-08-31 10:40:13 [DEBUG] - init user_passport
+2023-08-31 10:40:13 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:40:13 [DEBUG] - [func]codeUtil.init()
+2023-08-31 10:40:13 [DEBUG] - [msg] loadUserType...
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 10:40:13 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 10:40:13 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 10:40:13 [DEBUG] - [msg] loadCondCode...
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 10:40:13 [DEBUG] - [msg] loadSensCode...
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 10:40:13 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 10:40:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:40:13 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 10:40:13 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 10:40:13 [INFO] - Express SSL server listening on port 443
+2023-08-31 10:40:13 [INFO] - Express server listening on port 3001
+2023-08-31 10:40:13 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:40:14.417Z } ]
+2023-08-31 10:40:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:40:15 [DEBUG] - GET : /map/list/map
+2023-08-31 10:40:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:54:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:33 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:54:33 [INFO] - Argos Platform : win32
+2023-08-31 10:54:33 [INFO] - config.server_port : 3001
+2023-08-31 10:54:33 [DEBUG] - route_loader.init called.
+2023-08-31 10:54:33 [INFO] - Routing Moudle count : 68
+2023-08-31 10:54:33 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:54:33 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:54:33 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:54:33 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:54:33 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:54:33 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 10:54:34 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 10:54:34 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:54:34 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 10:54:34 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 10:54:34 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 10:54:34 [DEBUG] - config/passport called.
+2023-08-31 10:54:34 [DEBUG] - local passport setted.
+2023-08-31 10:54:34 [DEBUG] - init user_passport
+2023-08-31 10:54:34 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:54:34 [DEBUG] - [func]codeUtil.init()
+2023-08-31 10:54:34 [DEBUG] - [msg] loadUserType...
+2023-08-31 10:54:34 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:34 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 10:54:34 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 10:54:34 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:34 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 10:54:34 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 10:54:34 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:34 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 10:54:34 [DEBUG] - [msg] loadCondCode...
+2023-08-31 10:54:34 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:34 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 10:54:34 [DEBUG] - [msg] loadSensCode...
+2023-08-31 10:54:34 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:34 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 10:54:34 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 10:54:34 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:34 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 10:54:34 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 10:54:34 [INFO] - Express SSL server listening on port 443
+2023-08-31 10:54:34 [INFO] - Express server listening on port 3001
+2023-08-31 10:54:34 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:54:35.096Z } ]
+2023-08-31 10:54:48 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:54:48 [DEBUG] - GET : /map/list/map
+2023-08-31 10:54:48 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 10:54:48 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:54:48 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 10:54:48 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:57:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:06 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 10:57:06 [INFO] - Argos Platform : win32
+2023-08-31 10:57:06 [INFO] - config.server_port : 3001
+2023-08-31 10:57:06 [DEBUG] - route_loader.init called.
+2023-08-31 10:57:06 [INFO] - Routing Moudle count : 68
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 10:57:06 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 10:57:07 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 10:57:07 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:57:07 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 10:57:07 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 10:57:07 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 10:57:07 [DEBUG] - config/passport called.
+2023-08-31 10:57:07 [DEBUG] - local passport setted.
+2023-08-31 10:57:07 [DEBUG] - init user_passport
+2023-08-31 10:57:07 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 10:57:07 [DEBUG] - [func]codeUtil.init()
+2023-08-31 10:57:07 [DEBUG] - [msg] loadUserType...
+2023-08-31 10:57:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:07 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 10:57:07 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 10:57:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:07 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 10:57:07 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 10:57:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:07 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 10:57:07 [DEBUG] - [msg] loadCondCode...
+2023-08-31 10:57:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:07 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 10:57:07 [DEBUG] - [msg] loadSensCode...
+2023-08-31 10:57:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:07 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 10:57:07 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 10:57:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:07 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 10:57:07 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 10:57:07 [INFO] - Express SSL server listening on port 443
+2023-08-31 10:57:07 [INFO] - Express server listening on port 3001
+2023-08-31 10:57:07 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T01:57:07.976Z } ]
+2023-08-31 10:57:09 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 10:57:09 [DEBUG] - GET : /map/list/map
+2023-08-31 10:57:09 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 10:57:09 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 10:57:09 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 10:57:09 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 11:03:37 [INFO] - Argos Platform : win32
+2023-08-31 11:03:37 [INFO] - config.server_port : 3001
+2023-08-31 11:03:37 [DEBUG] - route_loader.init called.
+2023-08-31 11:03:37 [INFO] - Routing Moudle count : 68
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 11:03:37 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 11:03:37 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 11:03:37 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 11:03:37 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 11:03:37 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 11:03:37 [DEBUG] - config/passport called.
+2023-08-31 11:03:37 [DEBUG] - local passport setted.
+2023-08-31 11:03:37 [DEBUG] - init user_passport
+2023-08-31 11:03:37 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 11:03:37 [DEBUG] - [func]codeUtil.init()
+2023-08-31 11:03:37 [DEBUG] - [msg] loadUserType...
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 11:03:37 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 11:03:37 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 11:03:37 [DEBUG] - [msg] loadCondCode...
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 11:03:37 [DEBUG] - [msg] loadSensCode...
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 11:03:37 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 11:03:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:37 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 11:03:37 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 11:03:37 [INFO] - Express SSL server listening on port 443
+2023-08-31 11:03:37 [INFO] - Express server listening on port 3001
+2023-08-31 11:03:37 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T02:03:38.443Z } ]
+2023-08-31 11:03:40 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:03:40 [DEBUG] - GET : /map/list/map
+2023-08-31 11:03:40 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 11:03:40 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:40 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 11:03:40 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:03:59 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:03:59 [DEBUG] - GET : /map/list/map
+2023-08-31 11:03:59 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 11:03:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:03:59 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 11:03:59 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:10 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:10 [DEBUG] - GET : /equip/list/vehicle
+2023-08-31 11:11:10 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:10 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:10 [DEBUG] - GET : /api/equip/read/vh?filter_type=vh_nm&filter_value=&page=1&perPage=14&_=1693447870449
+2023-08-31 11:11:10 [DEBUG] - [func]gridUtil.getDefaultInfo()
+2023-08-31 11:11:10 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'vh_id',
+  sortAscending: undefined,
+  filter_type: 'vh_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:10 [DEBUG] - [func]vehicleDB.getReadVhList()
+2023-08-31 11:11:10 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'vh_id',
+  sortAscending: undefined,
+  filter_type: 'vh_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:10 [DEBUG] - undefined
+2023-08-31 11:11:10 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:10 [DEBUG] - {
+  text: 'SELECT v.*, u.flnm, p.sido_nm, p.sigungu_nm, c.vh_cond_nm,           count(*) OVER() total           FROM vh_mng v LEFT JOIN sv_user_mng u  ON v.sv_user_id = u.sv_user_id LEFT JOIN tc_pnu_sigungu p  ON v.mng_sgg = p.pnu_id LEFT JOIN tc_vh_cond c  ON v.cond_cd = c.vh_cond_id  ORDER BY vh_id DESC  LIMIT $1 OFFSET $2',
+  values: [ 14, 0 ]
+}
+2023-08-31 11:11:10 [DEBUG] - [func]gridUtil.convertGridData()
+2023-08-31 11:11:11 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:11 [DEBUG] - GET : /equip/add/vehicle
+2023-08-31 11:11:11 [DEBUG] - [func]userDB.getUserList - filter : , key : , strict : false
+2023-08-31 11:11:11 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:11 [DEBUG] - {
+  text: 'SELECT u.sv_user_id, u.flnm, u.divis, u.brdt, u.telno, u.join_ymd, u.user_cond_cd, u.user_img_file_path, u.ogdp          FROM sv_user_mng u           INNER JOIN tc_user_cond c ON u.user_cond_cd = c.user_cond_id           WHERE NOT u.user_cond_cd = 4 ORDER BY u.flnm'
+}
+2023-08-31 11:11:11 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:11 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:11 [DEBUG] - GET : /equip/list/sensor
+2023-08-31 11:11:11 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:11 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:11 [DEBUG] - GET : /api/equip/read/sens?filter_type=sens_nm&filter_value=&page=1&perPage=14&_=1693447871860
+2023-08-31 11:11:11 [DEBUG] - [func]gridUtil.getDefaultInfo()
+2023-08-31 11:11:11 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'sens_id',
+  sortAscending: undefined,
+  filter_type: 'sens_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:11 [DEBUG] - [func]sensDB.getReadSensList()
+2023-08-31 11:11:11 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'sens_id',
+  sortAscending: undefined,
+  filter_type: 'sens_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:11 [DEBUG] - undefined
+2023-08-31 11:11:11 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:11 [DEBUG] - {
+  text: 'SELECT s.*, t.sens_ty_nm, v.vh_nm, u.flnm, p.sido_nm, p.sigungu_nm, c.vh_cond_nm,  \n' +
+    '            count(*) OVER() total             FROM sens_mng s LEFT JOIN tc_sens_ty t  ON s.sens_ty = t.sens_ty_id LEFT JOIN vh_mng v  ON s.vh_id = v.vh_id LEFT JOIN sv_user_mng u  ON s.sv_user_id = u.sv_user_id LEFT JOIN tc_pnu_sigungu p  ON s.mng_sgg = p.pnu_id LEFT JOIN tc_vh_cond c  ON s.cond_cd = c.vh_cond_id WHERE s.sens_id > $1  ORDER BY sens_id DESC  LIMIT $2 OFFSET $3',
+  values: [ 0, 14, 0 ]
+}
+2023-08-31 11:11:11 [DEBUG] - [func]gridUtil.convertGridData()
+2023-08-31 11:11:12 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:12 [DEBUG] - GET : /equip/add/sensor
+2023-08-31 11:11:12 [DEBUG] - [func]userDB.getUserList - filter : , key : , strict : false
+2023-08-31 11:11:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:12 [DEBUG] - {
+  text: 'SELECT u.sv_user_id, u.flnm, u.divis, u.brdt, u.telno, u.join_ymd, u.user_cond_cd, u.user_img_file_path, u.ogdp          FROM sv_user_mng u           INNER JOIN tc_user_cond c ON u.user_cond_cd = c.user_cond_id           WHERE NOT u.user_cond_cd = 4 ORDER BY u.flnm'
+}
+2023-08-31 11:11:12 [DEBUG] - [func]vehicleDB.getSimpleList
+2023-08-31 11:11:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:12 [DEBUG] - {
+  text: 'SELECT vh_id, vh_nm, vh_no, cond_cd           FROM vh_mng\n' +
+    '          ORDER BY vh_nm'
+}
+2023-08-31 11:11:12 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:12 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:12 [DEBUG] - GET : /equip/list/vehicle
+2023-08-31 11:11:12 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:12 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:12 [DEBUG] - GET : /api/equip/read/vh?filter_type=vh_nm&filter_value=&page=1&perPage=14&_=1693447872834
+2023-08-31 11:11:12 [DEBUG] - [func]gridUtil.getDefaultInfo()
+2023-08-31 11:11:12 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'vh_id',
+  sortAscending: undefined,
+  filter_type: 'vh_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:12 [DEBUG] - [func]vehicleDB.getReadVhList()
+2023-08-31 11:11:12 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'vh_id',
+  sortAscending: undefined,
+  filter_type: 'vh_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:12 [DEBUG] - undefined
+2023-08-31 11:11:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:12 [DEBUG] - {
+  text: 'SELECT v.*, u.flnm, p.sido_nm, p.sigungu_nm, c.vh_cond_nm,           count(*) OVER() total           FROM vh_mng v LEFT JOIN sv_user_mng u  ON v.sv_user_id = u.sv_user_id LEFT JOIN tc_pnu_sigungu p  ON v.mng_sgg = p.pnu_id LEFT JOIN tc_vh_cond c  ON v.cond_cd = c.vh_cond_id  ORDER BY vh_id DESC  LIMIT $1 OFFSET $2',
+  values: [ 14, 0 ]
+}
+2023-08-31 11:11:13 [DEBUG] - [func]gridUtil.convertGridData()
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - GET : /stat/dashboard
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - GET : /api/stat/data-total?_=1693447873380
+2023-08-31 11:11:13 [DEBUG] - [func]dataCamDB.getTotalData()
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select count(*)::int\n              from photo_mng',
+  values: []
+}
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - GET : /api/stat/prj-status?_=1693447873381
+2023-08-31 11:11:13 [DEBUG] - [func] getProjectStauts()
+2023-08-31 11:11:13 [DEBUG] - [func]prjDB.getPrjStatusCount
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select p.prj_stts_cd, s.prj_stts_nm, count(*)::int\n' +
+    '            from project_mng p\n' +
+    '            join tc_prj_status s on p.prj_stts_cd = s.prj_stts_cd  \n' +
+    '            group by p.prj_stts_cd, s.prj_stts_nm \n' +
+    '            order by p.prj_stts_cd ',
+  values: []
+}
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select count(*)::int\n              from las_mng',
+  values: []
+}
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - { text: 'select count(*)::int\n              from obj_rs', values: [] }
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - GET : /api/stat/object?_=1693447873384
+2023-08-31 11:11:13 [DEBUG] - [func] getObjStatus()
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select ts.sign_nm, count(*)::int\n' +
+    '            from obj_rs o\n' +
+    '            left join tc_trffc_sign ts on o.cd = ts.sign_id \n' +
+    '            group by ts.sign_nm ',
+  values: []
+}
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - GET : /api/stat/equip?_=1693447873383
+2023-08-31 11:11:13 [DEBUG] - [func] getDataEquipStatus()
+2023-08-31 11:11:13 [DEBUG] - [func]vehicleDB.getTotalData()
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from vh_mng \n' +
+    '              where cond_cd = 1',
+  values: []
+}
+2023-08-31 11:11:13 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:13 [DEBUG] - GET : /api/stat/data-period?startDt=2022-08-31&endDt=2023-08-31&setp=month&_=1693447873382
+2023-08-31 11:11:13 [DEBUG] - [func] getDataPeriod()
+2023-08-31 11:11:13 [DEBUG] - [func]dataCamDB.getStatPeriod()
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select t.tDate, p.count::int\n' +
+    '              from ( \n' +
+    '                select ( \n' +
+    '                    to_char(generate_series($1::date, $2::date, $3::interval)::date, $4)\n' +
+    '                  )::text as tDate \n' +
+    '                ) t \n' +
+    '              left outer join ( \n' +
+    '                  select to_char(data_reg_dt, $4) as data_reg_dt, count(*) as count\n' +
+    '                  from photo_mng dt \n' +
+    '                  where data_reg_dt >=$1 and data_reg_dt <=$5\n' +
+    '                  group by to_char(data_reg_dt, $4)\t\n' +
+    '                ) p \n' +
+    '                on t.tDate = p.data_reg_dt \n' +
+    '              order by t.tDate ',
+  values: [
+    '2022-08-31',
+    '2023-08-31',
+    '1 month',
+    'YYYY년 MM월',
+    '2023-08-31 24:00'
+  ]
+}
+2023-08-31 11:11:13 [DEBUG] - [func]sensDB.getTotalCount()
+2023-08-31 11:11:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:13 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from sens_mng \n' +
+    '              where cond_cd = 1\n' +
+    '              and sens_ty = 3',
+  values: []
+}
+2023-08-31 11:11:13 [DEBUG] - [
+  { sign_nm: '야생동물보호', count: 19 },
+  { sign_nm: '4색등(종형)', count: 18 },
+  { sign_nm: '좌측면통행', count: 12 },
+  { sign_nm: '+자형교차로', count: 1 },
+  { sign_nm: '회전형교차로', count: 12 },
+  { sign_nm: '자전거전용차로', count: 122 },
+  { sign_nm: '자전거전용도로', count: 57 },
+  { sign_nm: '유턴금지', count: 36 },
+  { sign_nm: '낙석도로', count: 20 },
+  { sign_nm: '직진 및 우회전', count: 89 },
+  { sign_nm: '위험', count: 48 },
+  { sign_nm: '자전거 및 보행자 통행구분', count: 161 },
+  { sign_nm: '일시정지', count: 39 },
+  { sign_nm: '우측방통행', count: 2 },
+  { sign_nm: 'ㅓ자형교차로', count: 14 },
+  { sign_nm: '좌회전 및 유턴', count: 39 },
+  { sign_nm: '보행자보행금지', count: 14 },
+  { sign_nm: '4색등(횡형)', count: 2427 },
+  { sign_nm: '좌우회전', count: 33 },
+  { sign_nm: '강변도로', count: 42 },
+  { sign_nm: '어린이보호(어린이보호구역안)', count: 135 },
+  { sign_nm: '우측면통행', count: 259 },
+  { sign_nm: '이륜자동차및원동기장치자전거통행금지', count: 2 },
+  { sign_nm: '자전거 및 보행자 겸용도로', count: 123 },
+  { sign_nm: '앞지르기금지', count: 10 },
+  { sign_nm: '터널', count: 19 },
+  { sign_nm: '양측방통행', count: 28 },
+  { sign_nm: '유턴', count: 524 },
+  { sign_nm: '우회전', count: 26 },
+  { sign_nm: '자동차전용도로', count: 3 },
+  { sign_nm: '어린이보호', count: 61 },
+  { sign_nm: '정차·주차금지', count: 169 },
+  { sign_nm: '보행자전용도로', count: 9 },
+  { sign_nm: '신호기', count: 12 },
+  { sign_nm: '노면고르지못함', count: 8 },
+  { sign_nm: '우회로', count: 69 },
+  { sign_nm: '자전거횡단도', count: 324 },
+  { sign_nm: '2방향통행', count: 2 },
+  { sign_nm: '직진', count: 32 },
+  { sign_nm: '최고속도제한', count: 857 },
+  { sign_nm: '일방통행', count: 27 },
+  { sign_nm: '좌회전', count: 38 },
+  { sign_nm: '미끄러운도로', count: 40 },
+  { sign_nm: '양보', count: 64 },
+  { sign_nm: '3색등(종형)', count: 46 },
+  { sign_nm: '횡풍', count: 7 },
+  { sign_nm: '주차장', count: 27 },
+  { sign_nm: '차높이제한', count: 107 },
+  { sign_nm: '차중량제한', count: 65 },
+  { sign_nm: '자전거', count: 44 },
+  { sign_nm: '서행', count: 64 },
+  { sign_nm: '도로공사중', count: 14 },
+  { sign_nm: '우합류도로', count: 18 },
+  { sign_nm: '철길건널목', count: 5 },
+  { sign_nm: '자전거통행금지', count: 12 },
+  { sign_nm: '직진 및 좌회전', count: 208 },
+  { sign_nm: '우회전금지', count: 29 },
+  { sign_nm: 'Y자형교차로', count: 5 },
+  { sign_nm: '우측차로없어짐', count: 101 },
+  { sign_nm: '중앙분리대끝남', count: 1 },
+  { sign_nm: '우로굽은도로', count: 22 },
+  { sign_nm: '노인보호(노인보호구역안)', count: 24 },
+  { sign_nm: '3색등(횡형)', count: 1603 },
+  { sign_nm: '화물자동차통행금지', count: 8 },
+  { sign_nm: 'ㅏ자형교차로', count: 33 },
+  { sign_nm: '진행방향통행구분', count: 64 },
+  { sign_nm: '최저속도제한', count: 10 },
+  { sign_nm: '좌회전금지', count: 30 },
+  { sign_nm: '차간거리확보', count: 23 },
+  { sign_nm: '좌로굽은도로', count: 51 },
+  { sign_nm: '주차금지', count: 245 },
+  { sign_nm: '진입금지', count: 13 },
+  { sign_nm: '횡단보도', count: 577 },
+  { sign_nm: '과속방지턱', count: 116 },
+  { sign_nm: '내리막경사', count: 3 },
+  { sign_nm: '중앙분리대시작', count: 27 },
+  { sign_nm: '좌우로이중굽은도로', count: 2 },
+  { sign_nm: '자전거주차장', count: 21 },
+  { sign_nm: '직진금지', count: 34 },
+  { sign_nm: '회전 교차로', count: 21 },
+  { sign_nm: '상습정체구간', count: 3 },
+  { sign_nm: '버스전용차로', count: 12 },
+  { sign_nm: '위험물적재차량통행금지', count: 15 },
+  { sign_nm: '오르막경사', count: 1 },
+  { sign_nm: '비보호좌회전', count: 316 }
+]
+2023-08-31 11:11:13 [DEBUG] - { vehicle: 2, sensor: 1 }
+2023-08-31 11:11:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:15 [DEBUG] - GET : /equip/list/vehicle
+2023-08-31 11:11:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:15 [DEBUG] - GET : /api/equip/read/vh?filter_type=vh_nm&filter_value=&page=1&perPage=14&_=1693447875625
+2023-08-31 11:11:15 [DEBUG] - [func]gridUtil.getDefaultInfo()
+2023-08-31 11:11:15 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'vh_id',
+  sortAscending: undefined,
+  filter_type: 'vh_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:15 [DEBUG] - [func]vehicleDB.getReadVhList()
+2023-08-31 11:11:15 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'vh_id',
+  sortAscending: undefined,
+  filter_type: 'vh_nm',
+  filter_value: ''
+}
+2023-08-31 11:11:15 [DEBUG] - undefined
+2023-08-31 11:11:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:15 [DEBUG] - {
+  text: 'SELECT v.*, u.flnm, p.sido_nm, p.sigungu_nm, c.vh_cond_nm,           count(*) OVER() total           FROM vh_mng v LEFT JOIN sv_user_mng u  ON v.sv_user_id = u.sv_user_id LEFT JOIN tc_pnu_sigungu p  ON v.mng_sgg = p.pnu_id LEFT JOIN tc_vh_cond c  ON v.cond_cd = c.vh_cond_id  ORDER BY vh_id DESC  LIMIT $1 OFFSET $2',
+  values: [ 14, 0 ]
+}
+2023-08-31 11:11:15 [DEBUG] - [func]gridUtil.convertGridData()
+2023-08-31 11:11:16 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:16 [DEBUG] - GET : /data/list/prj
+2023-08-31 11:11:16 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:16 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:16 [DEBUG] - GET : /api/data/read/prj?filter_type=p.prj_id&filter_value=&page=1&perPage=14&_=1693447876278
+2023-08-31 11:11:16 [DEBUG] - [func]gridUtil.getDefaultInfo()
+2023-08-31 11:11:16 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'prj_id',
+  sortAscending: undefined,
+  filter_type: 'p.prj_id',
+  filter_value: ''
+}
+2023-08-31 11:11:16 [DEBUG] - [func]prjDB.getReadPrjList()
+2023-08-31 11:11:16 [DEBUG] - {
+  page: 1,
+  perPage: 14,
+  sortColumn: 'prj_id',
+  sortAscending: undefined,
+  filter_type: 'p.prj_id',
+  filter_value: ''
+}
+2023-08-31 11:11:16 [DEBUG] - undefined
+2023-08-31 11:11:16 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:16 [DEBUG] - {
+  text: 'SELECT p.*, v.vh_nm, s.sens_nm cam_sens_nm, s2.sens_nm lidar_sens_nm, s3.sens_nm sens_set_nm, u.flnm, t.prj_stts_nm, pnu.sido_nm, pnu.sigungu_nm,             count(*) OVER() total             FROM project_mng p LEFT JOIN vh_mng v  ON p.vh_id = v.vh_id LEFT JOIN sens_mng s  ON p.cam_sens_id = s.sens_id LEFT JOIN sens_mng s2  ON p.lidar_sens_id = s2.sens_id LEFT JOIN sens_mng s3  ON p.sens_set_id = s3.sens_id LEFT JOIN sv_user_mng u  ON p.sv_user_id = u.sv_user_id LEFT JOIN  tc_prj_status t ON p.prj_stts_cd = t.prj_stts_cd LEFT JOIN  tc_pnu_sigungu pnu ON p.pnu_cd = pnu.pnu_cd ORDER BY prj_id DESC  LIMIT $1 OFFSET $2',
+  values: [ 14, 0 ]
+}
+2023-08-31 11:11:16 [DEBUG] - [func]gridUtil.convertGridData()
+2023-08-31 11:11:17 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:11:17 [DEBUG] - GET : /map/list/map
+2023-08-31 11:11:17 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 11:11:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:11:17 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 11:11:18 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:14:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:14:15 [DEBUG] - GET : /map/list/map
+2023-08-31 11:14:15 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 11:14:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:14:15 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 11:14:15 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:14:54 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 11:14:54 [DEBUG] - GET : /map/list/map
+2023-08-31 11:14:54 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 11:14:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 11:14:54 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 11:14:54 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 13:15:38 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:38 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 13:15:38 [INFO] - Argos Platform : win32
+2023-08-31 13:15:38 [INFO] - config.server_port : 3001
+2023-08-31 13:15:38 [DEBUG] - route_loader.init called.
+2023-08-31 13:15:38 [INFO] - Routing Moudle count : 68
+2023-08-31 13:15:38 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 13:15:38 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 13:15:38 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 13:15:38 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 13:15:38 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 13:15:39 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 13:15:39 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 13:15:39 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 13:15:39 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 13:15:39 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 13:15:39 [DEBUG] - config/passport called.
+2023-08-31 13:15:39 [DEBUG] - local passport setted.
+2023-08-31 13:15:39 [DEBUG] - init user_passport
+2023-08-31 13:15:39 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 13:15:39 [DEBUG] - [func]codeUtil.init()
+2023-08-31 13:15:39 [DEBUG] - [msg] loadUserType...
+2023-08-31 13:15:39 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:39 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 13:15:39 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 13:15:39 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:39 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 13:15:39 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 13:15:39 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:39 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 13:15:39 [DEBUG] - [msg] loadCondCode...
+2023-08-31 13:15:39 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:39 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 13:15:39 [DEBUG] - [msg] loadSensCode...
+2023-08-31 13:15:39 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:39 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 13:15:39 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 13:15:39 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:39 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 13:15:39 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 13:15:39 [INFO] - Express SSL server listening on port 443
+2023-08-31 13:15:39 [INFO] - Express server listening on port 3001
+2023-08-31 13:15:39 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T04:15:40.367Z } ]
+2023-08-31 13:15:41 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 13:15:41 [DEBUG] - GET : /map/list/map
+2023-08-31 13:15:41 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 13:15:41 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 13:15:41 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 13:15:41 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 14:28:22 [INFO] - Argos Platform : win32
+2023-08-31 14:28:22 [INFO] - config.server_port : 3001
+2023-08-31 14:28:22 [DEBUG] - route_loader.init called.
+2023-08-31 14:28:22 [INFO] - Routing Moudle count : 68
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 14:28:22 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 14:28:22 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:28:22 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 14:28:22 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 14:28:22 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 14:28:22 [DEBUG] - config/passport called.
+2023-08-31 14:28:22 [DEBUG] - local passport setted.
+2023-08-31 14:28:22 [DEBUG] - init user_passport
+2023-08-31 14:28:22 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:28:22 [DEBUG] - [func]codeUtil.init()
+2023-08-31 14:28:22 [DEBUG] - [msg] loadUserType...
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 14:28:22 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 14:28:22 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 14:28:22 [DEBUG] - [msg] loadCondCode...
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 14:28:22 [DEBUG] - [msg] loadSensCode...
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 14:28:22 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 14:28:22 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 14:28:22 [INFO] - Express SSL server listening on port 443
+2023-08-31 14:28:22 [INFO] - Express server listening on port 3001
+2023-08-31 14:28:22 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T05:28:23.656Z } ]
+2023-08-31 14:28:22 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:28:22 [DEBUG] - GET : /map/list/map
+2023-08-31 14:28:22 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 14:28:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:22 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 14:28:22 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:28:26 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:28:26 [DEBUG] - GET : /map/list/map
+2023-08-31 14:28:26 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 14:28:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:26 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 14:28:26 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:28:54 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:28:54 [DEBUG] - GET : /map/list/map
+2023-08-31 14:28:54 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 14:28:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:28:54 [DEBUG] - { text: 'SELECT *           FROM project_mng', values: [] }
+2023-08-31 14:28:54 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 14:29:07 [INFO] - Argos Platform : win32
+2023-08-31 14:29:07 [INFO] - config.server_port : 3001
+2023-08-31 14:29:07 [DEBUG] - route_loader.init called.
+2023-08-31 14:29:07 [INFO] - Routing Moudle count : 68
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 14:29:07 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 14:29:07 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:29:07 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 14:29:07 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 14:29:07 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 14:29:07 [DEBUG] - config/passport called.
+2023-08-31 14:29:07 [DEBUG] - local passport setted.
+2023-08-31 14:29:07 [DEBUG] - init user_passport
+2023-08-31 14:29:07 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:29:07 [DEBUG] - [func]codeUtil.init()
+2023-08-31 14:29:07 [DEBUG] - [msg] loadUserType...
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 14:29:07 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 14:29:07 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 14:29:07 [DEBUG] - [msg] loadCondCode...
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 14:29:07 [DEBUG] - [msg] loadSensCode...
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 14:29:07 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 14:29:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:07 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 14:29:07 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 14:29:07 [INFO] - Express SSL server listening on port 443
+2023-08-31 14:29:07 [INFO] - Express server listening on port 3001
+2023-08-31 14:29:07 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T05:29:08.643Z } ]
+2023-08-31 14:29:08 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:29:08 [DEBUG] - GET : /map/list/map
+2023-08-31 14:29:08 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 14:29:08 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-08-31 14:29:36 [INFO] - Argos Platform : win32
+2023-08-31 14:29:36 [INFO] - config.server_port : 3001
+2023-08-31 14:29:36 [DEBUG] - route_loader.init called.
+2023-08-31 14:29:36 [INFO] - Routing Moudle count : 68
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-08-31 14:29:36 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-08-31 14:29:36 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:29:36 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-08-31 14:29:36 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-08-31 14:29:36 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-08-31 14:29:36 [DEBUG] - config/passport called.
+2023-08-31 14:29:36 [DEBUG] - local passport setted.
+2023-08-31 14:29:36 [DEBUG] - init user_passport
+2023-08-31 14:29:36 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-08-31 14:29:36 [DEBUG] - [func]codeUtil.init()
+2023-08-31 14:29:36 [DEBUG] - [msg] loadUserType...
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-08-31 14:29:36 [DEBUG] - [msg] loadUserStatus...
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-08-31 14:29:36 [DEBUG] - [msg] loadPnuCode...
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-08-31 14:29:36 [DEBUG] - [msg] loadCondCode...
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-08-31 14:29:36 [DEBUG] - [msg] loadSensCode...
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-08-31 14:29:36 [DEBUG] - [msg] loadWeatherCode...
+2023-08-31 14:29:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:36 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-08-31 14:29:36 [DEBUG] - updateUtil.checkUpdate
+2023-08-31 14:29:36 [INFO] - Express SSL server listening on port 443
+2023-08-31 14:29:36 [INFO] - Express server listening on port 3001
+2023-08-31 14:29:36 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-08-31T05:29:37.598Z } ]
+2023-08-31 14:29:37 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 14:29:37 [DEBUG] - GET : /map/list/map
+2023-08-31 14:29:37 [DEBUG] - [func]prjDB.getPrjList()
+2023-08-31 14:29:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-08-31 14:29:37 [DEBUG] - {
+  text: 'SELECT *           FROM project_mng p ORDER BY p.prj_id',
+  values: []
+}
+2023-08-31 14:29:38 [DEBUG] - deserializeUser() 호출됨.
+2023-08-31 16:40:29 [DEBUG] - GET : /
+2023-08-31 16:40:29 [DEBUG] - GET : /login

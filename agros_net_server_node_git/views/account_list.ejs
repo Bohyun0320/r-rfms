@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+    <link rel="stylesheet" href="/public/bower_components/tui-grid/dist/tui-grid.min.css">
+    <link rel="stylesheet" href="/public/bower_components/tui-pagination/dist/tui-pagination.css">
+    <link rel="stylesheet" href="/public/css/account.css">
+    
+    <title>사용자 조회</title>
+    <meta name="description" content="R-RFMS"/>
+    <meta property="og:title" content="R-RFMS 사용자 조회">
+    <meta property="og:description" content="R-RFMS 사용자 조회"/>
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="con-scr-title">사용자 조회</div>
+            <div class="spacer-horizon"></div>
+            <div class="excd-btn excd-btn-small excd-btn-white excd-btn-title" onclick="javascript:location.href='/signup'">
+              <i class="fas fa-plus-square"></i> 계정 생성
+            </div>
+            
+            <form  id="filter-form" class="con-scr-title-toolbar con-scr-title-toolbar-vh" action="/api/user/search" method="post">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <select class="selectpicker form-control" name="filter_type">
+                    <option value="flnm">이름</option>
+                    <option value="sv_user_id">이메일</option>
+                    <option value="ogdp">소속</option>
+                    <option value="telno">전화번호</option>
+                    <option value="user_cond_nm">상태</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control" aria-label="..." name="filter_value" onkeydown="javascript: if (event.keyCode == 13) {searchUserList();}">
+                <span class="input-group-btn">
+                  <button class="btn btn-default excd-btn-primary" type="button" onclick="javascript:searchUserList()">검색</button>
+                </span>
+              </div><!-- /input-group -->
+            </form>
+            
+          </div>
+          
+          <div class="safety-grid" id="account-list-grid"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+       
+    <script>
+      var userType = <%- JSON.stringify(userType)%>;
+      var userSttus = <%- JSON.stringify(userSttus)%>;
+    </script>
+        
+    <script src="/public/bower_components/underscore/underscore-min.js"></script>
+    <script src="/public/bower_components/backbone/backbone-min.js"></script>
+    <script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+    <script src="/public/bower_components/tui-pagination/dist/tui-pagination.min.js"></script>
+    <script src="/public/bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>
+    <script src="/public/bower_components/tui-grid/dist/tui-grid.min.js"></script>
+    
+    <script src="/public/js/fr_account_list.js"></script>
+  </body>
+</html>

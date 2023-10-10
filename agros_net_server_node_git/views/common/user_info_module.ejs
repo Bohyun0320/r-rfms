@@ -1,0 +1,144 @@
+<style type="text/css">
+  @import url("/public/css/user_info.css");
+</style>
+
+<form id="userinfo-form" action="/signup" method="post">
+  <div class="card-contents">
+    <div class="contents-group-title">일반정보</div>
+
+    <div class="contents-row">
+      <div class="contents-column user-info-basic">
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-envelope"></i>이메일<span class="excd-icon excd-mandatory"/></div>
+          <input type="email" class="form-control" placeholder="이메일을 입력해 주세요" name="email">
+        </div>
+        <div class="excd-input-group account-input display-none" id="curPwRow">
+          <div class="input-name"><i class="fas fa-unlock-alt"></i>현재 비밀번호<span class="excd-icon excd-mandatory"/></div>
+          <input type="password" class="form-control" placeholder="8~16자의 영문, 숫자, 특수문자" name="cur_password">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-unlock-alt"></i>비밀번호<span class="excd-icon excd-mandatory"/></div>
+          <input type="password" class="form-control" placeholder="8~16자의 영문, 숫자, 특수문자" name="password">
+        </div>
+        <div class="excd-input-group account-input" id="confirmPwRow">
+          <div class="input-name"><i class="fas fa-unlock-alt"></i>비밀번호 확인<span class="excd-icon excd-mandatory"/></div>
+          <input type="password" class="form-control" placeholder="8~16자의 영문, 숫자, 특수문자" name="confirm-password">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-signature"></i>이름<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="이름을 입력해 주세요" name="name">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-sitemap"></i>소속</div>
+          <input type="text" class="form-control" placeholder="소속을 입력해 주세요" name="group">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-mobile-alt"></i>전화번호<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="전화번호를 입력해 주세요" name="phone">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-user-tag"></i>회원 구분</div>
+          <select class="selectpicker form-control" name="user_type">
+            <% for (var i=0; i<userType.length; i++) { %>
+              <option value="<%= userType[i].user_ty_id%>" %>
+                <%= i==0?"selected=selected":""%> ><%= userType[i].user_ty_nm%>
+              </option>
+              <%}%>
+          </select>
+        </div>
+
+        <div class="excd-input-group account-input display-none" id="status">
+          <div class="input-name"><i class="fas fa-check-circle"></i>상태</div>
+          <select class="selectpicker form-control" name="user_stts" disabled>
+            <% for (var i=0; i<userSttus.length; i++) { %>
+              <option value="<%= userSttus[i].user_cond_id%>" %>
+                <%= i==0?"selected=selected":""%> ><%= userSttus[i].user_cond_nm%>
+              </option>
+              <%}%>
+          </select>
+        </div>
+
+        <div class="excd-mandatory-hint"><span class="excd-icon excd-mandatory"/> 필수항목</div>
+      </div>
+
+      <div class="contents-column contents-photo" id="user_photo">
+        <!-- <img src="/public/images/user.svg" alt=""> -->
+        <div class="profile-img img-empty"></div>
+        <div class="excd-btn" onclick="javascript:userInfoApi.addPhoto()">사진 등록</div>
+        <input class="image-input display-none" id="input-profile-photo" name="photo" type="file" accept="image/*">
+      </div>
+
+      <div class="spacer-horizon user-info-spacer"></div>
+      
+    </div>
+
+
+  </div>
+
+  <div class="card-contents card-contents-gray display-none">
+    <div class="contents-group-title">장비 정보</div>
+
+    <div class="contents-column">
+      <div class="excd-input-group account-input">
+        <div class="input-name"><i class="fas fa-car"></i>차량</div>
+        <select class="selectpicker form-control" name="car_type">
+            <option value="1" selected=selected>차량 1</option>
+            <option value="2" >차량 2</option>
+            <option value="3" >차량 3</option>
+        </select>
+      </div>
+
+      <div class="excd-input-group account-input">
+        <div class="input-name"><i class="fas fa-bullseye"></i>센서1</div>
+        <select class="selectpicker form-control" name="sens1_type">
+            <option value="1" selected=selected>센서 1</option>
+            <option value="2" >센서 2</option>
+            <option value="3" >센서 3</option>
+        </select>
+      </div>
+
+      <div class="excd-input-group account-input">
+        <div class="input-name"><i class="fas fa-bullseye"></i>센서2</div>
+        <select class="selectpicker form-control" name="sens2_type">
+            <option value="1" selected=selected>센서 1</option>
+            <option value="2" >센서 2</option>
+            <option value="3" >센서 3</option>
+        </select>
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarNew">
+    <div class="excd-btn" id="cancel">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="submit" >확인</div>
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarView">
+    <div class="excd-btn" id="back">이전</div>
+    <div class="excd-btn excd-btn-secondary" id="edit" >수정</div>
+    <div class="excd-btn excd-btn-primary" id="chgPw" >비밀번호 변경</div>
+    <div class="excd-btn excd-btn-color-third display-none" id="resetPw" >초기화</div>
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarEdit">
+    <div class="excd-btn" id="cancelUpdate">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="update" >업데이트</div>
+  </div>
+</form>
+
+<script>
+  var userType = {};
+  <% if (typeof userType !== 'undefined' && userType) {%>
+    userType = <%- JSON.stringify(userType)%>;
+  <%}%>
+
+  var userStts = {};
+  <% if (typeof userSttus !== 'undefined' && userSttus) {%>
+    userSttus = <%- JSON.stringify(userSttus)%>;
+  <%}%>
+
+</script>
+
+<script src="/public/js/module/fr_user_info_module.js"></script>

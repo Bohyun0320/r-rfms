@@ -1,0 +1,148 @@
+.contents-card-bsns {
+  max-width: 800px;
+  min-width: 600px;  
+}
+
+.card-title-business-info {
+  margin-left: 50px;
+  font-size: 14px;
+  color: #606368;
+}
+
+#business-contents {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-left: 4px !important;
+  padding-right: 26px !important;
+}
+
+.input-name {
+  flex-basis: 100px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.business-input {
+  position: relative;
+  padding: 6px 0;
+  width: 33%;
+  font-size: 14px;
+}
+
+.business-input-full {
+  width: 99%;
+}
+
+.business-input-large {
+  width: 55%;
+/*  flex-basis: 55%;*/
+}
+
+.business-input-medium {
+  width: 45%;
+/*  flex-basis: 45%;*/
+}
+
+.business-input-double {
+  width: 66%;
+}
+
+.business-input .input-group{
+  width: 70%;
+}
+
+
+/*
+.business-input .form-control {
+  flex-grow: 1;
+} 
+*/
+
+.bsns-btnbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.bsns-btnbar .safety-btn{
+  margin: 0 10px;
+  width: 180px;
+  text-align: center;
+}
+
+.selectpicker[name='user_type'] {
+  margin-top: 20px;
+}
+
+.tui-datepicker-input-safety {
+  height: 34px !important;
+  border-radius: 4px;
+}
+
+.tui-datepicker {
+  z-index: 5;
+}
+
+.tui-datepicker-input input:disabled {
+  background-color: #eeeeee;
+}
+
+#shp-msg {
+  color: #aaaaaa;
+  padding-left: 10px;
+}
+
+#shp-refresh {
+  display: flex;
+  flex-direction: column;
+}
+
+.refresh-msg {
+  margin-bottom: 10px;
+  color : #ff4d4d;
+}
+
+#filename[readonly] {
+/*  background-color: #ffffff;*/
+}
+
+.input-filter {
+  position: relative;
+}
+
+#filterUserList {
+  list-style-type: none;
+  position: absolute;
+  height : 300px;
+  width: 100%;
+  top:40px;
+  padding: 0;
+  margin: 0;
+  z-index: 5;
+  overflow: auto;
+}
+
+#filterUserList li a {
+  width: 100%;
+  border: 1px solid #ddd; /* Add a border to all links */
+  margin-top: -1px; /* Prevent double borders */
+  background-color: #f6f6f6; /* Grey background color */
+  padding: 8px 20px; /* Add some padding */
+  text-decoration: none; /* Remove default text underline */
+  font-size: 12px; /* Increase the font-size */
+  color: black; /* Add a black text color */
+  display: block; /* Make it into a block element to fill the whole list */
+}
+
+#filterUserList li a:hover {
+  background-color: #eee; /* Add a hover effect to all links, except for headers */
+}
+
+#bsns-bndry-file-form, #fullFilename {
+  display: none;
+}
+
+

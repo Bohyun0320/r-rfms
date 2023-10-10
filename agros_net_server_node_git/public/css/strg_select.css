@@ -1,0 +1,133 @@
+.title-toolbar {
+  display: flex;
+  flex-direction: row;
+}
+
+.title-tool {
+  display: flex;
+  padding: 4px 12px;
+  margin-right: 10px;
+  align-items: center;
+}
+
+.title-toolbar i {
+  margin-right: 10px;
+}
+
+.title-tool:hover {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.strg-card-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 20px 0;
+  font-size: 14px;
+/*  justify-content: space-between;*/
+}
+
+.contents-cardview-strg {
+  margin: 1%;
+  width: 21%;
+  min-width: 450px;
+  height: auto;
+  overflow: visible;
+/*  margin-bottom: 20px;*/
+/*  background-color: #fff7b7;*/
+}
+
+.card-title-strg-id {
+  margin: 6px 10px;
+  padding: 6px;
+  border-radius: 8px;
+  font-size: 12px;
+  background-color: white;
+}
+
+input[name='strg-radio'] {
+  margin: 14px 0 14px 20px;
+}
+
+
+.card-title-text {
+  /* margin: 10px 0 10px 20px; */
+  margin: 10px 0 10px 10px;
+}
+
+.card-title-toolbar {
+  height: 40px;
+}
+
+
+
+.contents-card-dummy {
+  display: none;
+}
+
+.card-title-strg {
+/*  padding : 10px 0;*/
+  border-radius: 10px 10px 0 0;
+  height: auto;
+/*  padding: 0;*/
+}
+
+.contents-cardview-strg .bottom {
+  width: 20px;
+}
+
+.strg-card-contents{
+  padding: 10px 0;
+  position: relative;
+  /* display: flex;
+  flex-direction: row; */
+}
+
+.card-info {
+  padding: 10px 20px;
+  color: #808080;
+  flex-grow: 1;
+}
+.card-info > * {
+  padding: 4px 0;
+}
+
+.card-strg-type {
+  padding: 5px 10px;
+  position: absolute;
+  right: 14px;
+  top : 14px;
+  background-color: #eaeaea;
+  /* border : 1px solid #6e6e6e; */
+  border-radius: 5px;
+}
+
+.strg-btnbar {
+  flex-basis: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin-right: 10px;
+}
+
+.strg-btnbar .safety-btn {
+  width: 90%;
+  margin: 5px 0;
+  text-align: center;
+}
+
+.contents-cardview-strg-selected .card-title-strg {
+  background-color: #53b5e4;
+  color: white;
+}
+
+.contents-cardview-strg-selected .card-title-tool:hover {
+  background-color: #2192c7;
+}
+
+.contents-card-disabled {
+  color: #d0d0d0;
+}

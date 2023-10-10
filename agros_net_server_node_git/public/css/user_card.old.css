@@ -1,0 +1,69 @@
+#signup-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.signup-text {
+  flex-basis: 74%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.signup-image {
+  flex-basis: 26%;
+  min-width: 200px;
+  padding: 40px 20px 20px 60px;
+}
+
+.input-name {
+  flex-basis: 120px;
+  flex-shrink: 0;
+  text-align: right;
+  padding-right: 14px;
+}
+
+.account-input {
+  padding: 14px 0;
+  width: 50%;
+}
+
+.account-input-large {
+  width: 100%;
+}
+
+.profile-img {
+  width: 100%;
+  padding-top: 100%;
+  background-image: url('/public/images/template/user.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  border: 1px solid #c9c9c9;
+}
+
+.singup-image-footer {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#btn-change-photo {
+  margin: 0 auto;
+}
+
+.signup-btnbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.signup-btnbar .safety-btn{
+  margin: 0 10px;
+}
+
+.selectpicker[name='user_type'] {
+  margin-top: 20px;
+}
+

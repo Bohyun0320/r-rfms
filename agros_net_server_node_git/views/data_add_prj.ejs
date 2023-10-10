@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+<!--    <link rel="stylesheet" href="/public/css/signup.css">-->
+    
+    <title>프로젝트 생성</title>
+    <meta name="description" content="프로젝트를 생성 합니다."/>
+    <meta property="og:title" content="프로젝트 생성">
+    <meta property="og:description" content="프로젝트를 생성 합니다."/>
+
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="title-text">프로젝트 생성</div>
+          </div>
+
+          <%- include('common/prj_info_module', {mode : 'new'} )%>
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+        
+    <script src="/public/js/fr_add_prj.js" type="module"></script>
+  </body>
+</html>

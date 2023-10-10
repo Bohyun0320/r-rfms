@@ -1,0 +1,66 @@
+/* #filter-form {
+  z-index: 20;
+} */
+
+.contents-form-toolbar {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: row;
+  font-size: 14px;
+  color : #808080;
+}
+
+.safety-input-group {
+  flex-shrink: 0;
+}
+
+.contents-form-toolbar .safety-input-group:nth-child(n+2) {
+  margin-left: 20px;
+}
+
+.contents-form-toolbar-bsns .input-name{
+  flex-basis : auto;
+  flex-shrink: 0;
+  padding-right: 10px;
+}
+
+.safety-grid {
+}
+
+.con-scr-title-toolbar .selectpicker {
+  width: 90px;
+}
+
+.con-scr-title-toolbar input {
+  width: 200px;
+}
+
+input[name="filter_fid"] {
+  width: 60px;
+}
+
+input[name="filter_name"] {
+  width: 120px;
+}
+
+#searchList {
+  margin-left: 20px;
+}
+
+.tui-datepicker-input-safety {
+  height: 34px !important;
+  border-radius: 4px;
+  z-index: 30;
+}
+
+.tui-datepicker-input-safety input {
+  height: 100%;
+}
+
+.tui-datepicker-input input:disabled {
+  background-color: #eeeeee;
+}
+
+.tui-datetime-input {
+  width: 110px;
+}

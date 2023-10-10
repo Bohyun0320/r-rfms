@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+<!--    <link rel="stylesheet" href="/public/css/signup.css">-->
+    
+    <title>프로젝트 정보</title>
+    <meta name="description" content="프로젝트 정보를 조회 합니다."/>
+    <meta property="og:title" content="프로젝트 정보">
+    <meta property="og:description" content="프로젝트 정보를 조회 합니다."/>
+
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="title-text">프로젝트 정보</div>
+          </div>
+
+          <%- include('common/prj_info_module', {mode : 'new'} )%>
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+
+    <script>
+      var prjInfo = {};
+      <% if (typeof prjInfo !== 'undefined' && prjInfo) {%>
+        prjInfo = <%- JSON.stringify(prjInfo)%>;
+      <%}%>
+    </script>
+        
+    <script src="/public/js/fr_view_prj.js" type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+@import url("./font.css");
+.sens-ty {
+  color: white;
+  border-radius: 6px;
+  padding: 4px 6px;
+  width: 72px;
+}
+
+.sens-ty-cam {
+  background-color: #fa8d4d;
+}
+
+.sens-ty-lidar {
+  background-color: #11728a;
+}
+
+.sens-ty-set {
+  background-color: #914391;
+}
+
+.tui-grid-table .nav-selected td {
+  color: #f96f1c;
+  font-weight: 600;
+}

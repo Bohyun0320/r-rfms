@@ -1,0 +1,118 @@
+@charset "UTF-8";
+@import url("./font.css");
+.excd-input-group-file {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.excd-filebox {
+  height: auto;
+  padding: 4px 8px;
+  margin-right: 10px;
+}
+
+.excd-filebox.excd-filebox-empty::before {
+  content: "파일을 추가해 주세요.";
+  color: #9a9a9a;
+}
+
+.excd-filebox .file-box-count {
+  margin: 5px 10px;
+}
+
+.excd-filebox .file-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 8px 10px;
+  padding: 4px 8px;
+  border: 1px solid #999999;
+  border-radius: 4px;
+}
+
+.excd-filebox .file-item .file-item-icon {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 3px 6px;
+  border-radius: 12px 3px 3px 3px;
+  color: white;
+  font-size: 12px;
+}
+
+.excd-filebox .file-item .file-item-pkg {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  padding: 3px 6px;
+  border-radius: 3px;
+  color: white;
+  font-size: 12px;
+  margin-left: 5px;
+  background-color: #eb3857;
+}
+
+.excd-filebox .file-item .file-item-pkg::before {
+  content: 'PKG';
+}
+
+.excd-filebox .file-item .file-item-name {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin: 0 8px;
+}
+
+.excd-filebox .file-item.file-item-zip > .file-item-icon {
+  background-color: #e45334;
+}
+
+.excd-filebox .file-item.file-item-zip > .file-item-icon::before {
+  content: 'ZIP';
+}
+
+.excd-filebox .file-item.file-item-img > .file-item-icon {
+  background-color: #116f4b;
+}
+
+.excd-filebox .file-item.file-item-img > .file-item-icon::before {
+  content: 'IMG';
+}
+
+.excd-filebox .file-item.file-item-las > .file-item-icon {
+  background-color: #064f91;
+}
+
+.excd-filebox .file-item.file-item-las > .file-item-icon::before {
+  content: 'LAS';
+}
+
+.excd-filebox .file-item.file-item-meta > .file-item-icon {
+  background-color: #7c09a8;
+}
+
+.excd-filebox .file-item.file-item-meta > .file-item-icon::before {
+  content: '</>';
+}
+
+.excd-filebox .file-item .file-item-rmbtn, .excd-filebox .file-item .file-item-dnbtn {
+  color: #777777;
+  font-size: 16px;
+}
+
+.excd-filebox .file-item .file-item-rmbtn:hover, .excd-filebox .file-item .file-item-dnbtn:hover {
+  cursor: pointer;
+}
+
+.excd-filebox .file-item.file-item-server {
+  background-color: #eeeeee;
+}
+
+#file-item-dummy {
+  display: none;
+}
+
+.file-btns .excd-btn:nth-child(n+2) {
+  margin-top: 4px;
+}

@@ -1,0 +1,808 @@
+2023-09-11 09:03:59 [INFO] - Argos Platform : win32
+2023-09-11 09:03:59 [INFO] - config.server_port : 3001
+2023-09-11 09:03:59 [INFO] - Routing Moudle count : 69
+2023-09-11 09:04:00 [INFO] - Express SSL server listening on port 443
+2023-09-11 09:04:00 [INFO] - Express server listening on port 3001
+2023-09-11 09:05:07 [INFO] - 계정과 비밀번호가 일치함.
+2023-09-11 09:18:52 [INFO] - Argos Platform : win32
+2023-09-11 09:18:52 [INFO] - config.server_port : 3001
+2023-09-11 09:18:52 [INFO] - Routing Moudle count : 69
+2023-09-11 09:18:53 [INFO] - Express SSL server listening on port 443
+2023-09-11 09:18:53 [INFO] - Express server listening on port 3001
+2023-09-11 09:47:44 [INFO] - Argos Platform : win32
+2023-09-11 09:47:44 [INFO] - config.server_port : 3001
+2023-09-11 09:47:44 [INFO] - Routing Moudle count : 69
+2023-09-11 09:47:44 [INFO] - Express SSL server listening on port 443
+2023-09-11 09:47:44 [INFO] - Express server listening on port 3001
+2023-09-11 10:19:42 [INFO] - Argos Platform : win32
+2023-09-11 10:19:42 [INFO] - config.server_port : 3001
+2023-09-11 10:19:42 [INFO] - Routing Moudle count : 70
+2023-09-11 10:29:32 [INFO] - Argos Platform : win32
+2023-09-11 10:29:32 [INFO] - config.server_port : 3001
+2023-09-11 10:29:32 [INFO] - Routing Moudle count : 70
+2023-09-11 10:29:33 [INFO] - Express SSL server listening on port 443
+2023-09-11 10:29:33 [INFO] - Express server listening on port 3001
+2023-09-11 10:31:26 [INFO] - Argos Platform : win32
+2023-09-11 10:31:26 [INFO] - config.server_port : 3001
+2023-09-11 10:31:26 [INFO] - Routing Moudle count : 70
+2023-09-11 10:31:26 [INFO] - Express SSL server listening on port 443
+2023-09-11 10:31:26 [INFO] - Express server listening on port 3001
+2023-09-11 11:38:00 [INFO] - Argos Platform : win32
+2023-09-11 11:38:00 [INFO] - config.server_port : 3001
+2023-09-11 11:38:00 [INFO] - Routing Moudle count : 70
+2023-09-11 11:38:01 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:38:01 [INFO] - Express server listening on port 3001
+2023-09-11 11:38:53 [INFO] - Argos Platform : win32
+2023-09-11 11:38:53 [INFO] - config.server_port : 3001
+2023-09-11 11:38:53 [INFO] - Routing Moudle count : 70
+2023-09-11 11:38:54 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:38:54 [INFO] - Express server listening on port 3001
+2023-09-11 11:39:48 [INFO] - Argos Platform : win32
+2023-09-11 11:39:48 [INFO] - config.server_port : 3001
+2023-09-11 11:39:48 [INFO] - Routing Moudle count : 70
+2023-09-11 11:39:48 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:39:48 [INFO] - Express server listening on port 3001
+2023-09-11 11:40:12 [INFO] - Argos Platform : win32
+2023-09-11 11:40:12 [INFO] - config.server_port : 3001
+2023-09-11 11:40:12 [INFO] - Routing Moudle count : 70
+2023-09-11 11:40:12 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:40:12 [INFO] - Express server listening on port 3001
+2023-09-11 11:44:31 [INFO] - Argos Platform : win32
+2023-09-11 11:44:31 [INFO] - config.server_port : 3001
+2023-09-11 11:44:31 [INFO] - Routing Moudle count : 70
+2023-09-11 11:44:31 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:44:31 [INFO] - Express server listening on port 3001
+2023-09-11 11:48:30 [INFO] - Argos Platform : win32
+2023-09-11 11:48:30 [INFO] - config.server_port : 3001
+2023-09-11 11:48:30 [INFO] - Routing Moudle count : 70
+2023-09-11 11:48:31 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:48:31 [INFO] - Express server listening on port 3001
+2023-09-11 11:48:58 [INFO] - Argos Platform : win32
+2023-09-11 11:48:58 [INFO] - config.server_port : 3001
+2023-09-11 11:48:58 [INFO] - Routing Moudle count : 70
+2023-09-11 11:48:58 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:48:58 [INFO] - Express server listening on port 3001
+2023-09-11 11:49:24 [INFO] - Argos Platform : win32
+2023-09-11 11:49:24 [INFO] - config.server_port : 3001
+2023-09-11 11:49:24 [INFO] - Routing Moudle count : 70
+2023-09-11 11:49:25 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:49:25 [INFO] - Express server listening on port 3001
+2023-09-11 11:49:47 [INFO] - Argos Platform : win32
+2023-09-11 11:49:47 [INFO] - config.server_port : 3001
+2023-09-11 11:49:47 [INFO] - Routing Moudle count : 70
+2023-09-11 11:49:47 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:49:47 [INFO] - Express server listening on port 3001
+2023-09-11 11:50:13 [INFO] - Argos Platform : win32
+2023-09-11 11:50:13 [INFO] - config.server_port : 3001
+2023-09-11 11:50:13 [INFO] - Routing Moudle count : 70
+2023-09-11 11:50:13 [INFO] - Express SSL server listening on port 443
+2023-09-11 11:50:13 [INFO] - Express server listening on port 3001
+2023-09-11 13:03:14 [INFO] - Argos Platform : win32
+2023-09-11 13:03:14 [INFO] - config.server_port : 3001
+2023-09-11 13:03:14 [INFO] - Routing Moudle count : 70
+2023-09-11 13:03:15 [INFO] - Express SSL server listening on port 443
+2023-09-11 13:03:15 [INFO] - Express server listening on port 3001
+2023-09-11 13:05:46 [INFO] - Argos Platform : win32
+2023-09-11 13:05:46 [INFO] - config.server_port : 3001
+2023-09-11 13:05:46 [INFO] - Routing Moudle count : 70
+2023-09-11 13:05:47 [INFO] - Express SSL server listening on port 443
+2023-09-11 13:05:47 [INFO] - Express server listening on port 3001
+2023-09-11 13:09:16 [INFO] - Argos Platform : win32
+2023-09-11 13:09:16 [INFO] - config.server_port : 3001
+2023-09-11 13:09:16 [INFO] - Routing Moudle count : 70
+2023-09-11 13:09:17 [INFO] - Express SSL server listening on port 443
+2023-09-11 13:09:17 [INFO] - Express server listening on port 3001
+2023-09-11 13:09:48 [INFO] - Argos Platform : win32
+2023-09-11 13:09:48 [INFO] - config.server_port : 3001
+2023-09-11 13:09:48 [INFO] - Routing Moudle count : 70
+2023-09-11 13:09:48 [INFO] - Express SSL server listening on port 443
+2023-09-11 13:09:48 [INFO] - Express server listening on port 3001
+2023-09-11 14:59:18 [INFO] - Argos Platform : win32
+2023-09-11 14:59:18 [INFO] - config.server_port : 3001
+2023-09-11 14:59:18 [INFO] - Routing Moudle count : 70
+2023-09-11 14:59:18 [INFO] - Express SSL server listening on port 443
+2023-09-11 14:59:18 [INFO] - Express server listening on port 3001
+2023-09-11 15:02:14 [INFO] - Argos Platform : win32
+2023-09-11 15:02:14 [INFO] - config.server_port : 3001
+2023-09-11 15:02:14 [INFO] - Routing Moudle count : 70
+2023-09-11 15:02:14 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:02:14 [INFO] - Express server listening on port 3001
+2023-09-11 15:02:50 [INFO] - Argos Platform : win32
+2023-09-11 15:02:50 [INFO] - config.server_port : 3001
+2023-09-11 15:02:50 [INFO] - Routing Moudle count : 70
+2023-09-11 15:02:51 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:02:51 [INFO] - Express server listening on port 3001
+2023-09-11 15:02:56 [ERROR] - Unhandled Rejection at:
+2023-09-11 15:03:18 [INFO] - Argos Platform : win32
+2023-09-11 15:03:18 [INFO] - config.server_port : 3001
+2023-09-11 15:03:18 [INFO] - Routing Moudle count : 70
+2023-09-11 15:03:19 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:03:19 [INFO] - Express server listening on port 3001
+2023-09-11 15:04:34 [INFO] - Argos Platform : win32
+2023-09-11 15:04:34 [INFO] - config.server_port : 3001
+2023-09-11 15:04:34 [INFO] - Routing Moudle count : 70
+2023-09-11 15:04:34 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:04:34 [INFO] - Express server listening on port 3001
+2023-09-11 15:06:06 [INFO] - Argos Platform : win32
+2023-09-11 15:06:06 [INFO] - config.server_port : 3001
+2023-09-11 15:06:06 [INFO] - Routing Moudle count : 70
+2023-09-11 15:06:06 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:06:06 [INFO] - Express server listening on port 3001
+2023-09-11 15:07:08 [INFO] - Argos Platform : win32
+2023-09-11 15:07:08 [INFO] - config.server_port : 3001
+2023-09-11 15:07:08 [INFO] - Routing Moudle count : 70
+2023-09-11 15:07:08 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:07:08 [INFO] - Express server listening on port 3001
+2023-09-11 15:07:48 [INFO] - Argos Platform : win32
+2023-09-11 15:07:48 [INFO] - config.server_port : 3001
+2023-09-11 15:07:48 [INFO] - Routing Moudle count : 70
+2023-09-11 15:07:49 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:07:49 [INFO] - Express server listening on port 3001
+2023-09-11 15:08:28 [INFO] - Argos Platform : win32
+2023-09-11 15:08:28 [INFO] - config.server_port : 3001
+2023-09-11 15:08:28 [INFO] - Routing Moudle count : 70
+2023-09-11 15:08:28 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:08:28 [INFO] - Express server listening on port 3001
+2023-09-11 15:09:17 [INFO] - Argos Platform : win32
+2023-09-11 15:09:17 [INFO] - config.server_port : 3001
+2023-09-11 15:09:17 [INFO] - Routing Moudle count : 70
+2023-09-11 15:09:18 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:09:18 [INFO] - Express server listening on port 3001
+2023-09-11 15:09:49 [INFO] - Argos Platform : win32
+2023-09-11 15:09:49 [INFO] - config.server_port : 3001
+2023-09-11 15:09:49 [INFO] - Routing Moudle count : 70
+2023-09-11 15:09:49 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:09:49 [INFO] - Express server listening on port 3001
+2023-09-11 15:10:10 [INFO] - Argos Platform : win32
+2023-09-11 15:10:10 [INFO] - config.server_port : 3001
+2023-09-11 15:10:10 [INFO] - Routing Moudle count : 70
+2023-09-11 15:10:10 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:10:10 [INFO] - Express server listening on port 3001
+2023-09-11 15:11:39 [INFO] - Argos Platform : win32
+2023-09-11 15:11:39 [INFO] - config.server_port : 3001
+2023-09-11 15:11:39 [INFO] - Routing Moudle count : 70
+2023-09-11 15:11:39 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:11:39 [INFO] - Express server listening on port 3001
+2023-09-11 15:12:32 [INFO] - Argos Platform : win32
+2023-09-11 15:12:32 [INFO] - config.server_port : 3001
+2023-09-11 15:12:32 [INFO] - Routing Moudle count : 70
+2023-09-11 15:12:32 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:12:32 [INFO] - Express server listening on port 3001
+2023-09-11 15:22:51 [INFO] - Argos Platform : win32
+2023-09-11 15:22:51 [INFO] - config.server_port : 3001
+2023-09-11 15:22:51 [INFO] - Routing Moudle count : 70
+2023-09-11 15:22:52 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:22:52 [INFO] - Express server listening on port 3001
+2023-09-11 15:27:10 [INFO] - Argos Platform : win32
+2023-09-11 15:27:10 [INFO] - config.server_port : 3001
+2023-09-11 15:27:10 [INFO] - Routing Moudle count : 70
+2023-09-11 15:27:10 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:27:10 [INFO] - Express server listening on port 3001
+2023-09-11 15:29:17 [INFO] - Argos Platform : win32
+2023-09-11 15:29:17 [INFO] - config.server_port : 3001
+2023-09-11 15:29:17 [INFO] - Routing Moudle count : 70
+2023-09-11 15:29:18 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:29:18 [INFO] - Express server listening on port 3001
+2023-09-11 15:42:32 [INFO] - Argos Platform : win32
+2023-09-11 15:42:32 [INFO] - config.server_port : 3001
+2023-09-11 15:42:32 [INFO] - Routing Moudle count : 71
+2023-09-11 15:42:33 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:42:33 [INFO] - Express server listening on port 3001
+2023-09-11 15:43:45 [INFO] - Argos Platform : win32
+2023-09-11 15:43:45 [INFO] - config.server_port : 3001
+2023-09-11 15:43:45 [INFO] - Routing Moudle count : 71
+2023-09-11 15:43:46 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:43:46 [INFO] - Express server listening on port 3001
+2023-09-11 15:44:12 [INFO] - Argos Platform : win32
+2023-09-11 15:44:12 [INFO] - config.server_port : 3001
+2023-09-11 15:44:12 [INFO] - Routing Moudle count : 71
+2023-09-11 15:44:13 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:44:13 [INFO] - Express server listening on port 3001
+2023-09-11 15:44:36 [INFO] - Argos Platform : win32
+2023-09-11 15:44:36 [INFO] - config.server_port : 3001
+2023-09-11 15:44:36 [INFO] - Routing Moudle count : 71
+2023-09-11 15:44:36 [INFO] - Express SSL server listening on port 443
+2023-09-11 15:44:36 [INFO] - Express server listening on port 3001
+2023-09-11 16:08:37 [INFO] - Argos Platform : win32
+2023-09-11 16:08:37 [INFO] - config.server_port : 3001
+2023-09-11 16:08:37 [INFO] - Routing Moudle count : 71
+2023-09-11 16:08:37 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:08:37 [INFO] - Express server listening on port 3001
+2023-09-11 16:08:44 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:08:44 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:08:45 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:09:37 [INFO] - Argos Platform : win32
+2023-09-11 16:09:37 [INFO] - config.server_port : 3001
+2023-09-11 16:09:37 [INFO] - Routing Moudle count : 71
+2023-09-11 16:09:38 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:09:38 [INFO] - Express server listening on port 3001
+2023-09-11 16:09:44 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:09:44 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:09:45 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:13:10 [INFO] - Argos Platform : win32
+2023-09-11 16:13:10 [INFO] - config.server_port : 3001
+2023-09-11 16:13:10 [INFO] - Routing Moudle count : 71
+2023-09-11 16:13:10 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:13:10 [INFO] - Express server listening on port 3001
+2023-09-11 16:13:14 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:13:14 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2"}"
+2023-09-11 16:13:15 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:15:27 [INFO] - Argos Platform : win32
+2023-09-11 16:15:27 [INFO] - config.server_port : 3001
+2023-09-11 16:15:27 [INFO] - Routing Moudle count : 71
+2023-09-11 16:15:28 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:15:28 [INFO] - Express server listening on port 3001
+2023-09-11 16:15:32 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:15:32 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:15:33 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:16:11 [INFO] - Argos Platform : win32
+2023-09-11 16:16:11 [INFO] - config.server_port : 3001
+2023-09-11 16:16:11 [INFO] - Routing Moudle count : 71
+2023-09-11 16:16:11 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:16:11 [INFO] - Express server listening on port 3001
+2023-09-11 16:16:14 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:16:14 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:16:15 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:17:16 [INFO] - Argos Platform : win32
+2023-09-11 16:17:16 [INFO] - config.server_port : 3001
+2023-09-11 16:17:16 [INFO] - Routing Moudle count : 71
+2023-09-11 16:17:16 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:17:16 [INFO] - Express server listening on port 3001
+2023-09-11 16:17:19 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:17:19 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:17:20 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:18:20 [INFO] - Argos Platform : win32
+2023-09-11 16:18:20 [INFO] - config.server_port : 3001
+2023-09-11 16:18:20 [INFO] - Routing Moudle count : 71
+2023-09-11 16:18:21 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:18:21 [INFO] - Express server listening on port 3001
+2023-09-11 16:18:24 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "1, 2, 3"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:18:24 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "1, 2, 3"
+2023-09-11 16:18:25 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:27:39 [INFO] - Argos Platform : win32
+2023-09-11 16:27:39 [INFO] - config.server_port : 3001
+2023-09-11 16:27:39 [INFO] - Routing Moudle count : 71
+2023-09-11 16:27:39 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:27:39 [INFO] - Express server listening on port 3001
+2023-09-11 16:27:43 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:27:43 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:27:44 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:27:50 [INFO] - Argos Platform : win32
+2023-09-11 16:27:50 [INFO] - config.server_port : 3001
+2023-09-11 16:27:50 [INFO] - Routing Moudle count : 71
+2023-09-11 16:27:51 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:27:51 [INFO] - Express server listening on port 3001
+2023-09-11 16:27:54 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:27:54 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+2023-09-11 16:27:55 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:29:10 [INFO] - Argos Platform : win32
+2023-09-11 16:29:10 [INFO] - config.server_port : 3001
+2023-09-11 16:29:10 [INFO] - Routing Moudle count : 71
+2023-09-11 16:29:11 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:29:11 [INFO] - Express server listening on port 3001
+2023-09-11 16:29:15 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:29:15 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+2023-09-11 16:29:16 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:29:57 [INFO] - Argos Platform : win32
+2023-09-11 16:29:57 [INFO] - config.server_port : 3001
+2023-09-11 16:29:57 [INFO] - Routing Moudle count : 71
+2023-09-11 16:29:57 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:29:57 [INFO] - Express server listening on port 3001
+2023-09-11 16:30:01 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:30:01 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+2023-09-11 16:30:02 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:31:25 [INFO] - Argos Platform : win32
+2023-09-11 16:31:25 [INFO] - config.server_port : 3001
+2023-09-11 16:31:25 [INFO] - Routing Moudle count : 71
+2023-09-11 16:31:25 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:31:25 [INFO] - Express server listening on port 3001
+2023-09-11 16:31:29 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:31:29 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1"}"
+2023-09-11 16:31:30 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:31:47 [INFO] - Argos Platform : win32
+2023-09-11 16:31:47 [INFO] - config.server_port : 3001
+2023-09-11 16:31:47 [INFO] - Routing Moudle count : 71
+2023-09-11 16:31:47 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:31:47 [INFO] - Express server listening on port 3001
+2023-09-11 16:32:59 [INFO] - Argos Platform : win32
+2023-09-11 16:32:59 [INFO] - config.server_port : 3001
+2023-09-11 16:32:59 [INFO] - Routing Moudle count : 71
+2023-09-11 16:33:00 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:33:00 [INFO] - Express server listening on port 3001
+2023-09-11 16:33:04 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:33:04 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+2023-09-11 16:33:05 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:34:25 [INFO] - Argos Platform : win32
+2023-09-11 16:34:25 [INFO] - config.server_port : 3001
+2023-09-11 16:34:25 [INFO] - Routing Moudle count : 71
+2023-09-11 16:34:25 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:34:25 [INFO] - Express server listening on port 3001
+2023-09-11 16:34:28 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "1,2,3"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:34:28 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "1,2,3"
+2023-09-11 16:34:29 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:35:40 [INFO] - Argos Platform : win32
+2023-09-11 16:35:40 [INFO] - config.server_port : 3001
+2023-09-11 16:35:40 [INFO] - Routing Moudle count : 71
+2023-09-11 16:35:41 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:35:41 [INFO] - Express server listening on port 3001
+2023-09-11 16:35:49 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "1,2,3"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:35:49 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "1,2,3"
+2023-09-11 16:35:50 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:37:39 [INFO] - Argos Platform : win32
+2023-09-11 16:37:39 [INFO] - config.server_port : 3001
+2023-09-11 16:37:40 [INFO] - Routing Moudle count : 71
+2023-09-11 16:37:40 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:37:40 [INFO] - Express server listening on port 3001
+2023-09-11 16:37:45 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "1,2,3"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:37:45 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "1,2,3"
+2023-09-11 16:37:46 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:37:58 [INFO] - Argos Platform : win32
+2023-09-11 16:37:58 [INFO] - config.server_port : 3001
+2023-09-11 16:37:58 [INFO] - Routing Moudle count : 71
+2023-09-11 16:37:58 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:37:58 [INFO] - Express server listening on port 3001
+2023-09-11 16:38:02 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:38:02 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "{"1","2","3"}"
+2023-09-11 16:38:03 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:39:39 [INFO] - Argos Platform : win32
+2023-09-11 16:39:39 [INFO] - config.server_port : 3001
+2023-09-11 16:39:39 [INFO] - Routing Moudle count : 71
+2023-09-11 16:39:39 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:39:39 [INFO] - Express server listening on port 3001
+2023-09-11 16:39:44 [ERROR] - error: 구문 오류, "$" 부근
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:39:44 [ERROR] - update failed - error: 구문 오류, "$" 부근
+2023-09-11 16:39:45 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:58:49 [INFO] - Argos Platform : win32
+2023-09-11 16:58:49 [INFO] - config.server_port : 3001
+2023-09-11 16:58:49 [INFO] - Routing Moudle count : 71
+2023-09-11 16:58:50 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:58:50 [INFO] - Express server listening on port 3001
+2023-09-11 16:58:54 [ERROR] - error: $1 매개 변수의 자료형을 알수가 없습니다.
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 16:58:54 [ERROR] - update failed - error: $1 매개 변수의 자료형을 알수가 없습니다.
+2023-09-11 16:58:55 [ERROR] - Unhandled Rejection at:
+2023-09-11 16:59:07 [INFO] - Argos Platform : win32
+2023-09-11 16:59:07 [INFO] - config.server_port : 3001
+2023-09-11 16:59:07 [INFO] - Routing Moudle count : 71
+2023-09-11 16:59:08 [INFO] - Express SSL server listening on port 443
+2023-09-11 16:59:08 [INFO] - Express server listening on port 3001
+2023-09-11 16:59:38 [INFO] - Argos Platform : win32
+2023-09-11 16:59:38 [INFO] - config.server_port : 3001
+2023-09-11 16:59:38 [INFO] - Routing Moudle count : 71
+2023-09-11 16:59:46 [INFO] - Argos Platform : win32
+2023-09-11 16:59:46 [INFO] - config.server_port : 3001
+2023-09-11 16:59:46 [INFO] - Routing Moudle count : 71
+2023-09-11 17:00:04 [INFO] - Argos Platform : win32
+2023-09-11 17:00:04 [INFO] - config.server_port : 3001
+2023-09-11 17:00:04 [INFO] - Routing Moudle count : 71
+2023-09-11 17:00:04 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:00:04 [INFO] - Express server listening on port 3001
+2023-09-11 17:00:11 [ERROR] - error: 정수 자료형 대한 잘못된 입력 구문: "1,2"
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 17:00:11 [ERROR] - update failed - error: 정수 자료형 대한 잘못된 입력 구문: "1,2"
+2023-09-11 17:00:12 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:00:38 [INFO] - Argos Platform : win32
+2023-09-11 17:00:38 [INFO] - config.server_port : 3001
+2023-09-11 17:00:38 [INFO] - Routing Moudle count : 71
+2023-09-11 17:00:38 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:00:38 [INFO] - Express server listening on port 3001
+2023-09-11 17:01:18 [INFO] - Argos Platform : win32
+2023-09-11 17:01:18 [INFO] - config.server_port : 3001
+2023-09-11 17:01:18 [INFO] - Routing Moudle count : 71
+2023-09-11 17:01:18 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:01:18 [INFO] - Express server listening on port 3001
+2023-09-11 17:01:18 [ERROR] - error: 연산자 없음: character varying = integer
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 17:01:18 [ERROR] - update failed - error: 연산자 없음: character varying = integer
+2023-09-11 17:01:19 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:01:25 [INFO] - Argos Platform : win32
+2023-09-11 17:01:25 [INFO] - config.server_port : 3001
+2023-09-11 17:01:25 [INFO] - Routing Moudle count : 71
+2023-09-11 17:01:25 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:01:25 [INFO] - Express server listening on port 3001
+2023-09-11 17:01:32 [ERROR] - error: 연산자 없음: character varying = integer
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 17:01:32 [ERROR] - update failed - error: 연산자 없음: character varying = integer
+2023-09-11 17:01:33 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:02:03 [INFO] - Argos Platform : win32
+2023-09-11 17:02:03 [INFO] - config.server_port : 3001
+2023-09-11 17:02:03 [INFO] - Routing Moudle count : 71
+2023-09-11 17:02:03 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:02:03 [INFO] - Express server listening on port 3001
+2023-09-11 17:03:24 [INFO] - Argos Platform : win32
+2023-09-11 17:03:24 [INFO] - config.server_port : 3001
+2023-09-11 17:03:24 [INFO] - Routing Moudle count : 71
+2023-09-11 17:03:24 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:03:24 [INFO] - Express server listening on port 3001
+2023-09-11 17:03:49 [INFO] - Argos Platform : win32
+2023-09-11 17:03:49 [INFO] - config.server_port : 3001
+2023-09-11 17:03:49 [INFO] - Routing Moudle count : 71
+2023-09-11 17:03:49 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:03:49 [INFO] - Express server listening on port 3001
+2023-09-11 17:04:27 [INFO] - Argos Platform : win32
+2023-09-11 17:04:27 [INFO] - config.server_port : 3001
+2023-09-11 17:04:27 [INFO] - Routing Moudle count : 71
+2023-09-11 17:04:27 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:04:27 [INFO] - Express server listening on port 3001
+2023-09-11 17:05:35 [INFO] - Argos Platform : win32
+2023-09-11 17:05:35 [INFO] - config.server_port : 3001
+2023-09-11 17:05:35 [INFO] - Routing Moudle count : 71
+2023-09-11 17:05:36 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:05:36 [INFO] - Express server listening on port 3001
+2023-09-11 17:26:08 [INFO] - Argos Platform : win32
+2023-09-11 17:26:08 [INFO] - config.server_port : 3001
+2023-09-11 17:26:08 [INFO] - Routing Moudle count : 71
+2023-09-11 17:26:08 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:26:08 [INFO] - Express server listening on port 3001
+2023-09-11 17:27:19 [INFO] - Argos Platform : win32
+2023-09-11 17:27:19 [INFO] - config.server_port : 3001
+2023-09-11 17:27:19 [INFO] - Routing Moudle count : 71
+2023-09-11 17:27:19 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:27:19 [INFO] - Express server listening on port 3001
+2023-09-11 17:27:21 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:27:32 [INFO] - Argos Platform : win32
+2023-09-11 17:27:32 [INFO] - config.server_port : 3001
+2023-09-11 17:27:32 [INFO] - Routing Moudle count : 71
+2023-09-11 17:27:33 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:27:33 [INFO] - Express server listening on port 3001
+2023-09-11 17:27:47 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:28:16 [INFO] - Argos Platform : win32
+2023-09-11 17:28:16 [INFO] - config.server_port : 3001
+2023-09-11 17:28:16 [INFO] - Routing Moudle count : 71
+2023-09-11 17:28:17 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:28:17 [INFO] - Express server listening on port 3001
+2023-09-11 17:38:56 [INFO] - Argos Platform : win32
+2023-09-11 17:38:56 [INFO] - config.server_port : 3001
+2023-09-11 17:38:56 [INFO] - Routing Moudle count : 71
+2023-09-11 17:38:56 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:38:56 [INFO] - Express server listening on port 3001
+2023-09-11 17:39:17 [INFO] - Argos Platform : win32
+2023-09-11 17:39:17 [INFO] - config.server_port : 3001
+2023-09-11 17:39:17 [INFO] - Routing Moudle count : 71
+2023-09-11 17:39:18 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:39:18 [INFO] - Express server listening on port 3001
+2023-09-11 17:39:50 [INFO] - Argos Platform : win32
+2023-09-11 17:39:50 [INFO] - config.server_port : 3001
+2023-09-11 17:39:50 [INFO] - Routing Moudle count : 71
+2023-09-11 17:39:51 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:39:51 [INFO] - Express server listening on port 3001
+2023-09-11 17:39:52 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:39:59 [INFO] - Argos Platform : win32
+2023-09-11 17:39:59 [INFO] - config.server_port : 3001
+2023-09-11 17:39:59 [INFO] - Routing Moudle count : 71
+2023-09-11 17:39:59 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:39:59 [INFO] - Express server listening on port 3001
+2023-09-11 17:40:05 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:40:14 [INFO] - Argos Platform : win32
+2023-09-11 17:40:14 [INFO] - config.server_port : 3001
+2023-09-11 17:40:14 [INFO] - Routing Moudle count : 71
+2023-09-11 17:40:15 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:40:15 [INFO] - Express server listening on port 3001
+2023-09-11 17:41:33 [INFO] - Argos Platform : win32
+2023-09-11 17:41:33 [INFO] - config.server_port : 3001
+2023-09-11 17:41:33 [INFO] - Routing Moudle count : 71
+2023-09-11 17:41:33 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:41:33 [INFO] - Express server listening on port 3001
+2023-09-11 17:41:35 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:41:41 [INFO] - Argos Platform : win32
+2023-09-11 17:41:41 [INFO] - config.server_port : 3001
+2023-09-11 17:41:41 [INFO] - Routing Moudle count : 71
+2023-09-11 17:41:42 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:41:42 [INFO] - Express server listening on port 3001
+2023-09-11 17:41:47 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:42:36 [INFO] - Argos Platform : win32
+2023-09-11 17:42:36 [INFO] - config.server_port : 3001
+2023-09-11 17:42:36 [INFO] - Routing Moudle count : 71
+2023-09-11 17:42:36 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:42:36 [INFO] - Express server listening on port 3001
+2023-09-11 17:42:55 [INFO] - Argos Platform : win32
+2023-09-11 17:42:55 [INFO] - config.server_port : 3001
+2023-09-11 17:42:55 [INFO] - Routing Moudle count : 71
+2023-09-11 17:42:56 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:42:56 [INFO] - Express server listening on port 3001
+2023-09-11 17:42:57 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:43:05 [INFO] - Argos Platform : win32
+2023-09-11 17:43:05 [INFO] - config.server_port : 3001
+2023-09-11 17:43:05 [INFO] - Routing Moudle count : 71
+2023-09-11 17:43:05 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:43:05 [INFO] - Express server listening on port 3001
+2023-09-11 17:43:13 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:43:46 [INFO] - Argos Platform : win32
+2023-09-11 17:43:46 [INFO] - config.server_port : 3001
+2023-09-11 17:43:46 [INFO] - Routing Moudle count : 71
+2023-09-11 17:43:46 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:43:46 [INFO] - Express server listening on port 3001
+2023-09-11 17:43:51 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:44:42 [INFO] - Argos Platform : win32
+2023-09-11 17:44:42 [INFO] - config.server_port : 3001
+2023-09-11 17:44:42 [INFO] - Routing Moudle count : 71
+2023-09-11 17:44:42 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:44:42 [INFO] - Express server listening on port 3001
+2023-09-11 17:47:31 [INFO] - Argos Platform : win32
+2023-09-11 17:47:31 [INFO] - config.server_port : 3001
+2023-09-11 17:47:31 [INFO] - Routing Moudle count : 71
+2023-09-11 17:47:31 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:47:31 [INFO] - Express server listening on port 3001
+2023-09-11 17:50:00 [INFO] - Argos Platform : win32
+2023-09-11 17:50:00 [INFO] - config.server_port : 3001
+2023-09-11 17:50:00 [INFO] - Routing Moudle count : 71
+2023-09-11 17:50:00 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:50:00 [INFO] - Express server listening on port 3001
+2023-09-11 17:50:46 [INFO] - Argos Platform : win32
+2023-09-11 17:50:46 [INFO] - config.server_port : 3001
+2023-09-11 17:50:46 [INFO] - Routing Moudle count : 71
+2023-09-11 17:50:46 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:50:46 [INFO] - Express server listening on port 3001
+2023-09-11 17:51:11 [INFO] - Argos Platform : win32
+2023-09-11 17:51:11 [INFO] - config.server_port : 3001
+2023-09-11 17:51:11 [INFO] - Routing Moudle count : 71
+2023-09-11 17:51:12 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:51:12 [INFO] - Express server listening on port 3001
+2023-09-11 17:51:43 [INFO] - Argos Platform : win32
+2023-09-11 17:51:43 [INFO] - config.server_port : 3001
+2023-09-11 17:51:43 [INFO] - Routing Moudle count : 71
+2023-09-11 17:51:44 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:51:44 [INFO] - Express server listening on port 3001
+2023-09-11 17:52:52 [INFO] - Argos Platform : win32
+2023-09-11 17:52:52 [INFO] - config.server_port : 3001
+2023-09-11 17:52:52 [INFO] - Routing Moudle count : 71
+2023-09-11 17:52:52 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:52:52 [INFO] - Express server listening on port 3001
+2023-09-11 17:54:24 [INFO] - Argos Platform : win32
+2023-09-11 17:54:24 [INFO] - config.server_port : 3001
+2023-09-11 17:54:24 [INFO] - Routing Moudle count : 71
+2023-09-11 17:54:24 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:54:24 [INFO] - Express server listening on port 3001
+2023-09-11 17:54:56 [INFO] - Argos Platform : win32
+2023-09-11 17:54:56 [INFO] - config.server_port : 3001
+2023-09-11 17:54:56 [INFO] - Routing Moudle count : 71
+2023-09-11 17:54:56 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:54:56 [INFO] - Express server listening on port 3001
+2023-09-11 17:54:57 [ERROR] - error: 연산자 없음: character varying = integer
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 17:54:57 [ERROR] - update failed - error: 연산자 없음: character varying = integer
+2023-09-11 17:54:58 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:55:08 [INFO] - Argos Platform : win32
+2023-09-11 17:55:08 [INFO] - config.server_port : 3001
+2023-09-11 17:55:08 [INFO] - Routing Moudle count : 71
+2023-09-11 17:55:08 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:55:08 [INFO] - Express server listening on port 3001
+2023-09-11 17:55:16 [ERROR] - error: 연산자 없음: character varying = integer
+    at Parser.parseErrorMessage (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:287:98)
+    at Parser.handlePacket (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:126:29)
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:39:38)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+    at addChunk (node:internal/streams/readable:315:12)
+    at readableAddChunk (node:internal/streams/readable:289:9)
+    at Socket.Readable.push (node:internal/streams/readable:228:10)
+    at TCP.onStreamRead (node:internal/stream_base_commons:190:23)
+2023-09-11 17:55:16 [ERROR] - update failed - error: 연산자 없음: character varying = integer
+2023-09-11 17:55:17 [ERROR] - Unhandled Rejection at:
+2023-09-11 17:56:28 [INFO] - Argos Platform : win32
+2023-09-11 17:56:28 [INFO] - config.server_port : 3001
+2023-09-11 17:56:28 [INFO] - Routing Moudle count : 71
+2023-09-11 17:56:28 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:56:28 [INFO] - Express server listening on port 3001
+2023-09-11 17:56:48 [INFO] - Argos Platform : win32
+2023-09-11 17:56:48 [INFO] - config.server_port : 3001
+2023-09-11 17:56:48 [INFO] - Routing Moudle count : 71
+2023-09-11 17:56:48 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:56:48 [INFO] - Express server listening on port 3001
+2023-09-11 17:57:04 [INFO] - Argos Platform : win32
+2023-09-11 17:57:04 [INFO] - config.server_port : 3001
+2023-09-11 17:57:04 [INFO] - Routing Moudle count : 71
+2023-09-11 17:57:05 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:57:05 [INFO] - Express server listening on port 3001
+2023-09-11 17:59:50 [INFO] - Argos Platform : win32
+2023-09-11 17:59:50 [INFO] - config.server_port : 3001
+2023-09-11 17:59:50 [INFO] - Routing Moudle count : 71
+2023-09-11 17:59:50 [INFO] - Express SSL server listening on port 443
+2023-09-11 17:59:50 [INFO] - Express server listening on port 3001
+2023-09-11 18:00:24 [INFO] - Argos Platform : win32
+2023-09-11 18:00:24 [INFO] - config.server_port : 3001
+2023-09-11 18:00:24 [INFO] - Routing Moudle count : 71
+2023-09-11 18:00:24 [INFO] - Express SSL server listening on port 443
+2023-09-11 18:00:24 [INFO] - Express server listening on port 3001

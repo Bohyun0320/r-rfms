@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+    <link rel="stylesheet" href="/public/bower_components/tui-grid/dist/tui-grid.min.css">
+    <link rel="stylesheet" href="/public/bower_components/tui-pagination/dist/tui-pagination.css">
+    <link rel="stylesheet" href="/public/css/eqip_list.css">
+    
+    <title>객체 데이터 조회</title>
+    <meta name="description" content="객체 데이터 정보를 조회 합니다."/>
+    <meta property="og:title" content="객체 데이터 조회">
+    <meta property="og:description" content="Argos 객체 데이터를 조회하고 관리합니다."/>
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="con-scr-title">객체 데이터 조회</div>
+
+            <form  id="filter-form" class="con-scr-title-toolbar con-scr-title-toolbar-vh" action="/api/data/data/search" method="post">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <select class="selectpicker form-control" name="filter_type">
+                    <option value="o.obj_rs_id">객체 아이디</option>
+                    <option value="sign_nm">교통표지명</option>
+                    <option value="prj_nm">프로젝트명</option>
+                    <option value="org_file_nm">파일명</option>
+                    <!-- <option value="trffc_sign_ty_nm">코드구분</option> -->
+                    <!-- <option value="sign_nm">교통표지</option> -->
+                  </select>
+                </div>
+                <input type="text" class="form-control" aria-label="..." name="filter_value" id="searchValue" onkeydown="javascript: if (event.keyCode == 13) {searchList();}">
+                <span class="input-group-btn">
+                  <button class="btn btn-default excd-btn-primary" type="button" onclick="javascript:searchList()">검색</button>
+                </span>
+              </div><!-- /input-group -->
+            </form>
+            
+          </div>
+          
+          <div class="safety-grid" id="data-list-obj-grid"></div>
+
+        </div>
+      </div>
+
+      <div class="excd-modal-bg display-none" id="dataViewModal">
+        <%- include('common/data_view_module', {})%>
+      </div>
+
+    </div>
+
+    <% include ./common/default_js %>
+       
+    <script>
+        ;
+    </script>
+        
+    <script src="/public/bower_components/underscore/underscore-min.js"></script>
+    <script src="/public/bower_components/backbone/backbone-min.js"></script>
+    <script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+    <script src="/public/bower_components/tui-pagination/dist/tui-pagination.min.js"></script>
+    <script src="/public/bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>
+    <script src="/public/bower_components/tui-grid/dist/tui-grid.min.js"></script>
+    
+    <script src="/public/js/fr_data_list_obj.js" type="module"></script>
+  </body>
+</html>

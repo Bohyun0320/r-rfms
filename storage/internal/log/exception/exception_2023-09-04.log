@@ -1,0 +1,192 @@
+2023-09-04 15:45:20 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 15:46:43 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 15:47:38 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 15:52:33 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 15:55:25 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 15:57:00 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 16:05:22 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 16:06:58 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 16:07:54 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 16:32:58 [ERROR] - uncaughtException: Route.get() requires a callback function but got a [object Undefined]
+Error: Route.get() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as get] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:38:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 17:22:48 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 17:25:33 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 17:27:21 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 17:33:18 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 17:53:35 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47
+2023-09-04 18:00:39 [ERROR] - uncaughtException: Route.post() requires a callback function but got a [object Undefined]
+Error: Route.post() requires a callback function but got a [object Undefined]
+    at Route.<computed> [as post] (D:\Code\r-rfms\agros_net_server_node_git\node_modules\express\lib\router\route.js:202:15)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:40:40)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\app.js:162:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Function.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:77:12)
+    at node:internal/main/run_main_module:17:47

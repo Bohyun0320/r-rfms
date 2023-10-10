@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+<!--    <link rel="stylesheet" href="/public/css/signup.css">-->
+    
+    <title>차량정보 등록</title>
+    <meta name="description" content="R-RFMS 차량정보 등록"/>
+    <meta property="og:title" content="차량정보 등록">
+    <meta property="og:description" content="R-RFMS 차량정보 등록"/>
+
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="title-text">차량정보 등록</div>
+          </div>
+
+          <%- include('common/vh_info_module', {mode : 'new'} )%>
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+        
+    <script src="/public/js/fr_add_vh.js"></script>
+  </body>
+</html>

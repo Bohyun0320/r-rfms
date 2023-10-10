@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no">
+
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/public/images/logo/favicon_32.png" />
+    <link rel="icon" type="image/png" sizes="196x196" href="/public/images/logo/favicon_128.png" />
+    <link rel="icon" type="image/png" sizes="128x128" href="/public/images/logo/favicon_196.png" />
+
+   <!-- Bootstrap -->
+    <link href="/public/bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+    
+    <!-- font awesome   -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+    <!-- global-stylesheet -->
+    <link rel="stylesheet" href="/public/css/global.css">
+    <link rel="stylesheet" href="/public/css/error_page.css">
+    
+    <title>404 Not Found</title>    
+
+  </head>
+  <body>
+    <!-- contents-->
+    <div class="mp-container err-container">
+      <div class="contents-card-wrapper contents-card-small contents-card-center err-wrapper ">
+        <div class="logo">
+          <img src="/public/images/logo/rfms_gr.svg" alt="" class="symbol">
+        </div>         
+        <div class="err-message">
+          <i class="fas fa-exclamation-triangle"></i> 페이지를 찾을 수 없습니다.
+        </div>
+        <div class="divider"></div>
+        <div class="err-direction">
+          <div class="excd-btn " onclick="javascript:history.back()">이전 페이지</div>
+          <div class="excd-btn excd-btn-primary " onclick="javascript:location.href='/'">홈으로 가기</div>
+        </div>
+      </div>
+      
+    </div>
+    
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script src="/public/libs/jquery/jquery-3.7.0.min.js"></script>
+
+  </body>
+</html>

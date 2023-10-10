@@ -1,0 +1,227 @@
+<style type="text/css">
+  @import url("/public/css/menubar.css");
+</style>
+
+    <!-- Custom-Link -->
+    <link rel="stylesheet" href="/public/bower_components/tui-chart/dist/tui-chart.min.css">
+    <link rel="stylesheet" href="/public/css/statistics.css">
+    <link rel="stylesheet" href="/public/css/stat_dashboard.css">
+    <link rel="stylesheet" href="/public/css/process.css">
+
+    <link rel="stylesheet" href="/public/bower_components/tui-date-picker/dist/tui-date-picker.css">
+
+<div id="menubar" <%=(typeof menuBarShrink !=='undefined' && menuBarShrink=='true' ) ? 'class=shrink' : '' %> >
+  <% if (typeof tool !=="undefined" && tool=='statistics' ) { %>
+    <ul class="menu" id="user-menu">
+      <li>
+        <a href="/stat/dashboard" <%- menu=='dashboard' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-chart-pie"></i></div>
+          <div class="menu-name">대시보드</div>
+        </a>
+      </li>
+      <li>
+        <!-- <a <%- menu=='detail' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-th-list"></i></div>
+          <div class="menu-name">상세보기</div>
+        </a> -->
+      </li>
+    </ul>
+  <% } %>
+
+  <% if (typeof tool !=="undefined" && tool=='account' ) { %>
+    <ul class="menu" id="user-menu">
+      <li>
+        <a href="/account/list" <%- menu=='list' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-users"></i></div>
+          <div class="menu-name">사용자 조회</div>
+        </a>
+      </li>
+      <li>
+        <a href="/account/my" <%- menu=='edit' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-user-edit"></i></div>
+          <div class="menu-name">사용자정보 수정</div>
+        </a>
+      </li>
+    </ul>
+  <% } %>
+
+  <% if (typeof tool !=="undefined" && tool=='equip' ) { %>
+    <ul class="menu">
+      <li>
+        <a href="/equip/list/vehicle" <%- menu=='list_vh' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-clipboard-list"></i></div>
+          <div class="menu-name">차량정보 조회</div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/equip/add/vehicle" <%- menu=='add_vh' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-car-side"></i></div>
+          <div class="menu-name">차량정보 등록</div>
+        </a>
+      </li>
+
+      <li>
+        <a href="/equip/list/sensor" <%- menu=='list_sens' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-th-list"></i></div>
+          <div class="menu-name">센서정보 조회</div>
+        </a>
+      </li>
+      
+      <li>
+        <a href="/equip/add/sensor" <%- menu=='add_sens' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-bullseye"></i></div>
+          <div class="menu-name">센서정보 등록</div>
+        </a>
+      </li>
+    </ul>
+  <% } %>
+
+  <% if (typeof tool !=="undefined" && tool=='data' ) { %>
+    <ul class="menu">
+      <li>
+        <a href="/data/list/prj" <%- menu=='listprj' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-clipboard-list"></i></div>
+          <div class="menu-name">프로젝트 조회</div>
+        </a>
+      </li>
+      <li>
+        <a href="/data/add/prj" <%- menu=='addprj' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-folder-plus"></i></div>
+          <div class="menu-name">프로젝트 생성</div>
+        </a>
+      </li>
+      <li>
+        <a href="/data/list/cam" <%- menu=='listDataCam' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-image"></i></div>
+          <div class="menu-name">영상데이터 조회</div>
+        </a>
+      </li>
+      <li>
+        <a href="/data/list/lidar" <%- menu=='listDataLidar' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-braille"></i></div>
+          <div class="menu-name">점군데이터 조회</div>
+        </a>
+      </li>
+      <li>
+        <a href="/data/list/obj" <%- menu=='listobj' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-vector-square"></i></div>
+          <div class="menu-name">객체 데이터 조회</div>
+        </a>
+      </li>
+    </ul>
+  <% } %>
+
+  <% if (typeof tool !=="undefined" && tool=='map' ) { %>
+    <ul class="menu">
+      <li>
+        <a href="/map/list/map" <%- menu=='list_map' ? 'class="active-menu"' : '' %> >
+          <div class="menu-icon"><i class="fas fa-clipboard-list"></i></div>
+          <div class="menu-name">검색 조건</div>
+        </a>
+      </li>
+      <li>
+        <div style="padding-left: 20px; padding-top: 10px;">
+          <div class="excd-btn-bar">
+            <div class="excd-btn excd-btn-white excd-btn-small"  id="PrjSelectBtn" onclick="PrjBtnActive()">프로젝트 검색</div>
+            <div class="excd-btn excd-btn-white excd-btn-small"  id="RegionSelectBtn" onclick="RegionBtnActive()">지역 검색</div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div style="padding-left: 20px; padding-bottom: 10px; font-weight: bold;">프로젝트</div>
+        <div style="width: 95%; padding-left: 20px;">
+          <select class="selectpicker form-control" name="prj_list" id="prj_list" multiple>
+            <% for (var i=0; i<prjList.length; i++){%>
+              <option value="<%= prjList[i].prj_id%>"%>
+                <%= i==0?"selected=selected":""%> ><%= prjList[i].prj_nm%>
+              </option>
+            <%}%>
+          </select>
+        </div>
+      </li>
+      <li>
+        <div style="padding-left: 20px; padding-top: 10px; padding-bottom: 10px; font-weight: bold;">지역</div>
+        <div style="display: flex;">
+          <div style="width: 140px; padding-left: 20px;">
+          <select class="selectpicker form-control" id="sido_list" name="sido_list">
+            <% for (var i=0; i<sidoList.length; i++){%>
+              <option value="<%= sidoList[i].ctprvn_cd%>"%>
+                <%= i==0?"selected=selected":""%> ><%= sidoList[i].ctp_kor_nm%>
+              </option>
+            <%}%>
+          </select>
+        </div>
+        <div style="width: 130px; padding-left: 10px;">
+          <select class="selectpicker form-control" name="sig_list" id="sig_list">
+          </select>
+        </div>
+      </li>
+      <li>
+        <div style="padding-left: 20px; padding-top: 10px; padding-bottom: 10px; font-weight: bold;">객체</div>
+        <div style="padding-left: 20px; padding-bottom: 10px; font-size: 13px;">
+          <% for (var i = 0; i<trffcTyList.length; i++){%>
+            <details>
+              <summary style="padding: 3px;">
+                <span style="padding-right: 10px;"><%= trffcTyList[i].trffc_sign_ty_nm%></span>
+                <input type="checkbox" id="<%= trffcTyList[i].trffc_sign_ty_nm%>"  class="signTy" onclick="typeClick('<%= trffcTyList[i].trffc_sign_ty_nm%>');"/>
+              </summary>
+              <% for (var j = 0 ; j<trffcList.length; j++){%>
+                <% if(trffcTyList[i].trffc_sign_ty_id == trffcList[j].sign_ty_id){%>
+                  <div style="display: inline-block; padding: 3px; padding-top: 5px;">
+                    <input type="checkbox" id="<%= trffcList[j].sign_nm%>" value="<%= trffcList[j].sign_id%>" class="sign" name="<%= trffcTyList[i].trffc_sign_ty_nm%>" onclick="signClick('<%= trffcTyList[i].trffc_sign_ty_nm%>')"/><label for="<%= trffcList[j].sign_nm%>" style="padding-left: 5px; font-weight: normal;"><%= trffcList[j].sign_nm%></label>
+                  </div>
+                <%}%>
+              <%}%>
+            </details>
+          <%}%>
+        </div>
+      </li>
+      <li>
+        <div style="padding-left: 20px; padding-top: 10px; padding-bottom: 10px; font-weight: bold;">기간</div>
+        <div style="padding-left: 15px;">
+          <div class="tui-datepicker-input tui-datetime-input tui-has-focus" style="width: 110px;">
+            <input type="text" id="start-date" aria-label="Date-Time" name="start_date">
+            <span class="tui-ico-date"></span>
+            <div class="excd-date-picker-container" id="stat-start-date-picker-container" style="margin-top: -1px;"></div>
+          </div>
+          ~
+          <div class="tui-datepicker-input tui-datetime-input tui-has-focus" style="width: 110px;">
+            <input type="text" id="end-date" aria-label="Date-Time" name="end_date">
+            <span class="tui-ico-date"></span>
+            <div class="excd-date-picker-container" id="stat-end-date-picker-container" style="margin-top: -1px;"></div>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div style="padding-left: 20px; padding-top: 25px; padding-bottom: 10px; font-weight: bold;">갱신여부</div>
+        <div style="padding-left: 20px; padding-bottom: 10px; font-size: 13px;">
+          <span style="padding-right: 10px;">갱신 객체 선택</span>
+          <input type="checkbox" id="updtYn"/>  
+        </div>      
+      </li>
+      <li>
+        <div class="excd-btn-bar">
+          <div class="excd-btn excd-btn-white excd-btn-small" id="searchBtn">조회</div>
+        </div>
+      </li>
+    </ul>
+  <% } %>
+
+  
+
+  <div class="spacer-vertical"></div>
+
+  <div class="divider-horizon"></div>
+  <div class="menu-footer" >
+    <i class="fas fa-angle-double-right"></i><a href="/doc/rest-api"> API Refference</a>
+  </div>
+</div>
+<div class="menubar-sapcer"></div>
+
+<script src="/public/bower_components/underscore/underscore-min.js"></script>
+<script src="/public/bower_components/backbone/backbone-min.js"></script>
+<script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+<script src="/public/bower_components/raphael/raphael.min.js"></script>
+<script src="/public/bower_components/tui-chart/dist/tui-chart-all.min.js"></script>
+<script src="/public/bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>

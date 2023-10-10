@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+<!--    <link rel="stylesheet" href="/public/css/signup.css">-->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.5.0/styles/default.min.css">
+    <link rel="stylesheet" href="/public/css/github-markdown.css">
+    <link rel="stylesheet" href="/public/css/doc_markdown.css">
+    
+    <title>Document</title>
+    <meta name="description" content="Document"/>
+    <meta property="og:title" content="Document">
+    <meta property="og:description" content="Document"/>
+
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="title-text">
+              <%= mdTitle%>
+            </div>
+          </div>
+
+          <div class="contents-doc markdown-body">
+            <%- mdContent %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+        
+  </body>
+</html>

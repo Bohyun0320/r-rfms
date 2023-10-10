@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <% include ./common/head %>
+    
+    <!-- Custom-Link -->
+    <link rel="stylesheet" href="/public/bower_components/tui-chart/dist/tui-chart.min.css">
+    <link rel="stylesheet" href="/public/css/statistics.css">
+    <link rel="stylesheet" href="/public/css/stat_dashboard.css">
+    <link rel="stylesheet" href="/public/css/process.css">
+
+    <link rel="stylesheet" href="/public/bower_components/tui-date-picker/dist/tui-date-picker.css">
+    
+    
+    <title>대시보드</title>
+    <meta name="description" content="대시보드"/>
+    <meta property="og:title" content="대시보드">
+    <meta property="og:description" content="R-RFMS 대시보드"/>
+  </head>
+  <body>
+    <div class="main-container">  
+      <%- include('common/header', {user: user}) %>
+      
+      <div class="app-container">
+    
+        <%- include('common/menubar', {menuBarShrink : menuBarShrink})%>
+
+        <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+          <div class="contents-title">
+            <div class="con-scr-title">대시보드</div>
+            <div class="spacer-horizon"></div>
+            <!-- <div class="excd-btn excd-btn-small excd-btn-white excd-btn-title" onclick="javascript:location.href='/data/add/prj'">
+              <i class="fas fa-plus-square"></i> 프로젝트 생성
+            </div> -->
+
+            <!-- <form  id="filter-form" class="con-scr-title-toolbar con-scr-title-toolbar-vh" action="/api/data/prj/search" method="post">
+              <div class="input-group">
+                <div class="input-group-btn">
+                  <select class="selectpicker form-control" name="filter_type">
+                    <option value="vh_id">차량 ID</option>
+                    <option value="prj_nm">프로젝트명</option>
+                    <option value="vh_nm">차량명</option>
+                    <option value="sens_nm">센서명</option>
+                    <option value="flnm">관리자</option>
+                  </select>
+                </div>
+                <input type="text" class="form-control" aria-label="..." name="filter_value" id="searchValue" onkeydown="javascript: if (event.keyCode == 13) {searchList();}">
+                <span class="input-group-btn">
+                  <button class="btn btn-default excd-btn-primary" type="button" onclick="javascript:searchList()">검색</button>
+                </span>
+              </div>
+            </form> -->
+
+          </div>
+          
+          <div class="contents-dashboard">
+            <div class="contents-row contents-stat-wrap">
+              <div class="stat-item">
+                <div class="stat-title">전체 데이터 현황</div>
+                <div class="stat-contents stat-data"> 
+                  <div class="stat-data-item">
+                    <div class="stat-data-item-icon"><i class="fas fa-image"></i></div>
+                    <div class="stat-data-item-type">영상 데이터</div>
+                    <div class="stat-data-item-count" id="dataCamCount">0 건</div>
+                    <div class="excd-btn-bar">
+                      <div class="excd-btn excd-btn-white excd-btn-small" onclick="location.href='/data/list/cam'">바로가기</div>
+                    </div>
+                  </div>
+                  <div class="stat-data-item">
+                    <div class="stat-data-item-icon"><i class="fas fa-braille"></i></div>
+                      <div class="stat-data-item-type">점군 데이터</div>
+                      <div class="stat-data-item-count" id="dataLidarCount">0 건</div>
+                      <div class="excd-btn-bar">
+                        <div class="excd-btn excd-btn-white excd-btn-small" onclick="location.href='/data/list/lidar'">바로가기</div>
+                      </div>
+                    </div>
+                    <div class="stat-data-item">
+                      <div class="stat-data-item-icon"><i class="fas fa-vector-square"></i></div>
+                      <div class="stat-data-item-type">객체 데이터</div>
+                      <div class="stat-data-item-count" id="dataObjCount">0 건</div>
+                      <div class="excd-btn-bar">
+                        <div class="excd-btn excd-btn-white excd-btn-small" onclick="location.href='/data/list/obj'">바로가기</div>
+                      </div>
+                  </div>
+
+                </div>
+  
+              </div>
+              <div class="stat-item" id="prjStats">
+                <div class="stat-title">프로젝트 현황</div>
+                <div class="stat-contents stat-prj"> 
+                  <div class="stat-info">
+                    <div class="stat-info-item">전체 : </div>
+                    <div class="stat-info-item" id="prjTotalCount">0 개</div>
+                  </div>
+                  <div class="process process-has-info">
+                    <a href="#" class="process-item">데이터획득중
+                      <div class="process-info" id="prjAcq">0 건</div>  
+                    </a>
+                    <a href="#" class="process-item active">획득 완료
+                      <div class="process-info" id="prjAcqCmpt">0 건</div>  
+                    </a>
+                    <a href="#" class="process-item">데이터 처리중
+                      <div class="process-info" id="prjPrcs">0 건</div>  
+                    </a>
+                    <a href="#" class="process-item active">처리완료
+                      <div class="process-info" id="prjPrcsCmpt">0 건</div>  
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stat-item" id="dataByPeriod">
+                <div class="contents-row stat-filter">
+                  <div class="stat-title">데이터 취득 현황</div>
+                  <div class="spacer-horizon"></div>
+                  <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                    <input type="text" id="start-date" aria-label="Date-Time" name="start_date">
+                    <span class="tui-ico-date"></span>
+                    <div class="excd-date-picker-container" id="stat-start-date-picker-container" style="margin-top: -1px;"></div>
+                  </div>
+                  ~
+                  <div class="tui-datepicker-input tui-datetime-input tui-has-focus">
+                    <input type="text" id="end-date" aria-label="Date-Time" name="end_date">
+                    <span class="tui-ico-date"></span>
+                    <div class="excd-date-picker-container" id="stat-end-date-picker-container" style="margin-top: -1px;"></div>
+                  </div>
+                  단위
+                  <select class="selectpicker form-control" name="date-step">
+                    <option value="year">년</option>
+                    <option value="month" selected="true">월</option>
+                    <option value="day">일</option>
+                  </select>
+                  <div class="excd-btn excd-btn-color-primary excd-btn-small" onclick="reqDataPeriod()">조회</div>
+
+                </div>
+                <!-- <div class="stat-chart" id="chart3"></div> -->
+                <div class="stat-chart" id="chartDataPeriod"></div>
+              </div>
+
+              <div class="stat-item" id="statEquip">
+                <div class="stat-title">장비 현황</div>
+                <div class="stat-contents stat-equip"> 
+                  <div class="stat-equip-item">
+                    <div class="stat-equip-icon"><i class="fas fa-car-side"></i></div>
+                    <div class="stat-equip-title">차량</div>
+                    <div class="contents-row">
+                      <div class="stat-equip-count" id="equipCarCnt">0</div>
+                      <div class="stat-equip-unit">대</div>
+                    </div>
+                    <div class="excd-btn excd-btn-small" onclick="location.href='/equip/list/vehicle'">바로가기</div>
+                  </div>
+
+                  <div class="stat-equip-item">
+                    <div class="stat-equip-icon"><i class="fas fa-rss-square"></i></div>
+                    <div class="stat-equip-title">센서</div>
+                    <div class="contents-row">
+                      <div class="stat-equip-count" id="equipSensCnt">0</div>
+                      <div class="stat-equip-unit">세트</div>
+                    </div>
+                    <div class="excd-btn excd-btn-small" onclick="location.href='/equip/list/sensor'">바로가기</div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div class="stat-item" id="chartObjData">
+                <div class="stat-title">객체데이터 취득 현황</div>
+                <div class="stat-chart" id="chartObj"></div>
+              </div>
+
+              <!-- <div class="stat-item">
+                <div class="stat-title">Chart4 현황</div>
+                <div class="stat-chart" id="chart5"></div>
+              </div> -->
+
+            </div>
+
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <% include ./common/default_js %>
+       
+    <script>
+        ;
+    </script>
+        
+      <script src="/public/bower_components/underscore/underscore-min.js"></script>
+      <script src="/public/bower_components/backbone/backbone-min.js"></script>
+      <script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+      <script src="/public/bower_components/raphael/raphael.min.js"></script>
+      <script src="/public/bower_components/tui-chart/dist/tui-chart-all.min.js"></script>
+      <script src="/public/bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>
+
+    <script src="/public/js/fr_stat_dashboard.js"></script>
+  </body>
+</html>

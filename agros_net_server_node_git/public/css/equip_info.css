@@ -1,0 +1,87 @@
+@import url("./font.css");
+.contents-photo {
+  padding: 20px 0 10px 20px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents-photo .profile-img {
+  width: 240px;
+  height: 240px;
+  margin: 20px 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3%;
+}
+
+.contents-photo .profile-img.img-empty {
+  background-image: url("/public/images/file-image-regular.svg");
+  background-size: 30%;
+  background-color: #eeeeee;
+}
+
+.contents-photo .excd-btn {
+  width: 240px;
+}
+
+.user-info-basic {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.contents-photo {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.contents-photo .cali-contents {
+  width: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+}
+
+.contents-photo .cali-contents textarea {
+  margin-top: 6px;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+.user-info-spacer {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.user-info-submit {
+  margin-top: 20px;
+}
+
+#sens-spec {
+  padding: 0 10px;
+}
+
+#sens-spec .card-contents-sub {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 6px;
+}
+
+#sens-spec .card-contents-sub:nth-child(n+2) {
+  margin-left: 6px;
+}
+
+.iofile-btn-bar {
+  margin-left: 10px;
+  padding: 0;
+}

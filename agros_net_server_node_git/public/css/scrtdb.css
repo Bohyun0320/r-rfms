@@ -1,0 +1,66 @@
+.title-toolbar {
+  display: flex;
+  flex-direction: row;
+}
+
+/*
+.title-tool:nth-child(n+2) {
+  margin-left: 10px;
+}
+*/
+
+.title-tool {
+  display: flex;
+  padding: 4px 12px;
+  margin-right :10px;
+  align-items: center;
+}
+
+.title-tool:hover {
+  background-color: #eeeeee;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+
+.title-toolbar i {
+  margin-right: 10px;
+}
+
+#scrtdb-input-file {
+  display: none;
+}
+
+#scrtdb-file-form .safety-input-group {
+  padding: 10px 0;
+}
+
+#scrtdb-file-form .input-name {
+  width: 100px;
+}
+
+.card-contents {
+  padding: 20px;
+}
+
+.scrtdb-btnbar {
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.scrtdb-btnbar .safety-btn{
+  margin: 0 10px;
+}
+
+.contents-card-wrapper .divider-horizon {
+  width: 95%;
+}
+
+.db-info {
+  margin-left: 20px;
+  font-size: 14px;
+  color : #aaaaaa;
+  flex-grow: 1;
+}

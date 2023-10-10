@@ -1,0 +1,87 @@
+@import url("./font.css");
+#menubar {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 270px;
+  height: 100%;
+  /*  height: 100vh;*/
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  background-color: #3cbcad;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  font-size: 14px;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#menubar ul.menu {
+  list-style: none;
+  width: 100%;
+  padding: 0 10px 0 0;
+  margin-top: 14px;
+}
+
+#menubar ul.menu li a {
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 14px;
+  width: 100%;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#menubar ul.menu li a.active-menu {
+  font-weight: 500;
+  background-color: #c2e0dd;
+  color: #2c2c2c;
+  border-radius: 0 16px 16px 0;
+}
+
+#menubar ul.menu li a:hover {
+  background-color: white;
+  color: #5b5b5b;
+  border-radius: 0 16px 16px 0;
+}
+
+#menubar ul.menu li .menu-icon {
+  width: 30px;
+  text-align: center;
+}
+
+#menubar .menu-footer {
+  padding: 10px 20px;
+}
+
+#menubar .menu-footer i {
+  margin-right: 5px;
+}
+
+#menubar .menu-footer, #menubar .divider-horizon {
+  display: none;
+}
+
+.menubar-sapcer {
+  width: 37px;
+  background-color: #c2e0dd;
+  border: 0;
+}

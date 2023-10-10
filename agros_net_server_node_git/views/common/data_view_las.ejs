@@ -1,0 +1,56 @@
+<div class="contents-row contents-data-container" id="<%=viewId%>">
+
+  <div class="contents-data-img">
+    <img class="lidar-img" src="/public/images/template/pointCloud.png" alt="" id="dataImg">
+    <div class="excd-map">
+      <%- include('./map_module', {}) %>
+    </div>
+    <div class="img-nav" id="imgNavPrev"><i class="fas fa-chevron-left"></i></div>
+    <div class="img-nav" id="imgNavNext"><i class="fas fa-chevron-right"></i></div>
+  </div>
+
+  <div class="contents-data-meta contents-column">
+    <div class="contents-data-meta contents-column">
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 ID</div>
+        <input type="text" class="form-control" name="dataLasId" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">프로젝트 ID</div>
+        <input type="text" class="form-control" name="dataPrjId" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">프로젝트명</div>
+        <input type="text" class="form-control" name="dataPrjNm" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 등록 유형</div>
+        <input type="text" class="form-control" name="dataRegTypeNm" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">파일명</div>
+        <input type="text" class="form-control" name="dataFileNm" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 등록 일시</div>
+        <input type="text" class="form-control" name="dataRegEndDt" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 처리 일시</div>
+        <input type="text" class="form-control" name="dataPrcsEndDt" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">위도</div>
+        <input type="text" class="form-control" name="dataLat" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">경도</div>
+        <input type="text" class="form-control" name="dataLng" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 취득 영역</div>
+        <textarea class="form-control" name="dataGetArea" id="" rows="10" readonly="true"></textarea>
+      </div>
+    </div>
+  </div>
+</div>

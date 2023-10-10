@@ -1,0 +1,159 @@
+# @hostname = dtgeo.iptime.org
+@hostname = localhost
+@port = 3001
+@host = {{hostname}}:{{port}}
+
+@sslHost = {{hostname}}
+
+
+### 1.Auth Token 가져오기 - local
+# POST https://{{sslHost}}/api/auth/token
+POST http://{{host}}/api/auth/token
+Content-Type: application/x-www-form-urlencoded
+
+id=admin@test.com
+&password=rudgns18!
+
+### 2. get Equip List
+GET http://{{host}}/api/equip/list
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJfdHlfaWQiOjMsInN0dHVzX3R5X2lkIjoxLCJpYXQiOjE2NDg1MzIzNjAsImV4cCI6MTY2MjkzMjM2MH0.UWfrgGBTihX0YJzq4ctInamOQv-BDK-6ihH_w3lsVP7XcFitMIcqfDSTQw7AjT7CkPTycfjE7N83S7-wVrWT-A}
+content-type: application/json; charset=UTF-8
+
+
+### 3. 프로젝트 생성
+POST http://{{host}}/api/project/add
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VyX3R5X2lkIjoxMCwic3R0dXNfdHlfaWQiOjEsImlhdCI6MTY1MjY5NTgwMSwiZXhwIjoxNjY3MDk1ODAxfQ.hauz3v17oKYPFcArZ2FwEtvNY7HOG5y6HoouStPFB4zdpWnCtrHaMYxj9yUa-gwTgV9KTI08Isfk5Rr77UeD2Q}
+Content-Type: application/x-www-form-urlencoded
+
+name=REST API 프로젝트031
+&prjno=test-api-031
+&vhid=4
+&camsensid=3
+&lidarsensid=1
+&memo=가나다라마바사
+&pnucd=11010
+&weathercd=2
+
+### 4. 프로젝트 데이터 스캔
+GET http://{{host}}/api/project/scan/210
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJfdHlfaWQiOjMsInN0dHVzX3R5X2lkIjoxLCJpYXQiOjE2NDg1MzIzNjAsImV4cCI6MTY2MjkzMjM2MH0.UWfrgGBTihX0YJzq4ctInamOQv-BDK-6ihH_w3lsVP7XcFitMIcqfDSTQw7AjT7CkPTycfjE7N83S7-wVrWT-A}
+content-type: application/json; charset=UTF-8
+
+### 5. 프로젝트 데이터 읽어오기
+GET http://{{host}}/api/project/data/87
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJfdHlfaWQiOjMsInN0dHVzX3R5X2lkIjoxLCJpYXQiOjE2NDg1MzIzNjAsImV4cCI6MTY2MjkzMjM2MH0.UWfrgGBTihX0YJzq4ctInamOQv-BDK-6ihH_w3lsVP7XcFitMIcqfDSTQw7AjT7CkPTycfjE7N83S7-wVrWT-A}
+content-type: application/json; charset=UTF-8
+
+### 6. 데이터 처리
+POST http://{{host}}/api/data/process
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJfdHlfaWQiOjMsInN0dHVzX3R5X2lkIjoxLCJpYXQiOjE2NDg1MzIzNjAsImV4cCI6MTY2MjkzMjM2MH0.UWfrgGBTihX0YJzq4ctInamOQv-BDK-6ihH_w3lsVP7XcFitMIcqfDSTQw7AjT7CkPTycfjE7N83S7-wVrWT-A}
+Content-Type: application/x-www-form-urlencoded
+
+photo_id=340
+&prc_ty=start
+&prj_update=true
+
+### 7. 메타데이터 싱크
+POST http://{{host}}/api/project/sync
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJfdHlfaWQiOjMsInN0dHVzX3R5X2lkIjoxLCJpYXQiOjE2NDg1MzIzNjAsImV4cCI6MTY2MjkzMjM2MH0.UWfrgGBTihX0YJzq4ctInamOQv-BDK-6ihH_w3lsVP7XcFitMIcqfDSTQw7AjT7CkPTycfjE7N83S7-wVrWT-A}
+Content-Type: application/x-www-form-urlencoded
+
+prjid=123
+&startPrcs=false
+
+### 8. 데이터 패스 가져오기
+GET http://{{host}}/api/data/path/114
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoidGVzdEB0ZXN0LmNvbSIsInVzZXJfdHlfaWQiOjMsInN0dHVzX3R5X2lkIjoxLCJpYXQiOjE2NDg1MzIzNjAsImV4cCI6MTY2MjkzMjM2MH0.UWfrgGBTihX0YJzq4ctInamOQv-BDK-6ihH_w3lsVP7XcFitMIcqfDSTQw7AjT7CkPTycfjE7N83S7-wVrWT-A}
+Content-Type: application/x-www-form-urlencoded
+
+
+###9. 메타데이터 전달
+POST http://{{host}}/api/data/meta
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VyX3R5X2lkIjoxMCwic3R0dXNfdHlfaWQiOjEsImlhdCI6MTY3NTI0MDQ4MywiZXhwIjoxNjg5NjQwNDgzfQ.cuGTKsDBjRGrh2Lq8GrqT6vRvM1BFr-huVs3iU19JSKPAz9fDswBEvB5FNMT04k6LVR6VIMJ3bJcuUCpKPfvLA}
+Content-Type: application/x-www-form-urlencoded
+
+prjId=132
+&fileNm=202302161614_im[000000].jpg
+&time=20230216161442.574125948
+&lat=0.000000000
+&lon=0.000000000
+&x=0.000000000
+&y=0.000000000
+&z=0.000000000
+&roll=0.000000000
+&pitch=0.000000000
+&yaw=0.000000000
+
+
+###9. 데이터 획득 완료 알림
+
+POST http://{{host}}/api/data/finish
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VyX3R5X2lkIjoxMCwic3R0dXNfdHlfaWQiOjEsImlhdCI6MTY3NTI0MDQ4MywiZXhwIjoxNjg5NjQwNDgzfQ.cuGTKsDBjRGrh2Lq8GrqT6vRvM1BFr-huVs3iU19JSKPAz9fDswBEvB5FNMT04k6LVR6VIMJ3bJcuUCpKPfvLA}
+Content-Type: application/x-www-form-urlencoded
+
+prjId=211
+# &use=n
+
+
+###10. 클론 프로젝트 생성
+POST http://{{host}}/api/project/clone
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VyX3R5X2lkIjoxMCwic3R0dXNfdHlfaWQiOjEsImlhdCI6MTY3NTI0MDQ4MywiZXhwIjoxNjg5NjQwNDgzfQ.cuGTKsDBjRGrh2Lq8GrqT6vRvM1BFr-huVs3iU19JSKPAz9fDswBEvB5FNMT04k6LVR6VIMJ3bJcuUCpKPfvLA}
+Content-Type: application/x-www-form-urlencoded
+
+srcPrjId=168
+# &prjNm=cloneName-001
+# &prjNo=cloneNo-001
+
+
+###11. 데이터 처리 완료 알림
+POST http://{{host}}/api/data/prc-finish
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VyX3R5X2lkIjoxMCwic3R0dXNfdHlfaWQiOjEsImlhdCI6MTY4MjA2OTkwOSwiZXhwIjoxNjk2NDY5OTA5fQ.Qfug_HhyxImUnFiZi2mlWlcNVAxHeXrpAbVy1LgifDRmZOA0nPrJmg1waYMRnwv_19dl4Vs4jU0gPbMw7D66_g}
+Content-Type: application/x-www-form-urlencoded
+
+prjId=190
+# &prjNm=cloneName-001
+# &prjNo=cloneNo-001
+
+
+
+###[internal] 디버그 : PNU 업데이트 
+POST http://{{host}}/api/debug/update-pnu
+Authorization: Bearer {eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiYWRtaW5AdGVzdC5jb20iLCJ1c2VyX3R5X2lkIjoxMCwic3R0dXNfdHlfaWQiOjEsImlhdCI6MTY3NTI0MDQ4MywiZXhwIjoxNjg5NjQwNDgzfQ.cuGTKsDBjRGrh2Lq8GrqT6vRvM1BFr-huVs3iU19JSKPAz9fDswBEvB5FNMT04k6LVR6VIMJ3bJcuUCpKPfvLA}
+Content-Type: application/x-www-form-urlencoded
+
+###[internal] 점군데이터 매칭 이미지 데이터 가져오기
+GET http://{{host}}/api/data/lidar/img
+    ?prjId=194
+    &fileNm=lidar[000010].pcd
+Content-Type: application/x-www-form-urlencoded
+
+###[internal] 전체 데이터 가져오기
+GET http://{{host}}/api/stat/data-total
+
+content-type: application/json; charset=UTF-8
+
+###[internal] 진행상태별 프로젝트 개수 가져오기
+GET http://{{host}}/api/stat/prj-status
+
+content-type: application/json; charset=UTF-8
+
+###[internal] 기간별 데이터 획득현황
+GET http://{{host}}/api/stat/data-period
+    ?startDt=2022-04-01
+    &endDt=2023-04-01
+    &setp=month
+
+content-type: application/json; charset=UTF-8
+
+###[internal] 장비현황 가져오기
+GET http://{{host}}/api/stat/equip
+content-type: application/json; charset=UTF-8
+
+###[internal] 객체데이터 현황 가져오기
+GET http://{{host}}/api/stat/object
+content-type: application/json; charset=UTF-8
+
+
+## ------------------
+###테스트
+GET http://{{host}}/

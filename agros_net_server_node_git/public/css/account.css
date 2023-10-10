@@ -1,0 +1,52 @@
+@import url("./font.css");
+#authCard {
+  width: 600px;
+  height: 300px;
+}
+
+#authCard .card-title {
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+#authCard .card-title .card-title-text {
+  font-size: 16px;
+  color: white;
+}
+
+#authCard .login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#authCard .login-input {
+  padding: 10px 60px;
+  position: relative;
+}
+
+#authCard .login-input .input-name {
+  width: 120px;
+}
+
+#authCard .login-input#formPw i {
+  position: absolute;
+  left: 82%;
+  top: 20px;
+  color: #5b5b5b;
+}
+
+#authCard .login-input#formPw i:hover {
+  cursor: pointer;
+}
+
+#authCard .excd-btn-bar {
+  margin: 20px;
+}

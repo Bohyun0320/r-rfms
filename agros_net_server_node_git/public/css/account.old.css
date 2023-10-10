@@ -1,0 +1,17 @@
+.safety-grid {
+/*  height: 800px;*/
+}
+
+.con-scr-title-toolbar .selectpicker {
+  width: 90px;
+}
+
+.con-scr-title-toolbar .input-group {
+  max-width: 360px;
+}
+
+@media (max-width: 1220){
+}
+
+@media (max-width: 820px){
+}

@@ -1,0 +1,288 @@
+<style type="text/css">
+  @import url("/public/css/prj_info.css");
+  @import url("/public/css/filebox.css");
+  @import url("/public/css/process.css");
+  @import url("/public/bower_components/tui-pagination/dist/tui-pagination.css");
+</style>
+
+<form id="prj-form" action="/api/data/add/prj" method="post">
+  <div class="card-contents">
+    <!-- <div class="contents-group-title">일반 정보</div> -->
+    <div class="contents-row">
+      <div class="contents-column user-info-basic">
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="fas fa-info"></i>프로젝트 ID</div>
+          <input type="text" class="form-control" placeholder="프로젝트 ID는 자동 생성됩니다." name="prjid" readonly>
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="far fa-credit-card"></i>프로젝트명<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="프로젝트 이름을 입력해 주세요" name="name">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="fas fa-camera"></i>프로젝트 번호<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="프로젝트 번호를 입력해 주세요" name="prjno">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="fas fa-map-marked-alt"></i>지역</div>
+          <select class="selectpicker form-control sub-form" name="sido"></select>
+          <select class="selectpicker form-control sub-form" name="sigungu"></select>
+          <input type="text" class="form-control display-none" name="pnucd">
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="fas fa-cloud-sun-rain"></i>날씨</div>
+          <div class="contents-row input-radio">
+            <% for (var i=0; i<weatherCode.length; i++) { %>
+              <input type="radio" name="weathercd" value=<%= weatherCode[i].weather_cd%>  > 
+              <!-- <i class=<%= weatherCode[i].weather_ico%>></i> -->
+              <%= weatherCode[i].weather_nm %> 
+            <%}%>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="fas fa-car-side"></i>차량 ID</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="vhid">
+              <% for (var i=0; i<vhList.length; i++) { %>
+                <option value="<%= vhList[i].vh_id%>" <%=  vhList[i].cond_cd==1 ? '' : 'disabled'%> >
+                  <%= vhList[i].vh_nm%> (<%= vhList[i].vh_no%>)
+                </option>
+                <%}%>
+            </select>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input display-none" id="sensCamSelect">
+          <div class="input-name input-name-wide"><i class="fas fa-camera"></i> 카메라센서 ID</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="camsensid">
+              <option value="-1">미선택</option>
+              <% for (var i=0; i<sensList.length; i++) { %>
+                <% if (sensList[i].sens_ty==2) {%>
+                  <option value="<%= sensList[i].sens_id%>">
+                    <%= sensList[i].sens_nm%> (<%= sensList[i].sens_no%>)
+                  </option>
+                  <%}}%>
+            </select>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input display-none" id="sensLidarSelect">
+          <div class="input-name input-name-wide"><i class="fas fa-rss"></i> 라이다센서 ID</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="lidarsensid">
+              <option value="-1">미선택</option>
+              <% for (var i=0; i<sensList.length; i++) { %>
+                <% if (sensList[i].sens_ty==1) {%>
+                  <option value="<%= sensList[i].sens_id%>">
+                    <%= sensList[i].sens_nm%> (<%= sensList[i].sens_no%>)
+                  </option>
+                  <%}}%>
+            </select>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input " id="sensSetSelect">
+          <div class="input-name input-name-wide"><i class="fas fa-rss-square"></i> 센서 세트</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="sensSetId">
+              <option value="-1">미선택</option>
+              <% for (var i=0; i<sensList.length; i++) { %>
+                <% if (sensList[i].sens_ty==3) {%>
+                  <option value="<%= sensList[i].sens_id%>" <%=  sensList[i].cond_cd==1 ? '' : 'disabled'%>>
+                    <%= sensList[i].sens_nm%> (<%= sensList[i].sens_no%>)
+                  </option>
+                  <%}}%>
+            </select>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name input-name-wide"><i class="fas fa-user-check"></i>관리자</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="owner">
+              <% for (var i=0; i<userList.length; i++) { %>
+                <option value="<%= userList[i].sv_user_id%>" <%=  userList[i].user_cond_cd==1 ? '' : 'disabled'%>>
+                  <%= userList[i].flnm%> (<%= userList[i].sv_user_id%>)
+                </option>
+                <%}%>
+            </select>
+          </div>
+        </div>
+        <div class="excd-input-group account-input ">
+          <div class="input-name input-name-wide"><i class="fas fa-file-alt"></i>메모</div>
+          <textarea class="form-control contact-textarea" rows="4" placeholder="참고사항을 입력해 주세요" name="memo"></textarea>
+        </div>
+
+        <div class="excd-mandatory-hint"><span class="excd-icon excd-mandatory"/> 필수항목</div>
+
+      </div>
+
+      <div class="contents-column contensts-info-sub">
+        <div class="excd-map display-none"> 
+          <%- include('./map_module', {}) %>
+        </div>
+
+        <div class="contents-group-title ">프로젝트 진행 상황</div>
+        <div class="process process-has-info">
+          <a href="#" class="process-item">데이터 획득중</a>
+          <a href="#" class="process-item">획득 완료</a>
+          <a href="#" class="process-item">데이터 처리
+            <div class="excd-btn excd-btn-small excd-btn-transparent btn-process-start btn-disabled" id="startPrjData" >
+              데이터 처리 시작
+            </div>
+          </a>
+          <a href="#" class="process-item">데이터 검수
+            <div class="excd-btn excd-btn-small excd-btn-transparent btn-process-start btn-disabled" id="startPrjEdit">
+              데이터 검수 시작
+            </div>
+          </a>
+          <a href="#" class="process-item process-item-last">최종 완료</a>
+       </div>
+
+        <div class="divider-horizon"></div>
+
+        <div class="prj-ext-info prj-ext-info-data display-none">
+          <div class="input-name"><i class="fas fa-video"></i>영상 데이터 : </div>
+          <div class="prj-ext-info-value" id="prj-data-count-cam">0 개</div>
+          <div class="spacer-horizon"></div>
+          <div class="excd-btn excd-btn-small excd-btn-transparent btn-prj-data" id="btn_prj_data_cam">영상 데이터 조회</div>
+        </div>
+        <div class="prj-ext-info prj-ext-info-data display-none">
+          <div class="input-name"><i class="fas fa-bullseye"></i>라이다 데이터 : </div>
+          <div class="prj-ext-info-value" id="prj-data-count-lidar">0 개</div>
+          <div class="spacer-horizon"></div>
+          <div class="excd-btn excd-btn-small excd-btn-transparent btn-prj-data" id="btn_prj_data_lidar">라이다 데이터 조회</div>
+        </div>
+        <div class="prj-ext-info prj-ext-info-data display-none">
+          <div class="input-name"><i class="fas fa-table"></i>메타 데이터 : </div>
+          <div class="prj-ext-info-value" id="prj-data-count-meta">0 개</div>
+          <div class="meta-status meta-status-"></div>
+          <div class="spacer-horizon"></div>
+          <div class="excd-btn excd-btn-small btn-prj-data excd-btn-primary" id="btn_meta_sync"><i class="fas fa-sync-alt"></i>데이터 싱크</div>
+        </div>
+
+        <div class="prj-ext-info divider-horizon display-none"></div>
+
+        <div class="prj-ext-info spacer-vertical display-none"></div>
+
+        <div class="prj-ext-info excd-btn-bar display-none">
+          <div class="excd-btn excd-btn-140" id="prj-delete">프로젝트 삭제</div>
+          <div class="excd-btn excd-btn-140 excd-btn-color-third" id="view-map">지도 보기</div>
+        </div>
+        
+      </div>
+
+      <!-- <div class="spacer-vertical user-info-spacer"></div> -->
+
+    </div>
+  </div>
+
+  <div class="excd-btn-bar prj-info-submit info-module-btnbar display-none" id="infoBtnbarNew">
+    <div class="excd-btn" id="cancel">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="submit">확인</div>
+  </div>
+
+  <div class="excd-btn-bar prj-info-submit info-module-btnbar display-none" id="infoBtnbarView">
+    <div class="excd-btn" id="back">이전</div>
+    <div class="excd-btn excd-btn-secondary" id="edit">수정</div>
+  </div>
+
+  <div class="excd-btn-bar prj-info-submit info-module-btnbar display-none" id="infoBtnbarEdit">
+    <div class="excd-btn" id="cancelUpdate">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="update">업데이트</div>
+  </div>
+</form>
+
+<form id="prj-data-form" action="/api/data/upload/prjdata" method="post" class="excd-disabled">
+  <div class="card-contents card-contents-gray ">
+    <div class="contents-group-title">데이터 패키지</div>
+    <div class="contents-group-msg"><i class="fas fa-exclamation-triangle"></i> 프로젝트 생성 후 업로드 가능합니다.</div>
+    <div class="contents-column">
+
+      <div class="excd-input-group excd-input-group-file account-input account-input-large">
+        <div class="input-name"><i class="fas fa-video"></i>영상 데이터</div>
+        <div class="form-control excd-filebox excd-filebox-empty" id="cam-file-box">
+          <!-- <input type="file" name="camfile" id="cam-file" accept="image/*, .zip" class="display-none" multiple>
+          <div class="file-item file-item-zip">
+              <div class="file-item-icon"></div>
+              <div class="file-item-name">filename.zip</div>
+              <div class="file-item-rmbtn"><i class="fas fa-times-circle"></i></div>
+            </div>
+            <div class="file-item file-item-img">fileName.zip</div>
+            <div class="file-item file-item-las">fileName.zip</div>
+            <div class="file-item file-item-meta">fileName.zip</div>
+          </div>
+          <div class="contents-column file-btns">
+            <button class="excd-btn excd-btn-small excd-btn-color-third" type="button" id="btnCamFile"><i class="fas fa-plus"></i> 파일추가</button>
+            <button class="excd-btn excd-btn-small excd-btn-color-gray display-none" type="button" id="btnCamFileRemove"><i class="fas fa-trash"></i> 전체삭제</button>
+          </div> -->
+        </div>
+      </div>
+      <div class="tui-pagination excd-page-filebox" id="pageCam"></div>
+      <div class="divider-horizon"></div>
+
+      <div class="excd-input-group excd-input-group-file account-input account-input-large">
+        <div class="input-name"><i class="fas fa-bullseye"></i>라이다 데이터</div>
+        <div class="form-control excd-filebox excd-filebox-empty" id="lidar-file-box"></div>
+      </div>
+      <div class="tui-pagination excd-page-filebox" id="pageLidar"></div>
+      <div class="divider-horizon"></div>
+      
+      <div class="excd-input-group excd-input-group-file account-input account-input-large">
+        <div class="input-name"><i class="fas fa-table"></i>메타 데이터</div>
+        <div class="form-control excd-filebox excd-filebox-empty" id="meta-file-box"></div>
+      </div>
+      <div class="tui-pagination excd-page-filebox" id="pageMeta"></div>
+      <div class="divider-horizon"></div>
+
+    </div>
+
+    <div class="excd-btn-bar prj-data-submit data-module-btnbar" id="dataBtnbarNew">
+      <div class="excd-btn" id="cancelData">취소</div>
+      <div class="excd-btn excd-btn-color-third" id="uploadData">업로드</div>
+    </div>
+
+  </div>
+</form>
+
+<div class="modal-bg modal-bg-white display-none" id="uploadProgress">
+  <%- include('./progress_circle', {}) %>
+</div>
+
+<script>
+  var pnuCode = {};
+  <% if (typeof pnuCode !== 'undefined' && pnuCode) {%>
+    pnuCode = <%- JSON.stringify(pnuCode) %>;
+  <%}%>
+
+  var userList = {};
+  <% if (typeof userList !== 'undefined' && userList) {%>
+    userList = <%- JSON.stringify(userList) %>;
+  <%}%>
+
+  var sensCode = {};
+  <% if (typeof sensCode !== 'undefined' && sensCode) {%>
+    sensCode = <%- JSON.stringify(sensCode) %>;
+  <%}%>
+
+  var vhList = {};
+  <% if (typeof vhList !== 'undefined' && vhList) {%>
+    vhList = <%- JSON.stringify(vhList) %>;
+  <%}%>
+
+  var sensList = {};
+  <% if (typeof sensList !== 'undefined' && sensList) {%>
+    sensList = <%- JSON.stringify(sensList) %>;
+  <%}%>
+
+
+</script>
+
+<script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+<script src="/public/bower_components/tui-pagination/dist/tui-pagination.min.js"></script>
+
+<script src="/public/js/module/fr_prj_info_module.js" type="module"></script>
+<script src="/public/js/module/fr_pnu_module.js"></script>

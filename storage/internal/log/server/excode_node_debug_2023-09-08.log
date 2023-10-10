@@ -1,0 +1,2669 @@
+2023-09-08 09:06:25 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:25 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-09-08 09:06:25 [INFO] - Argos Platform : win32
+2023-09-08 09:06:25 [INFO] - config.server_port : 3001
+2023-09-08 09:06:25 [DEBUG] - route_loader.init called.
+2023-09-08 09:06:25 [INFO] - Routing Moudle count : 69
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-09-08 09:06:25 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-09-08 09:06:26 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-09-08 09:06:26 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-09-08 09:06:26 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-09-08 09:06:26 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/map/sig -- method : ./api/api_map:postSigBySido
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-09-08 09:06:26 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-09-08 09:06:26 [DEBUG] - config/passport called.
+2023-09-08 09:06:26 [DEBUG] - local passport setted.
+2023-09-08 09:06:26 [DEBUG] - init user_passport
+2023-09-08 09:06:26 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-09-08 09:06:26 [DEBUG] - [func]codeUtil.init()
+2023-09-08 09:06:26 [DEBUG] - [msg] loadUserType...
+2023-09-08 09:06:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:26 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-09-08 09:06:26 [DEBUG] - [msg] loadUserStatus...
+2023-09-08 09:06:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:26 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-09-08 09:06:26 [DEBUG] - [msg] loadPnuCode...
+2023-09-08 09:06:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:26 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-09-08 09:06:26 [DEBUG] - [msg] loadCondCode...
+2023-09-08 09:06:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:26 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-09-08 09:06:26 [DEBUG] - [msg] loadSensCode...
+2023-09-08 09:06:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:26 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-09-08 09:06:26 [DEBUG] - [msg] loadWeatherCode...
+2023-09-08 09:06:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:26 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-09-08 09:06:26 [DEBUG] - updateUtil.checkUpdate
+2023-09-08 09:06:26 [INFO] - Express SSL server listening on port 443
+2023-09-08 09:06:26 [INFO] - Express server listening on port 3001
+2023-09-08 09:06:27 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-09-08T00:06:26.772Z } ]
+2023-09-08 09:06:30 [DEBUG] - GET : /
+2023-09-08 09:06:30 [DEBUG] - GET : /login
+2023-09-08 09:06:30 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:06:30 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:06:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:06:30 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:06:30 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:10:49 [DEBUG] - [func]local_login.LocalStrategy() - id : etoile0320@geostory.co.kr, pw:Fleur0302!@#
+2023-09-08 09:10:49 [DEBUG] - [func]userDB.authUser - id : etoile0320@geostory.co.kr, pw : Fleur0302!@#
+2023-09-08 09:10:49 [DEBUG] - [func]  : userDB.findOne : etoile0320@geostory.co.kr
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - {
+  text: 'SELECT * FROM sv_user_mng WHERE sv_user_id = $1',
+  values: [ 'etoile0320@geostory.co.kr' ]
+}
+2023-09-08 09:10:49 [DEBUG] - encptUtil.encryptPassword - password : Fleur0302!@#
+2023-09-08 09:10:49 [DEBUG] - codeUtil.getUserStatusName - code :1
+2023-09-08 09:10:49 [DEBUG] - user status : [
+  { user_cond_id: 1, user_cond_nm: '사용중' },
+  { user_cond_id: 2, user_cond_nm: '승인대기' },
+  { user_cond_id: 3, user_cond_nm: '사용정지' },
+  { user_cond_id: 4, user_cond_nm: '사용종료' }
+]
+2023-09-08 09:10:49 [DEBUG] - code found : 사용중
+2023-09-08 09:10:49 [INFO] - 계정과 비밀번호가 일치함.
+2023-09-08 09:10:49 [DEBUG] - {
+  sv_user_id: 'etoile0320@geostory.co.kr',
+  divis: 10,
+  flnm: '최보현',
+  brdt: null,
+  telno: '070-5228-1272',
+  ogdp: '(주)지오스토리',
+  join_ymd: 2023-07-05T15:00:00.000Z,
+  pw_no: 'cNJSIWsnyth68rOH+Ri9yGmo0bYhMSx3OOaHoWggDBkHIcHMTYz6TWInYZFZ+fff7hGfZ3S22Lc5fReibJZR5Q==',
+  pw_no_salt: 'DuznV18i/EDdO3ejZZDHeVK8zxGKhqQgPEKcaShZqYan8fk9wmvofozMo+n7R3x0mKyf42nSoU03jwZYnT/bfg==',
+  user_cond_cd: 1,
+  user_img_file_path: '/profile/photo/1688607543433.jpg',
+  login_failr_co: 0,
+  sttus_ty_name: '사용중'
+}
+2023-09-08 09:10:49 [DEBUG] - [func]userDB.resetLoginCount - id : etoile0320@geostory.co.kr
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - {
+  text: 'UPDATE sv_user_mng          SET login_failr_co = 0          WHERE sv_user_id = $1          RETURNING login_failr_co',
+  values: [ 'etoile0320@geostory.co.kr' ]
+}
+2023-09-08 09:10:49 [DEBUG] - serializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - {
+  conectIp: '127.0.0.1',
+  userId: undefined,
+  conectDt: 2023-09-08T00:10:49.589Z
+}
+2023-09-08 09:10:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - GET : /
+2023-09-08 09:10:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - GET : /stat/dashboard
+2023-09-08 09:10:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:10:49 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:10:49 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:10:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - GET : /api/stat/data-total?_=1694131849691
+2023-09-08 09:10:49 [DEBUG] - [func]dataCamDB.getTotalData()
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - {
+  text: 'select count(*)::int\n              from photo_mng',
+  values: []
+}
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - {
+  text: 'select count(*)::int\n              from las_mng',
+  values: []
+}
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - { text: 'select count(*)::int\n              from obj_rs', values: [] }
+2023-09-08 09:10:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:49 [DEBUG] - GET : /api/stat/prj-status?_=1694131849692
+2023-09-08 09:10:49 [DEBUG] - [func] getProjectStauts()
+2023-09-08 09:10:49 [DEBUG] - [func]prjDB.getPrjStatusCount
+2023-09-08 09:10:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:49 [DEBUG] - {
+  text: 'select p.prj_stts_cd, s.prj_stts_nm, count(*)::int\n' +
+    '            from project_mng p\n' +
+    '            join tc_prj_status s on p.prj_stts_cd = s.prj_stts_cd  \n' +
+    '            group by p.prj_stts_cd, s.prj_stts_nm \n' +
+    '            order by p.prj_stts_cd ',
+  values: []
+}
+2023-09-08 09:10:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:50 [DEBUG] - GET : /api/stat/data-period?startDt=2022-09-08&endDt=2023-09-08&setp=month&_=1694131849693
+2023-09-08 09:10:50 [DEBUG] - [func] getDataPeriod()
+2023-09-08 09:10:50 [DEBUG] - [func]dataCamDB.getStatPeriod()
+2023-09-08 09:10:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:50 [DEBUG] - {
+  text: 'select t.tDate, p.count::int\n' +
+    '              from ( \n' +
+    '                select ( \n' +
+    '                    to_char(generate_series($1::date, $2::date, $3::interval)::date, $4)\n' +
+    '                  )::text as tDate \n' +
+    '                ) t \n' +
+    '              left outer join ( \n' +
+    '                  select to_char(data_reg_dt, $4) as data_reg_dt, count(*) as count\n' +
+    '                  from photo_mng dt \n' +
+    '                  where data_reg_dt >=$1 and data_reg_dt <=$5\n' +
+    '                  group by to_char(data_reg_dt, $4)\t\n' +
+    '                ) p \n' +
+    '                on t.tDate = p.data_reg_dt \n' +
+    '              order by t.tDate ',
+  values: [
+    '2022-09-08',
+    '2023-09-08',
+    '1 month',
+    'YYYY년 MM월',
+    '2023-09-08 24:00'
+  ]
+}
+2023-09-08 09:10:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:50 [DEBUG] - GET : /api/stat/equip?_=1694131849694
+2023-09-08 09:10:50 [DEBUG] - [func] getDataEquipStatus()
+2023-09-08 09:10:50 [DEBUG] - [func]vehicleDB.getTotalData()
+2023-09-08 09:10:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:50 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from vh_mng \n' +
+    '              where cond_cd = 1',
+  values: []
+}
+2023-09-08 09:10:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:50 [DEBUG] - GET : /api/stat/object?_=1694131849695
+2023-09-08 09:10:50 [DEBUG] - [func] getObjStatus()
+2023-09-08 09:10:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:50 [DEBUG] - {
+  text: 'select ts.sign_nm, count(*)::int\n' +
+    '            from obj_rs o\n' +
+    '            left join tc_trffc_sign ts on o.cd = ts.sign_id \n' +
+    '            group by ts.sign_nm ',
+  values: []
+}
+2023-09-08 09:10:50 [DEBUG] - [func]sensDB.getTotalCount()
+2023-09-08 09:10:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:50 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from sens_mng \n' +
+    '              where cond_cd = 1\n' +
+    '              and sens_ty = 3',
+  values: []
+}
+2023-09-08 09:10:50 [DEBUG] - [
+  { sign_nm: '야생동물보호', count: 20 },
+  { sign_nm: '4색등(종형)', count: 19 },
+  { sign_nm: '좌측면통행', count: 12 },
+  { sign_nm: '+자형교차로', count: 1 },
+  { sign_nm: '회전형교차로', count: 12 },
+  { sign_nm: '자전거전용차로', count: 126 },
+  { sign_nm: '자전거전용도로', count: 59 },
+  { sign_nm: '유턴금지', count: 37 },
+  { sign_nm: '낙석도로', count: 23 },
+  { sign_nm: '직진 및 우회전', count: 93 },
+  { sign_nm: '위험', count: 50 },
+  { sign_nm: '자전거 및 보행자 통행구분', count: 164 },
+  { sign_nm: '일시정지', count: 39 },
+  { sign_nm: '우측방통행', count: 2 },
+  { sign_nm: 'ㅓ자형교차로', count: 16 },
+  { sign_nm: '좌회전 및 유턴', count: 42 },
+  { sign_nm: '보행자보행금지', count: 14 },
+  { sign_nm: '4색등(횡형)', count: 2624 },
+  { sign_nm: '좌우회전', count: 34 },
+  { sign_nm: '강변도로', count: 47 },
+  { sign_nm: '어린이보호(어린이보호구역안)', count: 143 },
+  { sign_nm: '우측면통행', count: 274 },
+  { sign_nm: '이륜자동차및원동기장치자전거통행금지', count: 2 },
+  { sign_nm: '자전거 및 보행자 겸용도로', count: 129 },
+  { sign_nm: '앞지르기금지', count: 10 },
+  { sign_nm: '터널', count: 20 },
+  { sign_nm: '양측방통행', count: 29 },
+  { sign_nm: '유턴', count: 555 },
+  { sign_nm: '우회전', count: 27 },
+  { sign_nm: '자동차전용도로', count: 3 },
+  { sign_nm: '어린이보호', count: 67 },
+  { sign_nm: '정차·주차금지', count: 170 },
+  { sign_nm: '보행자전용도로', count: 9 },
+  { sign_nm: '신호기', count: 13 },
+  { sign_nm: '노면고르지못함', count: 8 },
+  { sign_nm: '우회로', count: 70 },
+  { sign_nm: '자전거횡단도', count: 346 },
+  { sign_nm: '2방향통행', count: 2 },
+  { sign_nm: '직진', count: 32 },
+  { sign_nm: '최고속도제한', count: 902 },
+  { sign_nm: '일방통행', count: 28 },
+  { sign_nm: '좌회전', count: 42 },
+  { sign_nm: '미끄러운도로', count: 41 },
+  { sign_nm: '양보', count: 65 },
+  { sign_nm: '3색등(종형)', count: 48 },
+  { sign_nm: '횡풍', count: 7 },
+  { sign_nm: '주차장', count: 31 },
+  { sign_nm: '차높이제한', count: 116 },
+  { sign_nm: '차중량제한', count: 68 },
+  { sign_nm: '자전거', count: 45 },
+  { sign_nm: '서행', count: 68 },
+  { sign_nm: '도로공사중', count: 14 },
+  { sign_nm: '우합류도로', count: 18 },
+  { sign_nm: '철길건널목', count: 5 },
+  { sign_nm: '자전거통행금지', count: 12 },
+  { sign_nm: '직진 및 좌회전', count: 222 },
+  { sign_nm: '우회전금지', count: 30 },
+  { sign_nm: 'Y자형교차로', count: 5 },
+  { sign_nm: '우측차로없어짐', count: 110 },
+  { sign_nm: '중앙분리대끝남', count: 1 },
+  { sign_nm: '우로굽은도로', count: 24 },
+  { sign_nm: '노인보호(노인보호구역안)', count: 25 },
+  { sign_nm: '3색등(횡형)', count: 1696 },
+  { sign_nm: '화물자동차통행금지', count: 8 },
+  { sign_nm: 'ㅏ자형교차로', count: 35 },
+  { sign_nm: '진행방향통행구분', count: 74 },
+  { sign_nm: '최저속도제한', count: 10 },
+  { sign_nm: '좌회전금지', count: 31 },
+  { sign_nm: '차간거리확보', count: 23 },
+  { sign_nm: '좌로굽은도로', count: 53 },
+  { sign_nm: '주차금지', count: 246 },
+  { sign_nm: '진입금지', count: 13 },
+  { sign_nm: '횡단보도', count: 621 },
+  { sign_nm: '과속방지턱', count: 123 },
+  { sign_nm: '내리막경사', count: 3 },
+  { sign_nm: '중앙분리대시작', count: 31 },
+  { sign_nm: '좌우로이중굽은도로', count: 2 },
+  { sign_nm: '자전거주차장', count: 23 },
+  { sign_nm: '직진금지', count: 34 },
+  { sign_nm: '회전 교차로', count: 21 },
+  { sign_nm: '상습정체구간', count: 3 },
+  { sign_nm: '버스전용차로', count: 12 },
+  { sign_nm: '위험물적재차량통행금지', count: 15 },
+  { sign_nm: '오르막경사', count: 1 },
+  { sign_nm: '비보호좌회전', count: 323 }
+]
+2023-09-08 09:10:50 [DEBUG] - { vehicle: 2, sensor: 1 }
+2023-09-08 09:10:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:52 [DEBUG] - GET : /map/list/map
+2023-09-08 09:10:52 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:10:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:52 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:10:52 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:10:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:52 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:10:52 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:10:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:52 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:10:52 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:10:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:52 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:10:52 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:10:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:52 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:10:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:10:52 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:10:52 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:10:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:10:52 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:10:52 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:14:53 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:14:53 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:21:45 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:21:45 [DEBUG] - GET : /map/list/map
+2023-09-08 09:21:45 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:21:45 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:21:45 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:21:45 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:21:45 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:21:45 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:21:45 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:21:45 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:21:45 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:21:45 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:21:45 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:21:45 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:21:45 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:21:45 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:21:45 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:21:45 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:21:45 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:21:45 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:21:45 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:21:45 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:21:45 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:21:45 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:21:45 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:21:45 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:22:29 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:22:29 [DEBUG] - GET : /map/list/map
+2023-09-08 09:22:29 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:22:29 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:22:29 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:22:29 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:22:29 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:22:29 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:22:29 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:22:29 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:22:29 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:22:29 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:22:29 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:22:29 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:22:29 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:22:29 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:22:29 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:22:29 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:22:29 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:22:29 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:22:29 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:22:29 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:22:29 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:22:29 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:22:29 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:22:29 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:23:15 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:23:15 [DEBUG] - GET : /map/list/map
+2023-09-08 09:23:15 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:23:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:23:15 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:23:15 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:23:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:23:15 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:23:15 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:23:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:23:15 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:23:15 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:23:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:23:15 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:23:15 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:23:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:23:15 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:23:15 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:23:15 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:23:15 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:23:15 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:23:15 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:23:15 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:23:15 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:23:15 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:23:15 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:24:48 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:24:48 [DEBUG] - GET : /map/list/map
+2023-09-08 09:24:48 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:24:48 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:24:48 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:24:48 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:24:48 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:24:48 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:24:49 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:24:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:24:49 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:24:49 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:24:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:24:49 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:24:49 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:24:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:24:49 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:24:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:24:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:24:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:24:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:24:49 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:24:49 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:24:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:24:49 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:24:49 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:26:07 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:07 [DEBUG] - GET : /map/list/map
+2023-09-08 09:26:07 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:26:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:07 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:26:07 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:26:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:07 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:26:07 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:26:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:07 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:26:07 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:26:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:07 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:26:07 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:26:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:07 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:26:07 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:07 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:07 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:07 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:07 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:26:07 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:26:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:07 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:26:07 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:26:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:30 [DEBUG] - GET : /map/list/map
+2023-09-08 09:26:30 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:26:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:30 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:26:30 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:26:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:30 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:26:30 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:26:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:30 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:26:30 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:26:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:30 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:26:30 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:26:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:30 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:26:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:26:30 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:26:30 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:26:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:26:30 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:26:30 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:29:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:29:13 [DEBUG] - GET : /map/list/map
+2023-09-08 09:29:13 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:29:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:29:13 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:29:13 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:29:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:29:13 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:29:13 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:29:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:29:13 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:29:13 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:29:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:29:13 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:29:13 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:29:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:29:13 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:29:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:29:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:29:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:29:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:29:13 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:29:13 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:29:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:29:13 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:29:13 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:30:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:30:21 [DEBUG] - GET : /map/list/map
+2023-09-08 09:30:21 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:30:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:30:21 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:30:21 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:30:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:30:21 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:30:21 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:30:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:30:21 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:30:21 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:30:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:30:21 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:30:21 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:30:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:30:21 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:30:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:30:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:30:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:30:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:30:21 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:30:21 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:30:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:30:21 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:30:21 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:35:06 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:06 [DEBUG] - GET : /map/list/map
+2023-09-08 09:35:06 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:35:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:06 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:35:06 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:35:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:06 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:35:06 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:35:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:06 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:35:06 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:35:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:06 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:35:06 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:35:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:06 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:35:06 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:06 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:06 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:06 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:06 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:35:06 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:35:06 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:06 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:35:06 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:35:46 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:46 [DEBUG] - GET : /map/list/map
+2023-09-08 09:35:46 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:35:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:46 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:35:46 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:35:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:46 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:35:46 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:35:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:46 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:35:46 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:35:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:46 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:35:46 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:35:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:46 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:35:46 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:46 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:46 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:46 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:35:46 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:35:46 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:35:46 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:35:46 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:35:46 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:37:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:37:54 [DEBUG] - GET : /map/list/map
+2023-09-08 09:37:54 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:37:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:37:54 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:37:54 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:37:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:37:54 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:37:54 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:37:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:37:54 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:37:54 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:37:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:37:54 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:37:54 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:37:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:37:54 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:37:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:37:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:37:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:37:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:37:54 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:37:54 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:37:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:37:54 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:37:54 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:38:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:12 [DEBUG] - GET : /map/list/map
+2023-09-08 09:38:12 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:38:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:12 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:38:12 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:38:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:12 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:38:12 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:38:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:12 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:38:12 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:38:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:12 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:38:12 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:38:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:12 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:38:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:12 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:38:12 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:38:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:12 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:38:12 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:38:17 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:17 [DEBUG] - GET : /map/list/map
+2023-09-08 09:38:17 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:38:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:17 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:38:17 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:38:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:17 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:38:17 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:38:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:17 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:38:17 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:38:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:17 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:38:17 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:38:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:17 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:38:17 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:17 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:17 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:17 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:17 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:38:17 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:38:17 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:17 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:38:17 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:38:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:59 [DEBUG] - GET : /map/list/map
+2023-09-08 09:38:59 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:38:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:59 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:38:59 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:38:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:59 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:38:59 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:38:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:59 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:38:59 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:38:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:59 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:38:59 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:38:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:59 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:38:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:38:59 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:38:59 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:38:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:38:59 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:38:59 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:43:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:43:30 [DEBUG] - GET : /map/list/map
+2023-09-08 09:43:30 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:43:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:43:30 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:43:30 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:43:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:43:30 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:43:30 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:43:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:43:30 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:43:30 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:43:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:43:30 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:43:30 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:43:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:43:30 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:43:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:44:23 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:23 [DEBUG] - { text: "select current_setting('timezone'), now()", values: [] }
+2023-09-08 09:44:24 [INFO] - Argos Platform : win32
+2023-09-08 09:44:24 [INFO] - config.server_port : 3001
+2023-09-08 09:44:24 [DEBUG] - route_loader.init called.
+2023-09-08 09:44:24 [INFO] - Routing Moudle count : 69
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : / -- method : ./page/route_root:getRoot
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /login -- method : ./page/route_root:getLogin
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /signup -- method : ./page/route_account:getSignup
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /account/list -- method : ./page/route_account:getAccountList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /account/my -- method : ./page/route_account:getAccountMy
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /account/view/:email -- method : ./page/route_account:getAccountView
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /equip/list/vehicle -- method : ./page/route_equip:getListVh
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /equip/list/sensor -- method : ./page/route_equip:getListSens
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /equip/add/vehicle -- method : ./page/route_equip:getAddVehicle
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /equip/add/sensor -- method : ./page/route_equip:getAddSensor
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /equip/vehicle/:vhid -- method : ./page/route_equip:getViewVh
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /equip/sens/:sensid -- method : ./page/route_equip:getViewSens
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /map/list/map -- method : ./page/route_map:getListMap
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/list/prj -- method : ./page/route_data:getListPrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/add/prj -- method : ./page/route_data:getAddPrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/list/cam -- method : ./page/route_data:getListDataCam
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/list/lidar -- method : ./page/route_data:getListDataLidar
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/list/obj -- method : ./page/route_data:getListObj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/view/prj/:prjid -- method : ./page/route_data:getViewPrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /data/view/data/:dataid -- method : ./page/route_data:getViewData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /stat/dashboard -- method : ./page/route_stat:getDashboard
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /doc/:docname -- method : ./page/route_docs:getDocuemnt
+2023-09-08 09:44:24 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/account/read -- method : ./api/api_account:readUserList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:uploadUserPhoto
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/account/update -- method : ./api/api_account:postUpdateUser
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/account/changepw -- method : ./api/api_account:postChangePw
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/account/reset -- method : ./api/api_account:postUserReset
+2023-09-08 09:44:24 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-09-08 09:44:24 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object] , targetPath : , originalName : false
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/add/vehicle -- method : ./api/api_equip:postAddVehicle
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:uploadEquipPhoto
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/update/vehicle -- method : ./api/api_equip:postUpdateVehicle
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/equip/read/vh -- method : ./api/api_equip:readVhList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:uploadSensFiles
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/add/sens -- method : ./api/api_equip:postAddSens
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/equip/read/sens -- method : ./api/api_equip:readSensList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:uploadSensFiles
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/equip/update/sens -- method : ./api/api_equip:postUpdateSens
+2023-09-08 09:44:24 [DEBUG] - localStorage.multerFileds() - fieldName : [object Object],[object Object],[object Object] , targetPath : , originalName : true
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/add/prj -- method : ./api/api_data:postAddPrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/delete/prj -- method : ./api/api_data:postDelPrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/update/prj -- method : ./api/api_data:postUpdatePrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:uploadPrjData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/upload/prjdata/:prjid -- method : ./api/api_data:postUploadPrjDataProc
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/read/prj -- method : ./api/api_data:readPrjList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/read/cam -- method : ./api/api_data:readDataCamList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/read/lidar -- method : ./api/api_data:readDataLidarList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/read/obj -- method : ./api/api_obj:readObjList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/package/:prjid/:dataty -- method : ./api/api_data:getDataPackage
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/down/:dataty/:dataid -- method : ./api/api_data:getDataDownload
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/path/:prjid -- method : ./api/api_data:getDataPath
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/data/lidar/img -- method : ./api/api_data:getLidarImg
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/proc/start -- method : ./api/api_data:startDataProc
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/map/sig -- method : ./api/api_map:postSigBySido
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/stat/data-total -- method : ./api/api_stat:getTotalData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/stat/prj-status -- method : ./api/api_stat:getProjectStauts
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/stat/data-period -- method : ./api/api_stat:getDataPeriod
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/stat/equip -- method : ./api/api_stat:getDataEquipStatus
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/stat/object -- method : ./api/api_stat:getObjStatus
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/auth/token -- method : ./api/api_rest:postAuthTokken
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/equip/list -- method : ./api/api_rest:getEquipList
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/project/add -- method : ./api/api_rest:postPrjAdd
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/meta -- method : ./api/api_rest:postMetaData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/project/scan/:prjid -- method : ./api/api_rest:getPrjScan
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/project/data/:prjid -- method : ./api/api_rest:getPrjData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/project/sync -- method : ./api/api_rest:postPrjSync
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/project/clone -- method : ./api/api_rest:postClonePrj
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/finish -- method : ./api/api_rest:postFinishData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/data/prc-finish -- method : ./api/api_rest:postFinishPrcData
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : get -- path : /api/debug/token -- method : ./api/api_debug:getDebugToken
+2023-09-08 09:44:24 [DEBUG] - Router setted - type : post -- path : /api/debug/update-pnu -- method : ./api/api_debug:postUpdatePnu
+2023-09-08 09:44:24 [DEBUG] - config/passport called.
+2023-09-08 09:44:24 [DEBUG] - local passport setted.
+2023-09-08 09:44:24 [DEBUG] - init user_passport
+2023-09-08 09:44:24 [DEBUG] - localStorage.multer() - fieldName : photo , targetPath : , originalName : undefined
+2023-09-08 09:44:24 [DEBUG] - [func]codeUtil.init()
+2023-09-08 09:44:24 [DEBUG] - [msg] loadUserType...
+2023-09-08 09:44:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:24 [DEBUG] - { text: 'SELECT *  FROM tc_user_ty ORDER BY user_ty_id' }
+2023-09-08 09:44:24 [DEBUG] - [msg] loadUserStatus...
+2023-09-08 09:44:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:24 [DEBUG] - { text: 'SELECT *  FROM tc_user_cond ORDER BY user_cond_id' }
+2023-09-08 09:44:24 [DEBUG] - [msg] loadPnuCode...
+2023-09-08 09:44:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:24 [DEBUG] - { text: 'SELECT *  FROM tc_pnu_sigungu ORDER BY sido_cd, sigungu_cd' }
+2023-09-08 09:44:24 [DEBUG] - [msg] loadCondCode...
+2023-09-08 09:44:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:24 [DEBUG] - { text: 'SELECT *  FROM tc_vh_cond' }
+2023-09-08 09:44:24 [DEBUG] - [msg] loadSensCode...
+2023-09-08 09:44:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:24 [DEBUG] - { text: 'SELECT *  FROM tc_sens_ty' }
+2023-09-08 09:44:24 [DEBUG] - [msg] loadWeatherCode...
+2023-09-08 09:44:24 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:24 [DEBUG] - { text: 'SELECT *  FROM tc_weather order by weather_cd' }
+2023-09-08 09:44:24 [DEBUG] - updateUtil.checkUpdate
+2023-09-08 09:44:24 [INFO] - Express SSL server listening on port 443
+2023-09-08 09:44:24 [INFO] - Express server listening on port 3001
+2023-09-08 09:44:24 [DEBUG] - [ { current_setting: 'Asia/Seoul', now: 2023-09-08T00:44:24.173Z } ]
+2023-09-08 09:44:25 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:44:25 [DEBUG] - GET : /map/list/map
+2023-09-08 09:44:25 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:44:25 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:25 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:44:25 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:44:25 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:25 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:44:25 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:44:25 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:25 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:44:25 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:44:25 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:25 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:44:25 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:44:25 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:25 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:44:25 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:44:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:44:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:44:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:44:26 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:44:26 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:44:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:44:26 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:44:26 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:48:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:48:04 [DEBUG] - GET : /map/list/map
+2023-09-08 09:48:04 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:48:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:48:04 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:48:04 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:48:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:48:04 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:48:04 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:48:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:48:04 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:48:04 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:48:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:48:04 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:48:04 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:48:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:48:04 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:48:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:48:05 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:48:05 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:48:05 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:48:05 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:48:05 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:48:05 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:48:05 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:48:05 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:49:27 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:49:27 [DEBUG] - GET : /map/list/map
+2023-09-08 09:49:27 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:49:27 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:49:27 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:49:27 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:49:27 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:49:27 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:49:27 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:49:27 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:49:27 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:49:27 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:49:27 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:49:27 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:49:27 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:49:27 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:49:27 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:49:27 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:49:27 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:49:27 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:49:27 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:49:27 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:49:27 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:49:27 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:49:27 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:49:27 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:50:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:13 [DEBUG] - GET : /map/list/map
+2023-09-08 09:50:13 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:50:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:13 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:50:13 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:50:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:13 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:50:13 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:50:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:13 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:50:13 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:50:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:13 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:50:13 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:50:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:13 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:50:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:13 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:50:13 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:50:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:13 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:50:13 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:50:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:30 [DEBUG] - GET : /map/list/map
+2023-09-08 09:50:30 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:50:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:30 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:50:30 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:50:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:30 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:50:30 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:50:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:30 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:50:30 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:50:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:30 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:50:30 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:50:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:30 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:50:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:30 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:50:30 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:50:30 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:50:30 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:50:30 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:50:30 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:52:35 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:52:35 [DEBUG] - GET : /map/list/map
+2023-09-08 09:52:35 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:52:35 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:52:35 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:52:35 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:52:35 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:52:35 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:52:35 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:52:35 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:52:35 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:52:35 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:52:35 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:52:35 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:52:35 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:52:35 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:52:35 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:52:35 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:52:35 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:52:35 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:52:35 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:52:35 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:52:35 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:52:35 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:52:35 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:52:35 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:53:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:12 [DEBUG] - GET : /stat/dashboard
+2023-09-08 09:53:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:12 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:53:12 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:53:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:12 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:53:12 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:53:12 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:12 [DEBUG] - GET : /api/stat/data-total?_=1694134392802
+2023-09-08 09:53:12 [DEBUG] - [func]dataCamDB.getTotalData()
+2023-09-08 09:53:12 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:12 [DEBUG] - {
+  text: 'select count(*)::int\n              from photo_mng',
+  values: []
+}
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - {
+  text: 'select count(*)::int\n              from las_mng',
+  values: []
+}
+2023-09-08 09:53:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:13 [DEBUG] - GET : /api/stat/prj-status?_=1694134392803
+2023-09-08 09:53:13 [DEBUG] - [func] getProjectStauts()
+2023-09-08 09:53:13 [DEBUG] - [func]prjDB.getPrjStatusCount
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - {
+  text: 'select p.prj_stts_cd, s.prj_stts_nm, count(*)::int\n' +
+    '            from project_mng p\n' +
+    '            join tc_prj_status s on p.prj_stts_cd = s.prj_stts_cd  \n' +
+    '            group by p.prj_stts_cd, s.prj_stts_nm \n' +
+    '            order by p.prj_stts_cd ',
+  values: []
+}
+2023-09-08 09:53:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:13 [DEBUG] - GET : /api/stat/data-period?startDt=2022-09-08&endDt=2023-09-08&setp=month&_=1694134392804
+2023-09-08 09:53:13 [DEBUG] - [func] getDataPeriod()
+2023-09-08 09:53:13 [DEBUG] - [func]dataCamDB.getStatPeriod()
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - {
+  text: 'select t.tDate, p.count::int\n' +
+    '              from ( \n' +
+    '                select ( \n' +
+    '                    to_char(generate_series($1::date, $2::date, $3::interval)::date, $4)\n' +
+    '                  )::text as tDate \n' +
+    '                ) t \n' +
+    '              left outer join ( \n' +
+    '                  select to_char(data_reg_dt, $4) as data_reg_dt, count(*) as count\n' +
+    '                  from photo_mng dt \n' +
+    '                  where data_reg_dt >=$1 and data_reg_dt <=$5\n' +
+    '                  group by to_char(data_reg_dt, $4)\t\n' +
+    '                ) p \n' +
+    '                on t.tDate = p.data_reg_dt \n' +
+    '              order by t.tDate ',
+  values: [
+    '2022-09-08',
+    '2023-09-08',
+    '1 month',
+    'YYYY년 MM월',
+    '2023-09-08 24:00'
+  ]
+}
+2023-09-08 09:53:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:13 [DEBUG] - GET : /api/stat/equip?_=1694134392805
+2023-09-08 09:53:13 [DEBUG] - [func] getDataEquipStatus()
+2023-09-08 09:53:13 [DEBUG] - [func]vehicleDB.getTotalData()
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from vh_mng \n' +
+    '              where cond_cd = 1',
+  values: []
+}
+2023-09-08 09:53:13 [DEBUG] - [func]sensDB.getTotalCount()
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from sens_mng \n' +
+    '              where cond_cd = 1\n' +
+    '              and sens_ty = 3',
+  values: []
+}
+2023-09-08 09:53:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:13 [DEBUG] - GET : /api/stat/object?_=1694134392806
+2023-09-08 09:53:13 [DEBUG] - [func] getObjStatus()
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - {
+  text: 'select ts.sign_nm, count(*)::int\n' +
+    '            from obj_rs o\n' +
+    '            left join tc_trffc_sign ts on o.cd = ts.sign_id \n' +
+    '            group by ts.sign_nm ',
+  values: []
+}
+2023-09-08 09:53:13 [DEBUG] - { vehicle: 2, sensor: 1 }
+2023-09-08 09:53:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:13 [DEBUG] - { text: 'select count(*)::int\n              from obj_rs', values: [] }
+2023-09-08 09:53:13 [DEBUG] - [
+  { sign_nm: '야생동물보호', count: 20 },
+  { sign_nm: '4색등(종형)', count: 19 },
+  { sign_nm: '좌측면통행', count: 12 },
+  { sign_nm: '+자형교차로', count: 1 },
+  { sign_nm: '회전형교차로', count: 12 },
+  { sign_nm: '자전거전용차로', count: 126 },
+  { sign_nm: '자전거전용도로', count: 59 },
+  { sign_nm: '유턴금지', count: 37 },
+  { sign_nm: '낙석도로', count: 23 },
+  { sign_nm: '직진 및 우회전', count: 93 },
+  { sign_nm: '위험', count: 50 },
+  { sign_nm: '자전거 및 보행자 통행구분', count: 164 },
+  { sign_nm: '일시정지', count: 39 },
+  { sign_nm: '우측방통행', count: 2 },
+  { sign_nm: 'ㅓ자형교차로', count: 16 },
+  { sign_nm: '좌회전 및 유턴', count: 42 },
+  { sign_nm: '보행자보행금지', count: 14 },
+  { sign_nm: '4색등(횡형)', count: 2624 },
+  { sign_nm: '좌우회전', count: 34 },
+  { sign_nm: '강변도로', count: 47 },
+  { sign_nm: '어린이보호(어린이보호구역안)', count: 143 },
+  { sign_nm: '우측면통행', count: 274 },
+  { sign_nm: '이륜자동차및원동기장치자전거통행금지', count: 2 },
+  { sign_nm: '자전거 및 보행자 겸용도로', count: 129 },
+  { sign_nm: '앞지르기금지', count: 10 },
+  { sign_nm: '터널', count: 20 },
+  { sign_nm: '양측방통행', count: 29 },
+  { sign_nm: '유턴', count: 555 },
+  { sign_nm: '우회전', count: 27 },
+  { sign_nm: '자동차전용도로', count: 3 },
+  { sign_nm: '어린이보호', count: 67 },
+  { sign_nm: '정차·주차금지', count: 170 },
+  { sign_nm: '보행자전용도로', count: 9 },
+  { sign_nm: '신호기', count: 13 },
+  { sign_nm: '노면고르지못함', count: 8 },
+  { sign_nm: '우회로', count: 70 },
+  { sign_nm: '자전거횡단도', count: 346 },
+  { sign_nm: '2방향통행', count: 2 },
+  { sign_nm: '직진', count: 32 },
+  { sign_nm: '최고속도제한', count: 902 },
+  { sign_nm: '일방통행', count: 28 },
+  { sign_nm: '좌회전', count: 42 },
+  { sign_nm: '미끄러운도로', count: 41 },
+  { sign_nm: '양보', count: 65 },
+  { sign_nm: '3색등(종형)', count: 48 },
+  { sign_nm: '횡풍', count: 7 },
+  { sign_nm: '주차장', count: 31 },
+  { sign_nm: '차높이제한', count: 116 },
+  { sign_nm: '차중량제한', count: 68 },
+  { sign_nm: '자전거', count: 45 },
+  { sign_nm: '서행', count: 68 },
+  { sign_nm: '도로공사중', count: 14 },
+  { sign_nm: '우합류도로', count: 18 },
+  { sign_nm: '철길건널목', count: 5 },
+  { sign_nm: '자전거통행금지', count: 12 },
+  { sign_nm: '직진 및 좌회전', count: 222 },
+  { sign_nm: '우회전금지', count: 30 },
+  { sign_nm: 'Y자형교차로', count: 5 },
+  { sign_nm: '우측차로없어짐', count: 110 },
+  { sign_nm: '중앙분리대끝남', count: 1 },
+  { sign_nm: '우로굽은도로', count: 24 },
+  { sign_nm: '노인보호(노인보호구역안)', count: 25 },
+  { sign_nm: '3색등(횡형)', count: 1696 },
+  { sign_nm: '화물자동차통행금지', count: 8 },
+  { sign_nm: 'ㅏ자형교차로', count: 35 },
+  { sign_nm: '진행방향통행구분', count: 74 },
+  { sign_nm: '최저속도제한', count: 10 },
+  { sign_nm: '좌회전금지', count: 31 },
+  { sign_nm: '차간거리확보', count: 23 },
+  { sign_nm: '좌로굽은도로', count: 53 },
+  { sign_nm: '주차금지', count: 246 },
+  { sign_nm: '진입금지', count: 13 },
+  { sign_nm: '횡단보도', count: 621 },
+  { sign_nm: '과속방지턱', count: 123 },
+  { sign_nm: '내리막경사', count: 3 },
+  { sign_nm: '중앙분리대시작', count: 31 },
+  { sign_nm: '좌우로이중굽은도로', count: 2 },
+  { sign_nm: '자전거주차장', count: 23 },
+  { sign_nm: '직진금지', count: 34 },
+  { sign_nm: '회전 교차로', count: 21 },
+  { sign_nm: '상습정체구간', count: 3 },
+  { sign_nm: '버스전용차로', count: 12 },
+  { sign_nm: '위험물적재차량통행금지', count: 15 },
+  { sign_nm: '오르막경사', count: 1 },
+  { sign_nm: '비보호좌회전', count: 323 }
+]
+2023-09-08 09:53:14 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:14 [DEBUG] - GET : /map/list/map
+2023-09-08 09:53:14 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:53:14 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:14 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:53:14 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:53:14 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:14 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:53:14 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:53:14 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:14 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:53:14 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:53:14 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:14 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:53:14 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:53:14 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:14 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:53:14 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:14 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:14 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:14 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:53:14 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:53:14 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:53:14 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:53:14 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:53:14 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:54:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:04 [DEBUG] - GET : /map/list/map
+2023-09-08 09:54:04 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:54:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:04 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:54:04 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:54:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:04 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:54:04 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:54:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:04 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:54:04 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:54:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:04 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:54:04 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:54:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:04 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:54:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:04 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:04 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:54:04 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:54:04 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:04 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:54:04 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 09:54:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:13 [DEBUG] - GET : /map/list/map
+2023-09-08 09:54:13 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 09:54:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:13 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 09:54:13 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 09:54:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:13 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 09:54:13 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 09:54:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:13 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 09:54:13 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 09:54:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:13 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 09:54:13 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 09:54:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:13 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 09:54:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:13 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 09:54:13 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 09:54:13 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 09:54:13 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 09:54:13 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 09:54:13 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:08:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:08:49 [DEBUG] - GET : /map/list/map
+2023-09-08 10:08:49 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:08:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:08:49 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:08:49 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:08:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:08:49 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:08:49 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:08:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:08:49 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:08:49 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:08:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:08:49 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:08:49 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:08:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:08:49 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:08:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:08:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:08:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:08:49 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:08:49 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:08:49 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:08:49 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:08:49 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:08:49 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:09:03 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:09:03 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:09:03 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 27
+2023-09-08 10:09:03 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:09:03 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '27%' ]
+}
+2023-09-08 10:09:03 [DEBUG] - select sigListBySido succeed : 27
+2023-09-08 10:09:07 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:09:07 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:09:07 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 41
+2023-09-08 10:09:07 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:09:07 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '41%' ]
+}
+2023-09-08 10:09:07 [DEBUG] - select sigListBySido succeed : 41
+2023-09-08 10:14:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:14:26 [DEBUG] - GET : /map/list/map
+2023-09-08 10:14:26 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:14:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:14:26 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:14:26 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:14:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:14:26 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:14:26 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:14:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:14:26 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:14:26 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:14:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:14:26 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:14:26 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:14:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:14:26 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:14:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:14:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:14:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:14:26 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:14:26 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:14:26 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:14:26 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:14:26 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:14:26 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:15:00 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:00 [DEBUG] - GET : /map/list/map
+2023-09-08 10:15:00 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:15:00 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:00 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:15:00 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:15:00 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:00 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:15:00 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:15:00 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:00 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:15:00 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:15:00 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:00 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:15:00 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:15:00 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:00 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:15:01 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:01 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:01 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:01 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:01 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:15:01 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:15:01 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:01 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:15:01 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:15:51 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:51 [DEBUG] - GET : /map/list/map
+2023-09-08 10:15:51 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:15:51 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:51 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:15:51 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:15:51 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:51 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:15:51 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:15:51 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:51 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:15:51 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:15:51 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:51 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:15:51 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:15:51 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:51 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:15:51 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:15:52 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:15:52 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:15:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:15:52 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:15:52 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:16:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:16:21 [DEBUG] - GET : /map/list/map
+2023-09-08 10:16:21 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:16:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:16:21 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:16:21 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:16:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:16:21 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:16:21 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:16:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:16:21 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:16:21 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:16:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:16:21 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:16:21 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:16:21 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:16:21 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:16:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:16:21 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:16:22 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:16:22 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:16:22 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:16:22 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:16:22 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:16:22 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:16:22 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:18:47 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:18:47 [DEBUG] - GET : /map/list/map
+2023-09-08 10:18:47 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:18:47 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:18:47 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:18:47 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:18:47 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:18:47 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:18:47 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:18:47 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:18:47 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:18:47 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:18:47 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:18:47 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:18:47 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:18:47 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:18:47 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:18:47 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:18:47 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:18:47 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:18:47 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:18:47 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:18:47 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:18:47 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:18:47 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:18:47 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:19:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:19:50 [DEBUG] - GET : /map/list/map
+2023-09-08 10:19:50 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:19:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:19:50 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:19:50 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:19:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:19:50 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:19:50 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:19:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:19:50 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:19:50 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:19:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:19:50 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:19:50 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:19:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:19:50 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:19:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:19:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:19:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:19:50 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:19:50 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:19:50 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:19:50 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:19:50 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:19:50 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:20:36 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:36 [DEBUG] - GET : /map/list/map
+2023-09-08 10:20:36 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:20:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:36 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:20:36 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:20:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:36 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:20:36 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:20:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:36 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:20:36 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:20:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:36 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:20:36 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:20:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:36 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:20:36 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:37 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:37 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:37 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:37 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:20:37 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:20:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:37 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:20:37 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:20:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:54 [DEBUG] - GET : /map/list/map
+2023-09-08 10:20:54 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:20:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:54 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:20:54 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:20:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:54 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:20:54 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:20:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:54 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:20:54 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:20:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:54 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:20:54 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:20:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:54 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:20:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:54 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:20:54 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:20:54 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:20:54 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:20:54 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:20:54 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:22:51 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:22:51 [DEBUG] - GET : /map/list/map
+2023-09-08 10:22:52 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:22:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:22:52 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:22:52 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:22:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:22:52 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:22:52 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:22:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:22:52 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:22:52 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:22:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:22:52 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:22:52 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:22:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:22:52 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:22:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:22:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:22:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:22:52 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:22:52 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:22:52 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:22:52 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:22:52 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:22:52 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:23:33 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:23:33 [DEBUG] - GET : /map/list/map
+2023-09-08 10:23:33 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:23:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:23:33 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:23:33 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:23:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:23:33 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:23:33 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:23:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:23:33 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:23:33 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:23:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:23:33 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:23:33 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:23:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:23:33 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:23:33 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:23:33 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:23:33 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:23:33 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:23:33 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:23:33 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:23:33 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:23:33 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:23:33 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:24:36 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:24:36 [DEBUG] - GET : /map/list/map
+2023-09-08 10:24:36 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:24:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:24:36 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:24:36 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:24:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:24:36 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:24:36 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:24:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:24:36 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:24:36 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:24:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:24:36 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:24:36 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:24:36 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:24:36 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:24:36 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:24:36 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:24:36 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:24:37 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:24:37 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:24:37 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:24:37 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:24:37 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:24:37 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:25:28 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:25:28 [DEBUG] - GET : /map/list/map
+2023-09-08 10:25:28 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:25:28 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:25:28 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:25:28 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:25:28 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:25:28 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:25:28 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:25:28 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:25:28 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:25:28 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:25:28 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:25:28 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:25:28 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:25:28 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:25:28 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:25:28 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:25:28 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:25:28 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:25:28 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:25:28 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:25:28 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:25:28 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:25:28 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:25:28 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:27:20 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:20 [DEBUG] - GET : /map/list/map
+2023-09-08 10:27:20 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:27:20 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:20 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:27:20 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:27:20 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:20 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:27:20 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:27:20 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:20 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:27:20 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:27:20 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:20 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:27:20 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:27:20 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:20 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:27:20 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:20 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:20 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:20 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:20 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:27:20 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:27:20 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:20 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:27:20 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 10:27:55 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:55 [DEBUG] - GET : /map/list/map
+2023-09-08 10:27:55 [DEBUG] - [func]prjDB.getPrjList()
+2023-09-08 10:27:55 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:55 [DEBUG] - { text: 'SELECT * FROM project_mng p ORDER BY p.prj_id', values: [] }
+2023-09-08 10:27:55 [DEBUG] - [func]sidoDB.getSidoList()
+2023-09-08 10:27:55 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:55 [DEBUG] - {
+  text: 'SELECT id, ctprvn_cd, ctp_eng_nm, ctp_kor_nm FROM korea_map_sido sido ORDER BY sido.id',
+  values: []
+}
+2023-09-08 10:27:55 [DEBUG] - [func]sigDB.getSigList()
+2023-09-08 10:27:55 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:55 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig ORDER BY sig.id',
+  values: []
+}
+2023-09-08 10:27:55 [DEBUG] - [func]trffcSignTyDB.getTrffcSignTyList()
+2023-09-08 10:27:55 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:55 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign_ty ttst WHERE ttst.trffc_sign_ty_id not in ($1, $2, $3) ORDER BY ttst.trffc_sign_ty_id',
+  values: [ '4', '5', '6' ]
+}
+2023-09-08 10:27:55 [DEBUG] - [func]trffcSignDB.getTrffcSignList()
+2023-09-08 10:27:55 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:55 [DEBUG] - {
+  text: 'SELECT * FROM tc_trffc_sign tts ORDER BY tts.sign_ty_id',
+  values: []
+}
+2023-09-08 10:27:55 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:55 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:55 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:55 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 10:27:55 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 10:27:55 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 10:27:55 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 10:27:56 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 10:27:56 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /stat/dashboard
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 14:16:59 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 14:16:59 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /api/stat/prj-status?_=1694150219510
+2023-09-08 14:16:59 [DEBUG] - [func] getProjectStauts()
+2023-09-08 14:16:59 [DEBUG] - [func]prjDB.getPrjStatusCount
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select p.prj_stts_cd, s.prj_stts_nm, count(*)::int\n' +
+    '            from project_mng p\n' +
+    '            join tc_prj_status s on p.prj_stts_cd = s.prj_stts_cd  \n' +
+    '            group by p.prj_stts_cd, s.prj_stts_nm \n' +
+    '            order by p.prj_stts_cd ',
+  values: []
+}
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /api/stat/data-period?startDt=2022-09-08&endDt=2023-09-08&setp=month&_=1694150219511
+2023-09-08 14:16:59 [DEBUG] - [func] getDataPeriod()
+2023-09-08 14:16:59 [DEBUG] - [func]dataCamDB.getStatPeriod()
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select t.tDate, p.count::int\n' +
+    '              from ( \n' +
+    '                select ( \n' +
+    '                    to_char(generate_series($1::date, $2::date, $3::interval)::date, $4)\n' +
+    '                  )::text as tDate \n' +
+    '                ) t \n' +
+    '              left outer join ( \n' +
+    '                  select to_char(data_reg_dt, $4) as data_reg_dt, count(*) as count\n' +
+    '                  from photo_mng dt \n' +
+    '                  where data_reg_dt >=$1 and data_reg_dt <=$5\n' +
+    '                  group by to_char(data_reg_dt, $4)\t\n' +
+    '                ) p \n' +
+    '                on t.tDate = p.data_reg_dt \n' +
+    '              order by t.tDate ',
+  values: [
+    '2022-09-08',
+    '2023-09-08',
+    '1 month',
+    'YYYY년 MM월',
+    '2023-09-08 24:00'
+  ]
+}
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /api/stat/data-total?_=1694150219509
+2023-09-08 14:16:59 [DEBUG] - [func]dataCamDB.getTotalData()
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select count(*)::int\n              from photo_mng',
+  values: []
+}
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select count(*)::int\n              from las_mng',
+  values: []
+}
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /api/stat/equip?_=1694150219512
+2023-09-08 14:16:59 [DEBUG] - [func] getDataEquipStatus()
+2023-09-08 14:16:59 [DEBUG] - [func]vehicleDB.getTotalData()
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from vh_mng \n' +
+    '              where cond_cd = 1',
+  values: []
+}
+2023-09-08 14:16:59 [DEBUG] - [func]sensDB.getTotalCount()
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from sens_mng \n' +
+    '              where cond_cd = 1\n' +
+    '              and sens_ty = 3',
+  values: []
+}
+2023-09-08 14:16:59 [DEBUG] - { vehicle: 2, sensor: 1 }
+2023-09-08 14:16:59 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:16:59 [DEBUG] - GET : /api/stat/object?_=1694150219513
+2023-09-08 14:16:59 [DEBUG] - [func] getObjStatus()
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - {
+  text: 'select ts.sign_nm, count(*)::int\n' +
+    '            from obj_rs o\n' +
+    '            left join tc_trffc_sign ts on o.cd = ts.sign_id \n' +
+    '            group by ts.sign_nm ',
+  values: []
+}
+2023-09-08 14:16:59 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:16:59 [DEBUG] - { text: 'select count(*)::int\n              from obj_rs', values: [] }
+2023-09-08 14:16:59 [DEBUG] - [
+  { sign_nm: '야생동물보호', count: 20 },
+  { sign_nm: '4색등(종형)', count: 19 },
+  { sign_nm: '좌측면통행', count: 12 },
+  { sign_nm: '+자형교차로', count: 1 },
+  { sign_nm: '회전형교차로', count: 12 },
+  { sign_nm: '자전거전용차로', count: 126 },
+  { sign_nm: '자전거전용도로', count: 59 },
+  { sign_nm: '유턴금지', count: 37 },
+  { sign_nm: '낙석도로', count: 23 },
+  { sign_nm: '직진 및 우회전', count: 93 },
+  { sign_nm: '위험', count: 50 },
+  { sign_nm: '자전거 및 보행자 통행구분', count: 164 },
+  { sign_nm: '일시정지', count: 39 },
+  { sign_nm: '우측방통행', count: 2 },
+  { sign_nm: 'ㅓ자형교차로', count: 16 },
+  { sign_nm: '좌회전 및 유턴', count: 42 },
+  { sign_nm: '보행자보행금지', count: 14 },
+  { sign_nm: '4색등(횡형)', count: 2624 },
+  { sign_nm: '좌우회전', count: 34 },
+  { sign_nm: '강변도로', count: 47 },
+  { sign_nm: '어린이보호(어린이보호구역안)', count: 143 },
+  { sign_nm: '우측면통행', count: 274 },
+  { sign_nm: '이륜자동차및원동기장치자전거통행금지', count: 2 },
+  { sign_nm: '자전거 및 보행자 겸용도로', count: 129 },
+  { sign_nm: '앞지르기금지', count: 10 },
+  { sign_nm: '터널', count: 20 },
+  { sign_nm: '양측방통행', count: 29 },
+  { sign_nm: '유턴', count: 555 },
+  { sign_nm: '우회전', count: 27 },
+  { sign_nm: '자동차전용도로', count: 3 },
+  { sign_nm: '어린이보호', count: 67 },
+  { sign_nm: '정차·주차금지', count: 170 },
+  { sign_nm: '보행자전용도로', count: 9 },
+  { sign_nm: '신호기', count: 13 },
+  { sign_nm: '노면고르지못함', count: 8 },
+  { sign_nm: '우회로', count: 70 },
+  { sign_nm: '자전거횡단도', count: 346 },
+  { sign_nm: '2방향통행', count: 2 },
+  { sign_nm: '직진', count: 32 },
+  { sign_nm: '최고속도제한', count: 902 },
+  { sign_nm: '일방통행', count: 28 },
+  { sign_nm: '좌회전', count: 42 },
+  { sign_nm: '미끄러운도로', count: 41 },
+  { sign_nm: '양보', count: 65 },
+  { sign_nm: '3색등(종형)', count: 48 },
+  { sign_nm: '횡풍', count: 7 },
+  { sign_nm: '주차장', count: 31 },
+  { sign_nm: '차높이제한', count: 116 },
+  { sign_nm: '차중량제한', count: 68 },
+  { sign_nm: '자전거', count: 45 },
+  { sign_nm: '서행', count: 68 },
+  { sign_nm: '도로공사중', count: 14 },
+  { sign_nm: '우합류도로', count: 18 },
+  { sign_nm: '철길건널목', count: 5 },
+  { sign_nm: '자전거통행금지', count: 12 },
+  { sign_nm: '직진 및 좌회전', count: 222 },
+  { sign_nm: '우회전금지', count: 30 },
+  { sign_nm: 'Y자형교차로', count: 5 },
+  { sign_nm: '우측차로없어짐', count: 110 },
+  { sign_nm: '중앙분리대끝남', count: 1 },
+  { sign_nm: '우로굽은도로', count: 24 },
+  { sign_nm: '노인보호(노인보호구역안)', count: 25 },
+  { sign_nm: '3색등(횡형)', count: 1696 },
+  { sign_nm: '화물자동차통행금지', count: 8 },
+  { sign_nm: 'ㅏ자형교차로', count: 35 },
+  { sign_nm: '진행방향통행구분', count: 74 },
+  { sign_nm: '최저속도제한', count: 10 },
+  { sign_nm: '좌회전금지', count: 31 },
+  { sign_nm: '차간거리확보', count: 23 },
+  { sign_nm: '좌로굽은도로', count: 53 },
+  { sign_nm: '주차금지', count: 246 },
+  { sign_nm: '진입금지', count: 13 },
+  { sign_nm: '횡단보도', count: 621 },
+  { sign_nm: '과속방지턱', count: 123 },
+  { sign_nm: '내리막경사', count: 3 },
+  { sign_nm: '중앙분리대시작', count: 31 },
+  { sign_nm: '좌우로이중굽은도로', count: 2 },
+  { sign_nm: '자전거주차장', count: 23 },
+  { sign_nm: '직진금지', count: 34 },
+  { sign_nm: '회전 교차로', count: 21 },
+  { sign_nm: '상습정체구간', count: 3 },
+  { sign_nm: '버스전용차로', count: 12 },
+  { sign_nm: '위험물적재차량통행금지', count: 15 },
+  { sign_nm: '오르막경사', count: 1 },
+  { sign_nm: '비보호좌회전', count: 323 }
+]
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /stat/dashboard
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - POST : /api/map/sig :  - getSigBySido()
+2023-09-08 14:17:02 [DEBUG] - [func]sigDB.SigListBySido - sidoCd : 11
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'SELECT id, sig_cd, sig_eng_nm, sig_kor_nm FROM korea_map_sig sig WHERE sig.sig_cd LIKE $1 ORDER BY sig.id',
+  values: [ '11%' ]
+}
+2023-09-08 14:17:02 [DEBUG] - select sigListBySido succeed : 11
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /api/stat/data-total?_=1694150222498
+2023-09-08 14:17:02 [DEBUG] - [func]dataCamDB.getTotalData()
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select count(*)::int\n              from photo_mng',
+  values: []
+}
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /api/stat/prj-status?_=1694150222499
+2023-09-08 14:17:02 [DEBUG] - [func] getProjectStauts()
+2023-09-08 14:17:02 [DEBUG] - [func]prjDB.getPrjStatusCount
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select p.prj_stts_cd, s.prj_stts_nm, count(*)::int\n' +
+    '            from project_mng p\n' +
+    '            join tc_prj_status s on p.prj_stts_cd = s.prj_stts_cd  \n' +
+    '            group by p.prj_stts_cd, s.prj_stts_nm \n' +
+    '            order by p.prj_stts_cd ',
+  values: []
+}
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /api/stat/equip?_=1694150222501
+2023-09-08 14:17:02 [DEBUG] - [func] getDataEquipStatus()
+2023-09-08 14:17:02 [DEBUG] - [func]vehicleDB.getTotalData()
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from vh_mng \n' +
+    '              where cond_cd = 1',
+  values: []
+}
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /api/stat/data-period?startDt=2022-09-08&endDt=2023-09-08&setp=month&_=1694150222500
+2023-09-08 14:17:02 [DEBUG] - [func] getDataPeriod()
+2023-09-08 14:17:02 [DEBUG] - [func]dataCamDB.getStatPeriod()
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select t.tDate, p.count::int\n' +
+    '              from ( \n' +
+    '                select ( \n' +
+    '                    to_char(generate_series($1::date, $2::date, $3::interval)::date, $4)\n' +
+    '                  )::text as tDate \n' +
+    '                ) t \n' +
+    '              left outer join ( \n' +
+    '                  select to_char(data_reg_dt, $4) as data_reg_dt, count(*) as count\n' +
+    '                  from photo_mng dt \n' +
+    '                  where data_reg_dt >=$1 and data_reg_dt <=$5\n' +
+    '                  group by to_char(data_reg_dt, $4)\t\n' +
+    '                ) p \n' +
+    '                on t.tDate = p.data_reg_dt \n' +
+    '              order by t.tDate ',
+  values: [
+    '2022-09-08',
+    '2023-09-08',
+    '1 month',
+    'YYYY년 MM월',
+    '2023-09-08 24:00'
+  ]
+}
+2023-09-08 14:17:02 [DEBUG] - [func]sensDB.getTotalCount()
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select count(*)::int\n' +
+    '              from sens_mng \n' +
+    '              where cond_cd = 1\n' +
+    '              and sens_ty = 3',
+  values: []
+}
+2023-09-08 14:17:02 [DEBUG] - { vehicle: 2, sensor: 1 }
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select count(*)::int\n              from las_mng',
+  values: []
+}
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - { text: 'select count(*)::int\n              from obj_rs', values: [] }
+2023-09-08 14:17:02 [DEBUG] - deserializeUser() 호출됨.
+2023-09-08 14:17:02 [DEBUG] - GET : /api/stat/object?_=1694150222502
+2023-09-08 14:17:02 [DEBUG] - [func] getObjStatus()
+2023-09-08 14:17:02 [DEBUG] - [func] postgresUtil.query() : 
+2023-09-08 14:17:02 [DEBUG] - {
+  text: 'select ts.sign_nm, count(*)::int\n' +
+    '            from obj_rs o\n' +
+    '            left join tc_trffc_sign ts on o.cd = ts.sign_id \n' +
+    '            group by ts.sign_nm ',
+  values: []
+}
+2023-09-08 14:17:02 [DEBUG] - [
+  { sign_nm: '야생동물보호', count: 20 },
+  { sign_nm: '4색등(종형)', count: 19 },
+  { sign_nm: '좌측면통행', count: 12 },
+  { sign_nm: '+자형교차로', count: 1 },
+  { sign_nm: '회전형교차로', count: 12 },
+  { sign_nm: '자전거전용차로', count: 126 },
+  { sign_nm: '자전거전용도로', count: 59 },
+  { sign_nm: '유턴금지', count: 37 },
+  { sign_nm: '낙석도로', count: 23 },
+  { sign_nm: '직진 및 우회전', count: 93 },
+  { sign_nm: '위험', count: 50 },
+  { sign_nm: '자전거 및 보행자 통행구분', count: 164 },
+  { sign_nm: '일시정지', count: 39 },
+  { sign_nm: '우측방통행', count: 2 },
+  { sign_nm: 'ㅓ자형교차로', count: 16 },
+  { sign_nm: '좌회전 및 유턴', count: 42 },
+  { sign_nm: '보행자보행금지', count: 14 },
+  { sign_nm: '4색등(횡형)', count: 2624 },
+  { sign_nm: '좌우회전', count: 34 },
+  { sign_nm: '강변도로', count: 47 },
+  { sign_nm: '어린이보호(어린이보호구역안)', count: 143 },
+  { sign_nm: '우측면통행', count: 274 },
+  { sign_nm: '이륜자동차및원동기장치자전거통행금지', count: 2 },
+  { sign_nm: '자전거 및 보행자 겸용도로', count: 129 },
+  { sign_nm: '앞지르기금지', count: 10 },
+  { sign_nm: '터널', count: 20 },
+  { sign_nm: '양측방통행', count: 29 },
+  { sign_nm: '유턴', count: 555 },
+  { sign_nm: '우회전', count: 27 },
+  { sign_nm: '자동차전용도로', count: 3 },
+  { sign_nm: '어린이보호', count: 67 },
+  { sign_nm: '정차·주차금지', count: 170 },
+  { sign_nm: '보행자전용도로', count: 9 },
+  { sign_nm: '신호기', count: 13 },
+  { sign_nm: '노면고르지못함', count: 8 },
+  { sign_nm: '우회로', count: 70 },
+  { sign_nm: '자전거횡단도', count: 346 },
+  { sign_nm: '2방향통행', count: 2 },
+  { sign_nm: '직진', count: 32 },
+  { sign_nm: '최고속도제한', count: 902 },
+  { sign_nm: '일방통행', count: 28 },
+  { sign_nm: '좌회전', count: 42 },
+  { sign_nm: '미끄러운도로', count: 41 },
+  { sign_nm: '양보', count: 65 },
+  { sign_nm: '3색등(종형)', count: 48 },
+  { sign_nm: '횡풍', count: 7 },
+  { sign_nm: '주차장', count: 31 },
+  { sign_nm: '차높이제한', count: 116 },
+  { sign_nm: '차중량제한', count: 68 },
+  { sign_nm: '자전거', count: 45 },
+  { sign_nm: '서행', count: 68 },
+  { sign_nm: '도로공사중', count: 14 },
+  { sign_nm: '우합류도로', count: 18 },
+  { sign_nm: '철길건널목', count: 5 },
+  { sign_nm: '자전거통행금지', count: 12 },
+  { sign_nm: '직진 및 좌회전', count: 222 },
+  { sign_nm: '우회전금지', count: 30 },
+  { sign_nm: 'Y자형교차로', count: 5 },
+  { sign_nm: '우측차로없어짐', count: 110 },
+  { sign_nm: '중앙분리대끝남', count: 1 },
+  { sign_nm: '우로굽은도로', count: 24 },
+  { sign_nm: '노인보호(노인보호구역안)', count: 25 },
+  { sign_nm: '3색등(횡형)', count: 1696 },
+  { sign_nm: '화물자동차통행금지', count: 8 },
+  { sign_nm: 'ㅏ자형교차로', count: 35 },
+  { sign_nm: '진행방향통행구분', count: 74 },
+  { sign_nm: '최저속도제한', count: 10 },
+  { sign_nm: '좌회전금지', count: 31 },
+  { sign_nm: '차간거리확보', count: 23 },
+  { sign_nm: '좌로굽은도로', count: 53 },
+  { sign_nm: '주차금지', count: 246 },
+  { sign_nm: '진입금지', count: 13 },
+  { sign_nm: '횡단보도', count: 621 },
+  { sign_nm: '과속방지턱', count: 123 },
+  { sign_nm: '내리막경사', count: 3 },
+  { sign_nm: '중앙분리대시작', count: 31 },
+  { sign_nm: '좌우로이중굽은도로', count: 2 },
+  { sign_nm: '자전거주차장', count: 23 },
+  { sign_nm: '직진금지', count: 34 },
+  { sign_nm: '회전 교차로', count: 21 },
+  { sign_nm: '상습정체구간', count: 3 },
+  { sign_nm: '버스전용차로', count: 12 },
+  { sign_nm: '위험물적재차량통행금지', count: 15 },
+  { sign_nm: '오르막경사', count: 1 },
+  { sign_nm: '비보호좌회전', count: 323 }
+]

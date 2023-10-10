@@ -1,0 +1,25 @@
+<script>
+  var user = null;
+  <% if (typeof user !== 'undefined' && user) {%>
+  user = <%- JSON.stringify(user)%>;
+  <%}%>
+
+  var strgStatus = <%- typeof strgStatus!=='undefined' ? JSON.stringify(strgStatus) : 'null' %>;
+  var scrtDbStatus = <%- typeof scrtDbStatus!=='undefined' ? JSON.stringify(scrtDbStatus) : 'null' %>;
+</script>
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<!-- <script src="/public/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/public/bower_components/jquery.cookie/jquery.cookie.js"></script>
+  <script src="/public/jquery.form.min.js"></script> -->
+  
+<!-- JQuery update : 3.7.0 -->
+<script src="/public/libs/jquery/jquery-3.7.0.min.js"></script>
+<script src="/public/libs/jquery/jquery.form.min.js"></script>
+<script src="/public/libs/jquery/jquery.cookie-1.4.1.min.js"></script>
+<script src="/public/toastr/toastr.min.js"></script>
+
+
+<script src="/public/js/fr_default.js"></script>
+<script src="/public/js/fr_menubar.js"></script>

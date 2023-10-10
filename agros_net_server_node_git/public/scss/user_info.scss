@@ -1,0 +1,59 @@
+@import "_global";
+
+$photo-width-small: 160px;
+$photo-width: 240px;
+
+.card-contents {
+    // padding-bottom: 40px;
+}
+
+.contents-photo {
+    padding: 20px 40px;
+    flex-shrink: 0;
+
+    justify-content: start;
+    align-items: center;
+
+    // img {
+    //     width: $photo-width;
+    //     margin: 10px 0;
+    // }
+
+
+    .profile-img {
+        width: $photo-width;
+        height: $photo-width;
+        margin: 10px 0;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 3%;
+    }
+
+    .profile-img.img-empty {
+        background-image: url('/public/images/user.svg');
+        background-size: 30%;
+        background-color: $color-gray0; 
+    }
+
+    .excd-btn {
+        width: $photo-width-small; 
+    }
+} 
+
+
+.user-info-basic {
+    flex-grow: 3;
+}
+.contents-photo {
+    flex-grow: 2;
+}
+.user-info-spacer {
+    flex-grow: 2;
+}
+
+.user-info-submit {
+    margin-top: 20px;
+}
+
+

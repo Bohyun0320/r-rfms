@@ -1,0 +1,72 @@
+2023-09-12 09:21:02 [ERROR] - uncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at D:\Code\r-rfms\agros_net_server_node_git\database\obj_db.js:181:7
+    at D:\Code\r-rfms\agros_net_server_node_git\utils\postgres_util.js:47:12
+    at Query.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:417:18)
+    at Query.handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:527:28)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+2023-09-12 09:22:52 [ERROR] - uncaughtException: callback is not defined
+ReferenceError: callback is not defined
+    at D:\Code\r-rfms\agros_net_server_node_git\database\obj_db.js:181:7
+    at D:\Code\r-rfms\agros_net_server_node_git\utils\postgres_util.js:47:12
+    at Query.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:417:18)
+    at Query.handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\query.js:138:12)
+    at Client._handleReadyForQuery (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:290:19)
+    at Connection.emit (node:events:527:28)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\connection.js:114:12
+    at Parser.parse (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\parser.js:40:17)
+    at Socket.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-protocol\dist\index.js:11:42)
+    at Socket.emit (node:events:527:28)
+2023-09-12 10:08:06 [ERROR] - uncaughtException: Client was passed a null or undefined query
+TypeError: Client was passed a null or undefined query
+    at Client.query (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:505:13)
+    at PendingItem.callback (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:406:14)
+    at BoundPool._acquireClient (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:298:21)
+    at BoundPool._pulseQueue (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:146:19)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:179:37
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-12 10:12:09 [ERROR] - uncaughtException: Client was passed a null or undefined query
+TypeError: Client was passed a null or undefined query
+    at Client.query (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:505:13)
+    at PendingItem.callback (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:406:14)
+    at BoundPool._acquireClient (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:298:21)
+    at BoundPool._pulseQueue (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:146:19)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:179:37
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-12 10:14:49 [ERROR] - uncaughtException: Client was passed a null or undefined query
+TypeError: Client was passed a null or undefined query
+    at Client.query (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:505:13)
+    at PendingItem.callback (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:406:14)
+    at BoundPool._acquireClient (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:298:21)
+    at BoundPool._pulseQueue (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:146:19)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:179:37
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-12 10:15:47 [ERROR] - uncaughtException: Client was passed a null or undefined query
+TypeError: Client was passed a null or undefined query
+    at Client.query (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:505:13)
+    at PendingItem.callback (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:406:14)
+    at BoundPool._acquireClient (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:298:21)
+    at BoundPool._pulseQueue (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:146:19)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:179:37
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-12 10:15:58 [ERROR] - uncaughtException: Client was passed a null or undefined query
+TypeError: Client was passed a null or undefined query
+    at Client.query (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:505:13)
+    at PendingItem.callback (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:406:14)
+    at BoundPool._acquireClient (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:298:21)
+    at BoundPool._pulseQueue (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:146:19)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:179:37
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)
+2023-09-12 10:16:44 [ERROR] - uncaughtException: Client was passed a null or undefined query
+TypeError: Client was passed a null or undefined query
+    at Client.query (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg\lib\client.js:505:13)
+    at PendingItem.callback (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:406:14)
+    at BoundPool._acquireClient (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:298:21)
+    at BoundPool._pulseQueue (D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:146:19)
+    at D:\Code\r-rfms\agros_net_server_node_git\node_modules\pg-pool\index.js:179:37
+    at processTicksAndRejections (node:internal/process/task_queues:78:11)

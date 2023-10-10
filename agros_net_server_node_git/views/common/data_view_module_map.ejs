@@ -1,0 +1,31 @@
+<style type="text/css">
+    @import url("/public/css/data_view_module.css");
+  </style>
+  
+  <div class="contents-card-wrapper contents-card-center contents-card-center-contents contents-card-data" id="dataViewModule">
+    <div class="contents-column">
+      <div class="card-title card-title-data">
+        <div class="card-title-text">
+          데이터 상세정보
+        </div>
+        <div class="card-title-toolbar">
+          <div class="close-btn" id="closeBtn"></div>
+        </div>
+      </div>
+      
+      <%- include('data_view_obj_map', {viewId:'dataViewImg'})%>
+  
+    </div>
+    
+    <div class="divider-horizon"></div>
+  
+    <div class="excd-btn-bar">
+      <div class="excd-btn excd-btn-140" id="btnPrjInfo">프로젝트 정보</div>
+      <div class="excd-btn excd-btn-140 excd-btn-color-primary" id="btnConfirm">확인</div>
+    </div>
+  </div>
+  
+  <script src="/public/libs/turf/turf.min.js"></script>
+  <!-- <script src="/public/node_modules/fabric/dist/fabric.min.js"></script> -->
+  <script src="/public/libs/openseadragon-bin-4.1.0/openseadragon.min.js"></script>
+  

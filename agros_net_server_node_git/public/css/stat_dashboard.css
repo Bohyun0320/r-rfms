@@ -1,0 +1,353 @@
+@import url("./font.css");
+.contents-dashboard {
+  padding: 10px;
+}
+
+.contents-stat-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.stat-item {
+  position: relative;
+  margin: 10px 10px;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-preferred-size: 48%;
+      flex-basis: 48%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 16px 20px;
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.stat-item .stat-title {
+  margin: 4px 0 10px;
+  font-size: 18px;
+  border-bottom: 2px solid #acacac;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-left: 5px;
+  padding-right: 20px;
+  font-weight: bold;
+}
+
+.stat-item#prjStats {
+  min-height: 220px;
+}
+
+.stat-item#prjStats .stat-info {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  top: 25px;
+  right: 40px;
+  font-size: 20px;
+}
+
+.stat-item#prjStats .stat-info .stat-info-item {
+  margin-left: 10px;
+  color: #30988b;
+}
+
+.stat-item#prjStats .process-info {
+  font-size: 25px;
+  font-weight: 600;
+  bottom: -70px;
+  color: #5b5b5b;
+}
+
+.stat-item .stat-contents {
+  font-size: 16px;
+  margin: 10px;
+}
+
+.stat-item .stat-contents.stat-summary {
+  padding-left: 120px;
+}
+
+.stat-item .stat-contents.stat-data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item {
+  position: relative;
+  border-radius: 10px;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 10px 20px;
+  color: white;
+  min-width: 150px;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item:nth-child(n+2) {
+  margin-left: 8px;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item .stat-data-item-icon {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  font-size: 30px;
+  font-weight: 100;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item:nth-child(1) {
+  background-color: #fa8d4d;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item:nth-child(2) {
+  background-color: #36C2E6;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item:nth-child(3) {
+  background-color: #e662e6;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item .stat-data-item-count {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item .excd-btn-bar {
+  margin-top: 20px;
+  padding: 10px 0;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  padding-right: 10px;
+}
+
+.stat-item .stat-contents.stat-data .stat-data-item .excd-btn-bar .excd-btn-white:hover {
+  background-color: #999999;
+}
+
+.stat-item .stat-contents.stat-prj {
+  min-width: 580px;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item {
+  padding: 20px 20px 50px 40px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  color: #5b5b5b;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item .stat-equip-icon {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  top: 20px;
+  right: 40px;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  color: white;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item .stat-equip-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(n+2) {
+  margin-top: 30px;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item .stat-equip-count {
+  margin-left: 20%;
+  margin-right: 10px;
+  font-size: 50px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  font-weight: 600;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(1) {
+  border: 1px solid rgba(250, 140, 77, 0.5);
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(250, 140, 77, 0.2);
+          box-shadow: 4px 4px 8px 0 rgba(250, 140, 77, 0.2);
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(1) .stat-equip-count {
+  color: #fa8d4d;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(1) .stat-equip-icon {
+  background-color: #fa8d4d;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(2) {
+  border: 1px solid rgba(230, 98, 230, 0.5);
+  -webkit-box-shadow: 4px 4px 8px 0 rgba(230, 98, 230, 0.2);
+          box-shadow: 4px 4px 8px 0 rgba(230, 98, 230, 0.2);
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(2) .stat-equip-count {
+  color: #e662e6;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item:nth-child(2) .stat-equip-icon {
+  background-color: #e662e6;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item .excd-btn {
+  position: absolute;
+  bottom: 25px;
+  right: 50px;
+}
+
+.stat-item .stat-contents.stat-equip .stat-equip-item .stat-equip-unit {
+  margin-right: 20px;
+  font-size: 18px;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+}
+
+.stat-item .stat-contents .stat-contents-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin: 4px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stat-item .stat-contents .stat-contents-item .stat-box {
+  margin: 4px 20px;
+  font-size: 18px;
+  border: 2px solid #1833ef;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 4px 10px;
+}
+
+.stat-item .stat-contents .stat-contents-item .stat-box-red {
+  border-color: #ef5c5c;
+}
+
+.stat-item .stat-contents .stat-contents-item .stat-box-green {
+  border-color: #0abb54;
+}
+
+.stat-item .stat-contents .stat-contents-item .stat-box-pupple {
+  border-color: #ad1ef0;
+}
+
+.stat-item .stat-contents table {
+  margin: 0 0 40px 0;
+  width: 100%;
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  display: table;
+}
+
+.stat-item .stat-contents table tr {
+  display: table-row;
+  background: #f6f6f6;
+}
+
+.stat-item .stat-contents table tr:nth-of-type(odd) {
+  background: #e9e9e9;
+}
+
+.stat-item .stat-contents table tr.header {
+  font-weight: bold;
+  color: #ffffff;
+  background: #ea6153;
+}
+
+.stat-item .stat-contents table td {
+  padding: 10px;
+}
+
+.stat-item#chartObjData {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.stat-item .stat-chart {
+  height: 400px;
+}
+
+.stat-item#dataByPeriod {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.stat-item#statEquip {
+  -ms-flex-preferred-size: 20%;
+      flex-basis: 20%;
+}
+
+.stat-item#dataByPeriod .stat-filter {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.stat-item#dataByPeriod .stat-filter .tui-datepicker-input {
+  z-index: 1010;
+  margin: 0 10px;
+  width: 100px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+.stat-item#dataByPeriod .stat-filter select[name="date-step"] {
+  height: 28px;
+  padding: 4px 10px;
+  width: 60px;
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.stat-item#dataByPeriod .stat-filter .excd-btn {
+  margin-left: 10px;
+}
+
+.stat-item#dataByPeriod #chartDataPeriod {
+  width: 100%;
+}

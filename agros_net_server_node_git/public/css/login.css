@@ -1,0 +1,147 @@
+@import url("./font.css");
+.login-card-wrapper {
+  width: 500px;
+  background-color: #3cbcad;
+  color: white;
+}
+
+.card-title-login {
+  height: 100px;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.title-left img {
+  width: 150px;
+  height: auto;
+  display: block;
+}
+
+.title-right img {
+  margin-top: 20px;
+  width: 100px;
+  height: auto;
+}
+
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-input {
+  padding: 10px 60px;
+  position: relative;
+}
+
+.login-input#formPw i {
+  position: absolute;
+  left: 78%;
+  top: 20px;
+  color: #5b5b5b;
+}
+
+.login-input#formPw i:hover {
+  cursor: pointer;
+}
+
+.login-form-title {
+  font-size: 28px;
+  height: 120px;
+  padding: 20px 40px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.login-form-title img {
+  width: 60px;
+  padding-right: 20px;
+}
+
+.login-form-title .login-title {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  font-size: 28px;
+}
+
+.input-name {
+  width: 120px;
+}
+
+#checkbox-bar {
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#checkbox-bar label {
+  font-weight: normal;
+}
+
+#checkbox-bar label:nth-child(n + 2) {
+  margin-left: 80px;
+}
+
+#checkbox-bar label input {
+  margin-right: 6px;
+}
+
+#login-msg {
+  margin: 10px 60px;
+  padding: 16px;
+  color: #d12337;
+  background-color: #ffc8d1;
+  border: 1px solid #f47685;
+  border-radius: 6px;
+}
+
+.login-input a {
+  margin-left: 20px;
+}
+
+#login-footer {
+  margin: 20px 0;
+}
+
+#logout-msg {
+  color: #5b5b5b;
+  font-size: 18px;
+  padding: 24px;
+  margin-bottom: 20px;
+  padding: 16px;
+  background-color: #d9f3ff;
+  border-radius: 6px;
+}
+
+.logout-msg-time {
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+}

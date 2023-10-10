@@ -1,0 +1,95 @@
+#filter-form {
+  margin-left: auto;
+  flex-shrink: 0;
+}
+
+.contents-title-bar .safety-btn{
+  margin-left: 16px;
+  border-radius: 4px;
+}
+
+.contents-title-bar .safety-btn i {
+  margin-right: 10px;
+}
+
+.dashboard-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.chart-container {
+/*  width: 46%;*/
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 4px 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.chart-container-overview {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.chart-container-overview .title {
+/*  color : #507fff;*/
+  flex-basis: 20%;
+/*  font-weight: 600;*/
+}
+
+.overview-contents {
+  margin-bottom: 10%;
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: row;
+  font-weight: 600;
+  color: #888888;
+}
+
+.overview-contents-name i {
+  font-size: 36px;
+  margin-right: 16px;
+}
+
+.overview-contents > * {
+  display: flex;
+  padding: 20px;
+  align-items: center;
+}
+
+.overview-contents-no {
+  margin-left: auto;
+  width: 100px;
+  justify-content: center;
+  padding: 20px 0;
+  border-radius: 20px;
+  border : 6px solid rgb(252, 65, 65);
+  font-size: 24px;
+  color : #000000;
+}
+
+#inspct-compt .overview-contents-no {
+  border-color: #5279fc;
+}
+
+.dummy-chart-title {
+  font-size: 18px;
+  margin: 10px;
+}
+
+.dummy-chart-message {
+  width: 100%;
+  margin-top: 100px;
+  text-align: center;
+  color : gray;
+  font-size: 20px;
+}
+
+
+
+
+
+

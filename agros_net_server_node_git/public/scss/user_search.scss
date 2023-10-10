@@ -1,0 +1,47 @@
+@import "_global";
+
+$search-photo-size: 40px;
+
+.user-search-container {
+    position: absolute;
+    top: 40px;
+    left: 10px;
+    background: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+    padding: 10px;
+
+    &::after {
+        content: " ";
+        position: absolute;
+        width: 14px;
+        height: 14px;
+        top: -7px;
+        left: 20px;
+        transform: rotate(45deg);
+        background: #fff;
+        // background: red;
+        box-shadow: -2px -2px 2px rgba(0, 0, 0, 0.1);
+        border: #dbdbdb transparent transparent #dbdbdb;
+        z-index: 1;
+    }
+
+    .usercard {
+        padding: 10px;
+
+        &:nth-child(n + 2) {
+            border-top:1px solid #dbdbdb;
+        }
+    }
+
+    img.user-photo {
+        width: $search-photo-size;
+        height: $search-photo-size;
+    }
+}
+
+.user-profile {
+    margin-left: 10px;
+}

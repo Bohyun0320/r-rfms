@@ -1,0 +1,90 @@
+<div class="contents-row contents-data-container" id="<%=viewId%>">
+
+    <div class="contents-data-img">
+      <img class="cam-img display-none" src="/public/images/template/no_image.png"
+        onerror="this.src='/public/images/template/img_broken.svg'" alt="" id="dataImg">
+      <div class="imageViewer" id="imageViewer"></div>
+        <!-- <svg id="svgLabling">
+        </svg> -->
+        
+      <div class="excd-map display-none">
+        <%- include('./map_module', {}) %>
+      </div>
+      <div class="excd-btn excd-btn-small excd-btn-color-third" id="view-map"><i class="fas fa-map-marked-alt"></i> 지도 보기
+      </div>
+      <div class="img-nav" id="imgNavPrev"><i class="fas fa-chevron-left"></i></div>
+      <div class="img-nav" id="imgNavNext"><i class="fas fa-chevron-right"></i></div>
+    </div>
+  
+    <div class="contents-data-meta contents-column">
+      <div class="contents-data-meta contents-column">
+        <div class="excd-input-group account-input">
+          <div class="input-name">객체 ID</div>
+          <input type="text" class="form-control" name="dataObjId" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">객체명</div>
+          <input type="text" class="form-control" name="dataObjNm" readonly="true">
+        </div>
+        <!-- <div class="excd-input-group account-input">
+          <div class="input-name">프로젝트 ID</div>
+          <input type="text" class="form-control" name="dataObjPrjId" readonly="true">
+        </div> -->
+        <div class="excd-input-group account-input">
+          <div class="input-name">프로젝트명</div>
+          <input type="text" class="form-control" name="dataObjPrjNm" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">영상ID</div>
+          <input type="text" class="form-control" name="dataObjPhotoId" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">파일명</div>
+          <input type="text" class="form-control" name="dataObjFileNm" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">DL 모델ID</div>
+          <input type="text" class="form-control" name="dataObjDlModel" readonly="true">
+        </div>
+       <div class="excd-input-group account-input">
+          <div class="input-name">표지코드</div>
+          <input type="text" class="form-control" name="dataObjSignCd" readonly="true">
+        </div>
+        <!-- <div class="excd-input-group account-input">
+          <div class="input-name">표지구분</div>
+          <input type="text" class="form-control" name="dataObjSignTy" readonly="true">
+        </div> -->
+        <div class="excd-input-group account-input">
+          <div class="input-name">교통표지명</div>
+          <input type="text" class="form-control" name="dataObjSignNm" readonly="true">
+          <img src="" alt="" id="signImg" onerror="this.src='/public/images/template/img_broken.svg'">
+        </div>
+        <!-- <div class="excd-input-group account-input">
+          <div class="input-name">수집날짜</div>
+          <input type="text" class="form-control" name="dataObjClctDate" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">작업날짜</div>
+          <input type="text" class="form-control" name="dataObjJobDate" readonly="true">
+        </div> -->
+        <div class="excd-input-group account-input">
+          <div class="input-name">위도</div>
+          <input type="text" class="form-control" name="dataLat" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">경도</div>
+          <input type="text" class="form-control" name="dataLng" readonly="true">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name">업데이트 여부</div>
+          <input type="text" class="form-control" name="dataUpdt" readonly="true">
+        </div> 
+        <div class="excd-input-group account-input">
+          <div class="input-name">BBOX</div>
+          <textarea class="form-control" name="dataObjBbox" rows="5" readonly="true"></textarea>
+        </div>
+  
+      </div>
+    </div>
+  </div>
+  

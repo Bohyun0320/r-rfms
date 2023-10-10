@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <% include ./common/head %>
+        <!-- Custom-Link -->
+        <link rel="stylesheet" href="/public/bower_components/tui-grid/dist/tui-grid.min.css">
+        <link rel="stylesheet" href="/public/bower_components/tui-pagination/dist/tui-pagination.css">
+        <link rel="stylesheet" href="/public/css/eqip_list.css">
+        <!-- <link rel="stylesheet" href="/public/css/map_list.css"> -->
+
+        <script src="/public/js/module/fr_map_view_logic_module.js" type="mdoule"></script>
+
+        <title>지도 조회</title>
+        <meta name="description" content="R-RFMS 객체 정보를 지도에 조회하고 관리합니다."/>
+        <meta property="og:title" content="지도 조회">
+        <meta property="og:description" content="R-RFMS 객체 정보를 지도에 조회하고 관리합니다."/>
+    </head>
+    <body>
+        <div class="main-container">  
+            <%- include('common/header', {user: user}) %>
+            
+            <div class="app-container">
+          
+              <%- include('common/menubar', {menuBarShrink : menuBarShrink, prjList:prjList, sidoList: sidoList, sigList: sigList, trffcList: trffcList, trffcTyList : trffcTyList})%>
+      
+              <div class="contents-container <%= (typeof menuBarShrink !=='undefined' && menuBarShrink =='true') ? 'contents-container-wide' : '' %>">
+                <div class="contents-title">
+                  <div class="con-scr-title">지도 조회</div>
+                  <div class="spacer-horizon"></div>
+                  <!-- <div class="excd-btn excd-btn-small excd-btn-white excd-btn-title" onclick="javascript:location.href='/equip/add/vehicle'">
+                    <i class="fas fa-plus-square"></i> 차량 등록
+                  </div> -->
+      
+                  <!-- <form  id="filter-form" class="con-scr-title-toolbar con-scr-title-toolbar-vh" action="/api/equip/vh/search" method="post">
+                    <div class="input-group">
+                      <div class="input-group-btn">
+                        <select class="selectpicker form-control" name="filter_type"> -->
+                          <!-- <option value="vh_id">차량 ID</option> -->
+                          <!-- <option value="vh_nm">차량명</option>
+                          <option value="vh_no">차량번호</option>
+                          <option value="flnm">관리자</option>
+                        </select>
+                      </div>
+                      <input type="text" class="form-control" aria-label="..." name="filter_value" id="searchValue" onkeydown="javascript: if (event.keyCode == 13) {searchVhList(true);}">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default excd-btn-primary" type="button" onclick="javascript:searchVhList()">검색</button>
+                      </span>
+                    </div> -->
+                    <!-- /input-group -->
+                  <!-- </form> -->
+                  
+                </div>
+                
+                <!-- <div class="safety-grid" id="equip-vh-list-grid"></div> -->
+                  <div class="geo-map" style="height: 94%;">
+                    <%- include('./common/map_view_module',{})%>
+                  </div>
+              </div>
+            </div>
+
+            <div class="excd-modal-bg display-none" id="dataViewModal">
+              <%- include('common/data_view_module', {})%>
+            </div>
+          </div>
+      
+          <% include ./common/default_js %>
+             
+          <script>
+              ;
+          </script>
+          
+          <script src="/public/js/module/fr_map_view_logic_module.js" type="module"></script>
+          <script src="/public/bower_components/underscore/underscore-min.js"></script>
+          <script src="/public/bower_components/backbone/backbone-min.js"></script>
+          <script src="/public/bower_components/tui-code-snippet/dist/tui-code-snippet.min.js"></script>
+          <script src="/public/bower_components/tui-pagination/dist/tui-pagination.min.js"></script>
+          <script src="/public/bower_components/tui-date-picker/dist/tui-date-picker.min.js"></script>
+          <script src="/public/bower_components/tui-grid/dist/tui-grid.min.js"></script>
+    </body>
+</html>

@@ -1,0 +1,64 @@
+2023-09-13 16:37:02 [ERROR] - uncaughtException: Cannot use import statement outside a module
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_logic_module.js:1
+import MapViewModule from './fr_map_view_module.js';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:8:26)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-13 16:56:03 [ERROR] - uncaughtException: Cannot use import statement outside a module
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_logic_module.js:1
+import MapViewModule from './fr_map_view_module.js';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:8:26)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)
+2023-09-13 16:56:52 [ERROR] - uncaughtException: Cannot use import statement outside a module
+D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:8
+import mapViewLogicModule from '../../public/js/module/fr_map_view_logic_module';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at initRoutes (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:33:19)
+    at Object.route_loader.init (D:\Code\r-rfms\agros_net_server_node_git\routes\route_loader.js:20:10)
+2023-09-13 17:00:31 [ERROR] - uncaughtException: Cannot use import statement outside a module
+D:\Code\r-rfms\agros_net_server_node_git\public\js\module\fr_map_view_logic_module.js:1
+import MapViewModule from './fr_map_view_module.js';
+^^^^^^
+
+SyntaxError: Cannot use import statement outside a module
+    at Object.compileFunction (node:vm:352:18)
+    at wrapSafe (node:internal/modules/cjs/loader:1033:15)
+    at Module._compile (node:internal/modules/cjs/loader:1069:27)
+    at Object.Module._extensions..js (node:internal/modules/cjs/loader:1159:10)
+    at Module.load (node:internal/modules/cjs/loader:981:32)
+    at Function.Module._load (node:internal/modules/cjs/loader:822:12)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at Object.<anonymous> (D:\Code\r-rfms\agros_net_server_node_git\routes\api\api_map.js:8:14)
+    at Module._compile (node:internal/modules/cjs/loader:1105:14)

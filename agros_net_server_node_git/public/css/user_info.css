@@ -1,0 +1,54 @@
+@import url("./font.css");
+.contents-photo {
+  padding: 20px 40px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contents-photo .profile-img {
+  width: 240px;
+  height: 240px;
+  margin: 10px 0;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 3%;
+}
+
+.contents-photo .profile-img.img-empty {
+  background-image: url("/public/images/user.svg");
+  background-size: 30%;
+  background-color: #eeeeee;
+}
+
+.contents-photo .excd-btn {
+  width: 160px;
+}
+
+.user-info-basic {
+  -webkit-box-flex: 3;
+      -ms-flex-positive: 3;
+          flex-grow: 3;
+}
+
+.contents-photo {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.user-info-spacer {
+  -webkit-box-flex: 2;
+      -ms-flex-positive: 2;
+          flex-grow: 2;
+}
+
+.user-info-submit {
+  margin-top: 20px;
+}

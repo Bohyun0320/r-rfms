@@ -1,0 +1,84 @@
+<div class="contents-row contents-data-container" id="<%=viewId%>">
+
+  <div class="contents-data-img">
+    <img class="cam-img display-none" src="/public/images/template/no_image.png"
+      onerror="this.src='/public/images/template/img_broken.svg'" alt="" id="dataImg">
+    <div class="imageViewer" id="imageViewer"></div>
+    <div class="excd-map display-none">
+      <%- include('./map_module', {}) %>
+    </div>
+    <div class="excd-btn excd-btn-small excd-btn-color-third" id="view-map"><i class="fas fa-map-marked-alt"></i> 지도 보기
+    </div>
+    <div class="img-nav" id="imgNavPrev"><i class="fas fa-chevron-left"></i></div>
+    <div class="img-nav" id="imgNavNext"><i class="fas fa-chevron-right"></i></div>
+  </div>
+
+  <div class="contents-data-meta contents-column">
+    <div class="contents-data-meta contents-column">
+      <div class="excd-input-group account-input">
+        <div class="input-name">영상 ID</div>
+        <input type="text" class="form-control" name="dataPhotoId" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">프로젝트 ID</div>
+        <input type="text" class="form-control" name="dataPrjId" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">프로젝트명</div>
+        <input type="text" class="form-control" name="dataPrjNm" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 등록 유형</div>
+        <input type="text" class="form-control" name="dataRegTypeNm" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">파일명</div>
+        <input type="text" class="form-control" name="dataFileNm" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 등록 일시</div>
+        <input type="text" class="form-control" name="dataRegEndDt" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">데이터 처리 일시</div>
+        <input type="text" class="form-control" name="dataPrcsEndDt" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">위도</div>
+        <input type="text" class="form-control exif" name="dataLat" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">경도</div>
+        <input type="text" class="form-control" name="dataLng" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">고도</div>
+        <input type="text" class="form-control" name="dataAlt" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">UTM X 좌표</div>
+        <input type="text" class="form-control" name="dataUtmX" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">UTM Y 좌표</div>
+        <input type="text" class="form-control" name="dataUtmY" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">Pitch</div>
+        <input type="text" class="form-control" name="dataPitch" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">Roll</div>
+        <input type="text" class="form-control" name="dataRoll" readonly="true">
+      </div>
+      <div class="excd-input-group account-input">
+        <div class="input-name">Yaw</div>
+        <input type="text" class="form-control" name="dataYaw" readonly="true">
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+<script src="/public/bower_components/exif-js/exif.js"></script>

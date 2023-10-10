@@ -1,0 +1,248 @@
+<style type="text/css">
+  @import url("/public/css/equip_info.css");
+</style>
+
+<form id="equip-form" action="/api/equip/add/sens" method="post">
+  <div class="card-contents">
+    <div class="contents-row">
+      <div class="contents-column user-info-basic">
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-info"></i>센서 ID</div>
+          <input type="text" class="form-control" placeholder="센서 ID는 자동 생성됩니다." name="sensid" readonly>
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-clone"></i>센서 종류</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="sens_ty">
+              <% for (var i=0; i<sensCode.length; i++) { %>
+                <option value="<%= sensCode[i].sens_ty_id%>" <%= sensCode[i].sens_ty_id==3 ? ' selected':' disabled'%> >
+                  <%= sensCode[i].sens_ty_nm%>
+                </option>
+                <%}%>
+            </select>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name" id="labelSensName"><i class="far fa-credit-card"></i>센서명<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="센서 이름을 입력해 주세요" name="name">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name" id="labelSensNum"><i class="fas fa-camera"></i>센서번호<span class="excd-icon excd-mandatory"/></div>
+          <input type="text" class="form-control" placeholder="센서 번호를 입력해 주세요" name="sensno">
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-car-side"></i>장착 차량</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="vhid">
+              <% for (var i=0; i<vhList.length; i++) { %>
+                <option value="<%= vhList[i].vh_id%>" <%=  vhList[i].cond_cd==1 ? '' : 'disabled'%>>
+                  <%= vhList[i].vh_nm%> (<%= vhList[i].vh_no%>)
+                </option>
+                <%}%>
+            </select>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-map-marked-alt"></i>관리지역</div>
+          <!-- <div class="input-sub-name">시·도</div> -->
+          <select class="selectpicker form-control sub-form" name="sido"></select>
+          <!-- <div class="input-sub-name">시·군·구</div> -->
+          <select class="selectpicker form-control sub-form" name="sigungu"></select>
+
+          <input type="text" class="form-control display-none" name="pnuid">
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-user-check"></i>관리자</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="owner">
+              <% for (var i=0; i<userList.length; i++) { %>
+                <option value="<%= userList[i].sv_user_id%>" <%=  userList[i].user_cond_cd==1 ? '' : 'disabled'%>>
+                  <%= userList[i].flnm%> (<%= userList[i].sv_user_id%>)
+                </option>
+                <%}%>
+            </select>
+          </div>
+        </div>
+        <div class="excd-input-group account-input">
+          <div class="input-name"><i class="fas fa-check-circle"></i>상태</div>
+          <div class="contents-rel">
+            <select class="selectpicker form-control" name="cond">
+              <% for (var i=0; i<condCode.length; i++) { %>
+                <option value="<%= condCode[i].vh_cond_id%>">
+                  <%= condCode[i].vh_cond_nm%>
+                </option>
+                <%}%>
+            </select>
+          </div>
+        </div>
+
+        <!-- for GS Certi - addClass : display-none -->
+        <div class="excd-input-group account-input ">
+          <div class="input-name" id="ioFileNm"><i class="fas fa-file-csv"></i>IO 파일<span class="excd-icon"/></div>
+          <input type="text" class="form-control" placeholder="IO 파일 업로드" name="io_file_name">
+          <input type="file" name="io_file" id="sens-io-file" class="display-none" accept=".csv">
+          <div class="excd-btn-bar iofile-btn-bar">
+            <div class="excd-btn excd-btn-small excd-btn-primary" onclick="javascript:equipSensApi.addIoFile()">파일선택</div>
+            <div class="excd-btn excd-btn-small excd-btn-transparent" onclick="location.href='/public/template/IO.csv'">양식 다운로드</div>
+          </div>
+        </div>
+
+        <div class="excd-input-group account-input account-input-large">
+          <div class="input-name"><i class="fas fa-file-alt"></i>메모</div>
+          <textarea class="form-control contact-textarea" rows="4" placeholder="참고사항을 입력해 주세요" name="memo"></textarea>
+        </div>
+        <div class="excd-mandatory-hint"><span class="excd-icon excd-mandatory"/> 필수항목</div>
+
+      </div>
+
+      <div class="contents-column contents-photo" id="vh_photo">
+        <!-- <img src="/public/images/user.svg" alt=""> -->
+        <div class="profile-img img-empty"></div>
+        <div class="excd-btn" onclick="javascript:equipSensApi.addPhoto()">사진 등록</div>
+        <input class="image-input display-none" id="input-sens-photo" name="photo" type="file" accept="image/*">
+
+        <div class="spacer-vertical"></div>
+        <div class="contents-column cali-contents display-none" id="sensCalInfo" >
+          <div class="input-name"><i class="fas fa-sliders-h"></i> 보정값 정보</div>
+          <textarea readonly class="form-control contact-textarea" rows="10" placeholder="정보 없음" name="sens_cal"></textarea>
+        </div>
+      </div>
+
+      <!-- <div class="spacer-horizon user-info-spacer"></div> -->
+
+    </div>
+  </div>
+
+  <div class="contents-row" id="sens-spec">
+
+    <div class="card-contents card-contents-gray card-contents-sub" id="spec-lidar">
+      <div class="contents-group-title"><i class="fas fa-receipt"></i> 라이다 사양</div>
+      <div class="contents-column">
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>제조사</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_brand">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>모델명</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_model">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>일련번호</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_serial">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>해상도</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_resol">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>최대 범위</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_range">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>크기</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_size">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>무게</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="lidar_weight">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>기타 사양</div>
+          <textarea class="form-control contact-textarea" rows="4" placeholder="사양을 입력해 주세요." name="lidar_etc"></textarea>
+        </div>
+  
+      </div>
+    </div>
+ 
+    <div class="card-contents card-contents-gray card-contents-sub" id="spec-cam">
+      <div class="contents-group-title"><i class="fas fa-receipt"></i> 카메라 사양</div>
+      <div class="contents-column">
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>제조사</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_brand">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>모델명</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_model">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>일련번호</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_serial">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>센서크기</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_size">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>해상도</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_resol">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>픽셀 개수</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_pixel">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>초점 거리</div>
+          <input type="text" class="form-control" placeholder="사양을 입력해 주세요" name="cam_focus">
+        </div>
+        <div class="excd-input-group excd-input-group-file account-input">
+          <div class="input-name"><i class="fas fa-dot-circle"></i>캘리브레이션</div>
+          <textarea class="form-control contact-textarea" rows="4" placeholder="캘리브레이션 값을 입력해 주세요." name="cam_calbr"></textarea>
+        </div>
+  
+      </div>
+    </div>
+
+  </div>
+
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarNew">
+    <div class="excd-btn" id="cancel">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="submit">확인</div>
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarView">
+    <div class="excd-btn" id="back">이전</div>
+    <div class="excd-btn excd-btn-secondary" id="edit">수정</div>
+  </div>
+
+  <div class="excd-btn-bar user-info-submit info-module-btnbar display-none" id="infoBtnbarEdit">
+    <div class="excd-btn" id="cancelUpdate">취소</div>
+    <div class="excd-btn excd-btn-secondary" id="update">업데이트</div>
+  </div>
+</form>
+
+<script>
+  var pnuCode = {};
+  <% if (typeof pnuCode !== 'undefined' && pnuCode) {%>
+    pnuCode = <%- JSON.stringify(pnuCode) %>;
+  <%}%>
+
+  var userList = {};
+  <% if (typeof userList !== 'undefined' && userList) {%>
+    userList = <%- JSON.stringify(userList) %>;
+  <%}%>
+
+  var condCode = {};
+  <% if (typeof condCode !== 'undefined' && condCode) {%>
+    condCode = <%- JSON.stringify(condCode) %>;
+  <%}%>
+
+  var sensCode = {};
+  <% if (typeof sensCode !== 'undefined' && sensCode) {%>
+    sensCode = <%- JSON.stringify(sensCode) %>;
+  <%}%>
+
+  var vhList = {};
+  <% if (typeof vhList !== 'undefined' && vhList) {%>
+    vhList = <%- JSON.stringify(vhList) %>;
+  <%}%>
+
+</script>
+
+<script src="/public/js/module/fr_sens_info_module.js"></script>
+<script src="/public/js/module/fr_pnu_module.js"></script>
